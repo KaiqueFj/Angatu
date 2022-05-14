@@ -1,4 +1,4 @@
-# ☀️ Project Angatu ☁️
+#  Project Angatu 
 
 
 # 📕 About this project 
