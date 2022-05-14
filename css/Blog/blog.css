@@ -1,0 +1,436 @@
+/*Style of fonts*/
+
+li,
+a,
+button {
+  color: var(--black);
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Header style*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px 10px 10px;
+
+  position: absolute;
+  width: 100%;
+  height: 82px;
+  left: 0px;
+  top: 0px;
+
+  background: var(--white);
+  border: 1px solid var(--black);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px var(--black);
+}
+
+/*Logo style*/
+.logo {
+  height: 46px;
+  width: 240px;
+  padding-bottom: 5px;
+  padding-left: 65px;
+  cursor: pointer;
+}
+
+/*space inside the navlist*/
+.list .list-li {
+  display: inline-block;
+  padding: 0px 20px;
+  margin-left: 35px;
+}
+
+/*to keep list without style*/
+.list {
+  position: static;
+  width: 100%;
+  left: 253px;
+  top: -11.07px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
+/*style of transition*/
+.list .list-link::after {
+  content: "";
+  height: 2px;
+  width: 0px;
+  background-color: var(--white);
+  display: block;
+  transition: 0.5s ease-out;
+}
+
+/*hover for transition in <a>*/
+.list .list-link:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  left: 25%;
+  background-color: var(--purple);
+  display: block;
+}
+
+/*style of contact button*/
+.btn-ctn {
+  background-color: var(--gray);
+  border: none;
+  border-radius: 25px;
+  padding: 9px 18px;
+  color: var(--white);
+  height: 45px;
+  cursor: pointer;
+  justify-content: right;
+}
+
+/*style of SingIn button*/
+
+.btn-log {
+  background-color: var(--dark-purple);
+  height: 45px;
+  width: 85px;
+  color: var(--white);
+  padding: 9px 8px;
+  border: none;
+  border-radius: 25px;
+  padding-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+/*style of SingIn button hover*/
+
+.btn-log:hover {
+  background-color: var(--purple);
+}
+
+/*Container of background*/
+
+.aboutUs {
+  background: var(--purple);
+  max-width: 1920px;
+  max-height: 100%;
+  height: 15rem;
+  top: 83px;
+  background-size: contain;
+}
+
+/*Container of background*/
+
+.mainImageHome {
+  background: var(--purple);
+  max-width: 1920px;
+  max-height: 1080;
+}
+
+/*size of background image*/
+
+.mainImg {
+  position: absolute;
+  width: 100%;
+  height: 24rem;
+  top: 83px;
+  background-size: contain;
+}
+
+/*container of post*/
+.postsContainer {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1px 10px 18px 30px;
+  position: absolute;
+  width: 85%;
+  height: 705px;
+  left: 105px;
+  top: 32rem;
+  border: 1px solid var(--gray);
+  box-sizing: border-box;
+}
+
+/*style of post titles*/
+.postsContainer .mainTitle {
+  width: 430px;
+  height: 50px;
+  left: 30px;
+  top: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 50px;
+  color: var(--black);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 34px 0px;
+}
+
+/*style of post */
+
+.posts {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 45%;
+  height: 260px;
+  left: 30px;
+  top: 118px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 50px 0px;
+}
+
+
+.post-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 8px;
+    position: static;
+    width: 794px;
+    height: 260px;
+    top: 0px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 3px;
+}
+
+.post-image {
+  position: static;
+float: left;
+  width: 260px;
+  height: 211px;
+  border-radius: 25px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 4px;
+}
+
+.post-title {
+ 
+    font-family: "Poppins",sans-serif;
+    font-weight: 700;
+    font-size: 29px;
+    height: 68px;
+    line-height: 30px;
+    color: var(--black);
+    order: 0;
+    flex-grow: 0;
+    margin: 5px 1px;
+    margin-left: 5px;
+}
+
+.btn-post{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    position: static;
+    width: 130px;
+    height: 44px;
+    left: 279px;
+    top: 173px;
+    color: var(--white);
+    background: var(--dark-purple);
+    border-radius: 20px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 10px 2px;
+ 
+}
+
+.btn-post:hover {
+    background: var(--purple)
+}
+
+.post-info {
+    position: static;
+    width: 761px;
+    justify-content: space-between;
+    font-family: "Poppins",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: justify;
+    color: var(--black);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.post-info-second {
+    position: unset;
+    width: 761px;
+    height: 125px;
+    justify-content: space-between;
+    font-family: "Poppins",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 33px;
+    text-align: justify;
+    color: var(--black);
+    flex: auto;
+    order: 1;
+    flex-grow: 0;
+    margin: -24px 0px;
+}
+
+
+/*style of footer*/
+#footer {
+  top: 1235px;
+  position: absolute;
+  width: 100%;
+  height: 240px;
+}
+
+/*style of footer list links*/
+
+.foot-list {
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  padding-left: 150px;
+  left: 5%;
+  bottom: 35.5%;
+  justify-content: space-between;
+  line-height: 38px;
+  list-style: none;
+  position: relative;
+  height: 120px;
+  width: 50%;
+}
+
+.foot-list .list-footer-pages {
+  font-family: "Poppins", sans-serif;
+}
+
+/*links below footer page*/
+.foot-list-link {
+  flex-direction: row;
+  align-items: center;
+  padding: 22px 12px;
+  padding-left: 228px;
+  justify-content: space-between;
+  list-style: none;
+  position: relative;
+  width: auto;
+  height: 120px;
+}
+
+.foot-list-link .list-footer-links {
+  display: inline-block;
+  margin: 0;
+  justify-content: space-between;
+  padding: 0px 25px;
+  height: fit-content;
+  font-family: "Poppins", sans-serif;
+  color: var(--purple);
+}
+
+/*styles of apps  (google and apple) */
+.Apps {
+  position: absolute;
+  left: 41.62%;
+  top: -0.29%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  inline-size: auto;
+  height: auto;
+}
+
+/*style of icons*/
+.Apps .apps-icon {
+  display: inline-block;
+  height: 35px;
+  max-width: 30rem;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/*style of text*/
+.Apps .apps-text {
+  padding-left: 7.4%;
+  font-size: 22px;
+  padding-bottom: 3%;
+  font-family: "Poppins", sans-serif;
+  color: var(--purple);
+}
+
+/*style of social position in page*/
+.social {
+  position: absolute;
+  right: 2.74%;
+  top: -0.29%;
+}
+/*style of icons (facebook, instagram, youtube*/
+.social-icon {
+  height: 40px;
+  width: 38px;
+  padding-left: 5px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+/*acesse nossas redes*/
+.social .message {
+  font-size: 22px;
+  padding-bottom: 3%;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  color: var(--purple);
+}
+
+/*style of the logo in footer*/
+
+.logo-footer {
+  height: auto;
+  position: relative;
+  width: 130px;
+  left: 50px;
+}
+
+/*style of size of logo footer*/
+.logo-footer .imgFooter {
+  width: 80px;
+  height: 63px;
+  bottom: 30px;
+}
+
+/*style of name below footer image*/
+.logo-footer .logoName {
+  position: absolute;
+  left: -6.22%;
+  right: 85.35%;
+  top: 40px;
+
+  font-family: "Caveat", cursive;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 60px;
+
+  color: var(--dark-purple);
+}

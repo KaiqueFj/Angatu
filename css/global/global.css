@@ -1,0 +1,56 @@
+/*Variables*/
+:root {
+  --white: #fff;
+  --ice:#f0f0f0;
+  --black:#000;
+  --purple: #7766cd;
+  --dark-purple:#402f93;
+  --primary-color:rgb(255, 255, 255);
+  --gray:rgb(94, 94, 94);
+  --glass:rgba(200, 200, 200, 0.4);
+  --dark-glass:rgba(114, 114, 114, 0.5)
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1700px) {
+  html {
+    font-size: 84.5%;
+  }
+}
+body{
+  font-family: 'open sans Condensed';
+
+}
+
+label {
+  color: var(--label);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+body,
+input,
+button,
+textarea,
+select {
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+button,
+select {
+  cursor: pointer;
+}
