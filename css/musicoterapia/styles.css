@@ -114,51 +114,74 @@ header {
 }
 
 /*color of background*/
-body{
-    background-color: #15222b
+body {
+  background-color: #15222b;
 }
 
-.lotus{
-    top:16%;
-    position: absolute;
-    display: flex;
-  justify-content:space-between;
-    width: 100%;
-    height: 20vh;
-
+.lotus {
+  top: 16%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 20vh;
 }
 
-.lotus button{
-    width: 8%;
-    height: 6vh;
-    background: transparent;
-    border:0;
-    padding-left: 30px;
+.lotus button {
+  width: 8%;
+  height: 6vh;
+  background: transparent;
+  border: 0;
+  padding-left: 30px;
 }
 
-
-.lotus button img{
-   height:30px;
-   width:38px;
+.lotus button img {
+  height: 30px;
+  width: 38px;
 }
 
-#lotus-image{
-    margin-left: 7%;
-    height: 12rem;
-    display: flex;
-    justify-content: center;
-    width: 12rem
+#lotus-image {
+  margin-left: 20%;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  width: 12rem;
 }
-
 
 .lotus input {
-    background: url(../../assets/musicoterapia/Search.png) no-repeat right;
-    background-size: 20%;
-    margin-right: 30px;
-    
-    height: 6vh;
-    border-radius: 36px;
-    background-color: var(--light-gray);
+  background: url(../../assets/musicoterapia/Search.png) no-repeat right;
+  background-size: 20%;
+  margin-right: 30px;
+
+  height: 6vh;
+  border-radius: 36px;
+  background-color: var(--light-gray);
+}
+
+.title {
+  font-size: 16px;
+  position: absolute;
+  padding-top: 24%;
+  padding-left: 3%;
+  font-family: "Poppins";
+  align-items: center;
+  color: var(--white);
+}
+.options {
+  display: grid;
+  grid-template-columns: 4rem 28rem 4rem;
+  grid-template-rows: 32rem 63px;
+  grid-column-gap: 6px;
+  grid-row-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  margin-left: 26%;
+  padding-top: 16%;
+}
+
+.options img {
+  width: 15rem;
+  height: 17rem;
 }
 
 /*style of footer*/
@@ -166,7 +189,8 @@ body{
   top: 62rem;
   position: absolute;
   width: 100%;
-  height: 240px;
+  height: 310px;
+  background-color:var(--white)
 }
 
 /*style of footer list links*/
@@ -273,6 +297,7 @@ body{
   position: relative;
   width: 130px;
   left: 50px;
+
 }
 
 /*style of size of logo footer*/
