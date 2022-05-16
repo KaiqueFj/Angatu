@@ -6,13 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angatu</title>
-    <link rel="stylesheet" href="./css/aboutUs/aboutUs.css">
+    <link rel="stylesheet" href="./css/contact/styles.css">
     <link rel="stylesheet" href="./css/global/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
-
 
 </head>
 
@@ -20,7 +18,7 @@
     <div id="main">
         <header>
             <div class="headerImage">
-                <img class="logo" src="./assets/logo2.jpeg" alt="Logo Angatu" href>
+                <img class="logo" src="./assets/logo2.jpeg" alt="Logo Angatu">
             </div>
             <nav>
                 <ul class="list">
@@ -31,23 +29,62 @@
                     <a class="list-li" href="Contato.html"><button class="btn-ctn">Contact</button></a>
                     <a class="list-li" href="Login.html"><button class="btn-log">Entrar</button></a>
                 </ul>
+
             </nav>
+
         </header>
-        <div class="mainImageHome">
-            <img class="mainImg" src="./assets/aboutUs/bg.png" alt="MainImage">
+
+
+
+        <div class="mainImage">
+            <img class="mainImg" src="./assets/contact/background.png" alt="MainImage">
         </div>
 
-        <div class="messageinBg">
-            <p class="strong">
-                Sobre Nós
-            </p>
-            <p class="text">
-                A Angatu nasceu o objetivo de ajudar na promoção do bem-estar mental. A plataforma visa establecer um
-                vínculo com indicíduos que sofram de ansiedade e estresse, servindo como ferramenta primária no dia a
-                dia desses indivíduos ou como suporte à tratamentos com especialistas.
-            </p>
+        <div class="singUp-box">
+            <h3> Contato</h3>
+            <p>A sua mensagem é muito importante para nós. Assim podemos manter um contanto mais direto e sincero com
+                você ;)</p>
+            <form>
+
+                <div class="user-box">
+                    <img src="./assets/SingUp/Icon-Avatar.png" alt="Icon-user" class="icon-user">
+                    <input type="text" name="Username" id="Username" placeholder="Digite seu nome:" required>
+                    <label>Nome:</label>
+                </div>
+
+                <div class="user-box">
+                    <img src="./assets/SingUp/mail-icon (1).png" alt="Icon-user" class="icon-user">
+
+                    <input type="E-mail" name="Username" id="E-mail" placeholder="Digite seu E-mail:" required>
+                    <label>E-mail:</label>
+                </div>
+
+
+                <div class="user-box">
+                    <img src="./assets/SingUp/phone-icon.png" alt="Icon-user" class="icon-user">
+                    <input type="tel" name="Username" id="Telefone" placeholder="Digite seu telefone:" required>
+                    <label>Telefone:</label>
+                </div>
+
+                <div class="user-box">
+                    <textarea id="textMessage" cols="33" rows="5" class="t-area"
+                        placeholder="Envie sua mensagem aqui:"></textarea>
+                    <label>Mensagem:</label>
+                </div>
+
+                <div class="submitBtn">
+                    <input type="submit" value="Enviar mensagem">
+                </div>
+
         </div>
+
+
+        </form>
     </div>
+
+
+
+
 
     <footer id="footer">
 
@@ -83,6 +120,9 @@
             <li class="list-footer-links">Políticas de privacidade</li>
         </ul>
     </footer>
+
+
+
 
 </body>
 
