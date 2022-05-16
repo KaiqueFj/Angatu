@@ -201,7 +201,7 @@ header {
   width: 60px;
   height: 45px;
   left: 628px;
-  top: 657px;
+  top: 742px;
 }
 
 /*size of second part*/
@@ -209,7 +209,7 @@ header {
   position: absolute;
   width: 1273px;
   height: 480px;
-  top: 730px;
+  top: 780px;
 }
 
 /*seu cuidado diario*/
@@ -255,11 +255,10 @@ header {
 .options {
   position: absolute;
   width: 100%;
-  overflow: auto;
-  top: 910px;
+  overflow: hidden;
+  top: 924px;
   display: inline-block;
   justify-content: space-between;
-
   display: flex;
   flex-direction: row;
   align-items: flex-start;
