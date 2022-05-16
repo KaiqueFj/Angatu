@@ -132,38 +132,40 @@ header {
 }
 
 .singUp-box h3 {
-  margin: 0 15% -3px;
-  color: var(--white);
-  text-align: center;
-  padding-left: 96px;
-  font-family: "Poppins";
-  font-weight: 700;
-  vertical-align: Top;
-  font-size: 30px;
-  line-height: 40px;
-  display: flex;
+    color: var(--white);
+    text-align: center;
+    font-style: bold;
+    padding-left: 38px;
+    font-family: "Poppins";
+    font-weight: 700;
+    vertical-align: Top;
+    font-size: 30px;
+    line-height: 40px;
+    display: flex;
 }
 
 .singUp-box p {
-  line-height: 32px;
-  vertical-align: text-top;
-  text-align: left;
-  top: -21px;
-  color: var(--white);
-  padding: 21px 0;
-  padding-bottom: 10%;
-  font-size: 16px;
-  pointer-events: none;
+    line-height: 32px;
+    vertical-align: text-top;
+    text-align: left;
+    top: -21px;
+    color: var(--white);
+    padding: 21px 0;
+    padding-left: 27px;
+    padding-bottom: 10%;
+    font-size: 16px;
+    width: 103%;
+    pointer-events: none;
 }
 
 .singUp-box {
-  position: absolute;
-  top: 16%;
-  left: 30.5%;
-  width: 533px;
-  height: 110vh;
-  padding: 40px;
-  background: var(--dark-glass);
+    position: absolute;
+    top: 16%;
+    left: 31.5%;
+    width: 446px;
+    height: 49vh;
+    padding: 40px;
+    background: var(--dark-glass);
 }
 
 .singUp-box .user-box {
@@ -172,69 +174,22 @@ header {
   width: auto;
 }
 
-.singUp-box .user-box input {
-  width: 74%;
-  font-size: 16px;
-  padding-left: 2.6rem;
-  margin-bottom: 30px;
-  outline: none;
-  height: 35px;
-  background: var(--white);
-  border-radius: 8px;
-}
 
-.singUp-box .user-box textarea {
-  width: 74%;
-  margin-top: 32px;
-  padding-top: 2%;
-  padding-left: 0.6rem;
-  margin-bottom: 30px;
-  outline: none;
-  height: 80px;
-  background: var(--white);
-  border-radius: 8px;
-}
-
-.singUp-box .user-box label:nth-child(2) {
-  margin-top: 30px;
-  padding-top: 2%;
-  padding-left: 0.6rem;
-}
-
-.singUp-box .user-box label {
-  position: absolute;
-  top: -31px;
-  color: var(--white);
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  pointer-events: none;
-  transition: 0.5s;
-}
 
 
 .singUp-box .submitBtn input {
-  width: 74%;
-  padding: 10px 32px;
-  font-size: 16px;
-  margin-bottom: 30px;
-  margin-left: 15%;
-  outline: none;
-  background: var(--dark-purple);
-  cursor: pointer;
-  border-radius: 10px;
-
-  color: var(--white);
+     padding: 10px 32px;
+     font-size: 16px;
+     margin-bottom: 30px;
+     margin-left: 34%;
+     outline: none;
+     background: var(--dark-purple);
+     cursor: pointer;
+     border-radius: 18px;
+     color: var(--white);
 }
 
-.singUp-box .user-box img {
-  padding-left: 2%;
-  padding-top: 0.5rem;
-  height: 30px;
-  image-orientation: initial;
-  position: absolute;
-  width: 31px;
-}
+
 
 .singUp-box .submitBtn input:hover {
   background-color: var(--purple);
@@ -242,13 +197,7 @@ header {
   transition: ease-in-out;
 }
 
-.singUp-box .message {
-  position: absolute;
-  justify-content: space-between;
-  padding-left: 24%;
-  width: 61%;
-  height: 24%;
-}
+
 
 .message .text {
   display: inline-block;
