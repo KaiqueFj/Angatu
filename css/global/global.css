@@ -9,7 +9,8 @@
   --gray:rgb(94, 94, 94);
   --light-gray:#A6B3BD;
   --glass:rgba(200, 200, 200, 0.4);
-  --dark-glass:rgba(114, 114, 114, 0.5)
+  --dark-glass:rgba(114, 114, 114, 0.5);
+  --dark-green:#15222b;
 }
 
 ::-webkit-scrollbar {
