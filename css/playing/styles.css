@@ -226,6 +226,7 @@ body {
 .options {
   position: absolute;
   display: flex;
+  align-items: center;
   flex-direction: row;
   margin-left: 37%;
   width: 20rem;
