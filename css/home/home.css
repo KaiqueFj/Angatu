@@ -23,7 +23,6 @@ header {
   align-items: center;
 }
 
-
 .Header-logo {
   width: 10rem;
   margin: 0 0.8rem;
@@ -32,7 +31,7 @@ header {
 }
 
 .Header-logo h2 {
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   font-weight: 500;
   color: var(--purple);
   font-family: var(--font-brand);
@@ -107,21 +106,34 @@ li {
 }
 
 /*Main*/
+#main {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font);
+}
+.main-home {
+  padding-top: 13%;
+  width: 1300px;
+  display: flex;
+  align-items: center;
+  padding-left: 1%;
+  justify-content: space-between;
+}
 
 .mainImageHome {
-  background: var(--purple);
-  max-width: 1920px;
-  max-height: 1080;
+  flex-wrap: wrap;
+  margin-left: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*size of background image*/
-
 .mainImg {
-  position: absolute;
-  width: 100%;
-  height: 44rem;
-  top: 83px;
-  background-size: contain;
+  width: 70rem;
 }
 
 /*container text of text in background*/
@@ -130,71 +142,41 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px 10px;
-
+  padding: 1.3rem 1rem;
   position: absolute;
-  width: 552px;
-  height: 333px;
-  left: 120px;
-  top: 296px;
-
+  width: 32rem;
+  height: 20rem;
+  margin-left: 8rem;
+  margin-top: 4rem;
   background: var(--glass);
 }
 
 /*Edit of Strong text in the middle of background image*/
 
 .strong {
-  position: static;
-  width: 477px;
-  height: 100px;
-  left: 37.5px;
-  top: 21px;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
+  font-family: var(--font);
   font-weight: 700;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 50px;
-
+  font-size: 2.4rem;
+  line-height: 3.2rem;
   color: var(--black);
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 10px 0px;
+  margin: 0.8rem 0;
 }
-
 /*Edit of subtext in the middle of background image*/
 .text {
-  position: static;
-  width: 474px;
-  height: 181px;
-  left: 39px;
-  top: 131px;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  height: 8rem;
+  font-family: var(--font);
   font-weight: bold;
-  font-size: 18px;
-  line-height: 30px;
-
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  text-align: justify;
   color: var(--black);
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 10px 0px;
+  margin: 1.8rem 0;
 }
-
 /*logo in the middle of the second part*/
 .smallLogo {
   position: absolute;
-  width: 60px;
-  height: 45px;
-  left: 628px;
-  top: 742px;
+  margin-left: 37.5rem;
+  margin-top: 46rem;
 }
 
 /*size of second part*/
