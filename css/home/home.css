@@ -180,12 +180,42 @@ li {
 }
 
 /*size of second part*/
-.secondPart {
-  position: absolute;
-  width: 1273px;
-  height: 480px;
-  top: 780px;
+#information {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font);
 }
+
+.secondPart{
+  width: 1300px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+.secondPart p:nth-child(1){
+  font-family: var(--font);
+  font-weight:700;
+  font-size:2.4rem;
+  text-align: center;
+  line-height:3.2rem
+  }
+
+  .secondPart p:nth-child(2){
+    font-family: var(--font);
+    font-weight:500;
+    width:62rem;
+    font-size:1.4rem;
+    text-align: center;
+    line-height:2.2rem
+    }
+
+  
 
 /*seu cuidado diario*/
 .informationStrong {
