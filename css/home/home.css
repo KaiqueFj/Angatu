@@ -181,8 +181,10 @@ li {
 
 /*size of second part*/
 #information {
-  height: 100vh;
+  height: 35VH;
+  position: relative;
   width: 100%;
+  margin-top: 14rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,7 +197,6 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 7rem;
 }
 
 .secondPart p:nth-child(1){
@@ -215,387 +216,50 @@ li {
     line-height:2.2rem
     }
 
-  
-
-/*seu cuidado diario*/
-.informationStrong {
-  position: absolute;
-  width: 792px;
-  height: 50px;
-  left: 272px;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 50px;
-
-  text-align: center;
-
-  color: var(--black);
-}
-
-/*text below cuidado diario*/
-
-.information {
-  position: absolute;
-  width: 746px;
-  height: 60px;
-  left: 292px;
-  top: 73px;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-
-  font-size: 18px;
-  line-height: 30px;
-
-  text-align: center;
-
-  color: var(--black);
-}
-
 /*opções dentro do site*/
-.options {
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
-  top: 924px;
-  display: inline-block;
+#features{
+  height:100%;
+  padding-left: 1%;
+  width:100%;
+  display:flex;
+  flex-direction:row;
   justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  position: absolute;
-  height: 280px;
+  align-items: center;
+}
+
+.options{
+  width:1300px;
+  display:flex;
+  flex-direction:row;
+  gap: 2rem;
 }
 
 /*info das opções*/
 .info {
-  position: static;
-  width: 229px;
-  height: 144px;
-  left: 10px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 20px 0px;
+  margin: 0.6rem 0;
 }
 
-.musicoterapia {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 30px 10px;
-
-  position: absolute;
-  width: 240px;
-  height: 280px;
-  right: auto;
-
-  background: var(--ice);
-
-  border-radius: 8px;
-}
-
-.info .title {
-  position: static;
-  width: 229px;
-  height: 43px;
-  left: 10px;
-  top: 105px;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
+.title {
+  height: 2.6rem;
+  font-family: var(--font);
   font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  /* identical to box height, or 167% */
-
+  font-size: 1.5rem;
+  line-height: 2.3rem;
   color: var(--black);
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 8px 0px;
+  margin: 0.2rem 0;
 }
 
-.info .information {
-  position: static;
-  width: 228px;
-  left: 10px;
-  top: 155px;
+.card{
+  width:15rem;
+
+}
+
+ .information {
+  font-size: 1rem;
+  line-height:1.4rem;
+  font-family: var(--font);
   text-align: justify;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 147.52%;
-
-  display: flex;
-  align-items: center;
-  letter-spacing: auto;
-  color: #6e7886;
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin: 25px 0px;
-}
-
-.meditação {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 30px 10px;
-
-  position: absolute;
-  width: 240px;
-  height: 280px;
-  left: 260px;
-  background: var(--ice);
-  border-radius: 8px;
-}
-
-.info-med .title {
-  position: static;
-  width: 229px;
-  height: 30px;
-  left: 10px;
-  top: 105px;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  /* identical to box height, or 167% */
-
-  color: var(--black);
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 25px 0px;
-}
-
-.info-med .information-med {
-  position: static;
-  width: 228px;
-  height: 89px;
-  left: 10px;
-  top: 160px;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 147.52%;
-  /* or 21px */
-
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.005em;
-
-  color: #6e7886;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin: 25px 0px;
-}
-
-.jogos {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 30px 10px;
-
-  position: absolute;
-  width: 240px;
-  height: 280px;
-  left: 520px;
-
-  background: var(--ice);
-  border-radius: 8px;
-}
-
-.info-game .title {
-  position: static;
-  width: 229px;
-  height: 30px;
-  left: 10px;
-  top: 105px;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-
-  color: var(--black);
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 25px 0px;
-}
-
-.info-game .information-game {
-  position: static;
-  width: 228px;
-  height: 89px;
-  left: 10px;
-  top: 160px;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 147.52%;
-
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.005em;
-
-  color: #6e7886;
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin: 25px 0px;
-}
-
-.DiaryMood {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 30px 10px;
-
-  position: absolute;
-  width: 240px;
-  height: 280px;
-  left: 775px;
-  background: var(--ice);
-  border-radius: 8px;
-}
-.info-mood .title {
-  position: static;
-  width: 229px;
-  height: 30px;
-  left: 10px;
-  top: 105px;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-
-  color: var(--black);
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 25px 0px;
-}
-
-.info-mood .information-mood {
-  position: static;
-  width: 228px;
-  height: 89px;
-  left: 10px;
-  top: 160px;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 147.52%;
-
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.005em;
-
-  color: #6e7886;
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin: 25px 0px;
-}
-
-.Sports {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 30px 10px;
-
-  position: absolute;
-  width: 240px;
-  height: 280px;
-  left: 1030px;
-  top: -1px;
-
-  background: var(--ice);
-  border-radius: 8px;
-}
-.info-sport .title {
-  position: static;
-  width: 229px;
-  height: 30px;
-  left: 10px;
-  top: 105px;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-
-  color: var(--black);
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 25px 0px;
-}
-
-.info-sport .information-sport {
-  position: static;
-  width: 228px;
-  height: 89px;
-  left: 10px;
-  top: 160px;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 147.52%;
-
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.005em;
-
-  color: #6e7886;
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin: 25px 0px;
+  margin: 0.8rem 0px;
 }
 
 /*style of footer*/
