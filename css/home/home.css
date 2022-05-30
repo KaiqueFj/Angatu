@@ -13,51 +13,45 @@ button {
 /*Header style*/
 
 header {
+  width: 100vw;
+  height: 9vh;
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+  font-family: var(--font);
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 60px 10px 10px;
-
-  position: absolute;
-  width: 100%;
-  height: 82px;
-  left: 0px;
-  top: 0px;
-
-  background: var(--white);
-  border: 1px solid var(--black);
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px var(--black);
 }
 
-/*Logo style*/
-.logo {
-  height: 46px;
-  width: 240px;
-  padding-bottom: 5px;
-  padding-left: 65px;
-  cursor: pointer;
+.Header-logo {
+  width: 10rem;
+  margin: 0 0.8rem;
+  display: flex;
+  align-items: center;
 }
 
-/*space inside the navlist*/
-.list .list-li {
-  display: inline-block;
-  padding: 0px 20px;
-  margin-left: 35px;
+.Header-logo h2 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: var(--purple);
+  font-family: var(--font-brand);
 }
 
-/*to keep list without style*/
-.list {
-  position: static;
-  width: 100%;
-  left: 253px;
-  top: -11.07px;
+nav {
+  display: block;
+  margin-left: 12rem;
+}
 
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 10px;
+ul {
+  display: flex;
+  gap: 2.8rem;
+  padding-top: 0.2rem;
+  list-style: none;
+}
+
+li {
+  display: list-item;
+  align-self: center;
 }
 
 /*style of transition*/
@@ -81,39 +75,36 @@ header {
 }
 
 /*style of contact button*/
-.btn-ctn {
+
+#contato button {
+  background-color: var(--light-gray);
+  border: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#contato button:hover {
   background-color: var(--gray);
-  border: none;
-  border-radius: 25px;
-  padding: 9px 18px;
+  transition: all ease 1s;
   color: var(--white);
-  height: 45px;
-  cursor: pointer;
-  justify-content: right;
 }
 
-/*style of SingIn button*/
-
-.btn-log {
-  background-color: var(--dark-purple);
-  height: 45px;
-  width: 85px;
-  color: var(--white);
-  padding: 9px 8px;
-  border: none;
-  border-radius: 25px;
-  padding-right: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-/*style of SingIn button hover*/
-
-.btn-log:hover {
+#entrar button {
   background-color: var(--purple);
+  border: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-/*Container of background*/
+#entrar button:hover {
+  background-color: var(--dark-purple);
+  transition: all ease 1s;
+  color: var(--white);
+}
+
+/*Main*/
 
 .mainImageHome {
   background: var(--purple);

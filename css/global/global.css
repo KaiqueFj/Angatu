@@ -12,6 +12,9 @@
   --glass:rgba(200, 200, 200, 0.4);
   --dark-glass:rgba(114, 114, 114, 0.5);
   --dark-green:#15222b;
+
+  --font: 'Sans-serif', arial;
+  --font-brand: "Caveat", cursive;
 }
 
 ::-webkit-scrollbar {
