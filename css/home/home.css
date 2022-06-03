@@ -16,9 +16,10 @@ header {
   width: 100vw;
   height: 9vh;
   position: fixed;
-  z-index: 999;
+  z-index: 100;
   background-color: var(--white);
   font-family: var(--font);
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
   display: flex;
   align-items: center;
 }
@@ -40,6 +41,7 @@ header {
 nav {
   display: block;
   margin-left: 12rem;
+  width: 1300px;
 }
 
 ul {
@@ -181,7 +183,7 @@ li {
 
 /*size of second part*/
 #information {
-  height: 35VH;
+  height: 35vh;
   position: relative;
   width: 100%;
   margin-top: 14rem;
@@ -191,7 +193,7 @@ li {
   font-family: var(--font);
 }
 
-.secondPart{
+.secondPart {
   width: 1300px;
   flex-direction: column;
   display: flex;
@@ -199,202 +201,149 @@ li {
   justify-content: center;
 }
 
-.secondPart p:nth-child(1){
+.secondPart p:nth-child(1) {
   font-family: var(--font);
-  font-weight:700;
-  font-size:2.4rem;
+  font-weight: 700;
+  font-size: 2.4rem;
   text-align: center;
-  line-height:3.2rem
-  }
-
-  .secondPart p:nth-child(2){
-    font-family: var(--font);
-    font-weight:500;
-    width:62rem;
-    font-size:1.4rem;
-    text-align: center;
-    line-height:2.2rem
-    }
-
-/*opções dentro do site*/
-#features{
-  height:100%;
-  padding-left: 1%;
-  width:100%;
-  display:flex;
-  flex-direction:row;
-  justify-content: space-between;
-  align-items: center;
+  line-height: 3.2rem;
 }
 
-.options{
-  width:1300px;
-  display:flex;
-  flex-direction:row;
-  gap: 2rem;
+.secondPart p:nth-child(2) {
+  font-family: var(--font);
+  font-weight: 500;
+  width: 62rem;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 2.2rem;
+}
+
+/*opções dentro do site*/
+#features {
+  height: 100%;
+  padding-left: 1.4%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.options {
+  width: 1300px;
+  display: flex;
+  flex-direction: row;
+  gap: 1.8em;
 }
 
 /*info das opções*/
 .info {
-  margin: 0.6rem 0;
+  margin: 0.6rem 0.4rem;
 }
 
 .title {
-  height: 2.6rem;
+  height: 2.4rem;
   font-family: var(--font);
   font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 2.3rem;
+  font-size: 1.2rem;
   color: var(--black);
-  margin: 0.2rem 0;
 }
 
-.card{
-  width:15rem;
-
+.card {
+  width: 14rem;
+  background-color: var(--glass);
+  display: flex;
+  flex-wrap: wrap;
+  height: 13rem;
+  padding: 0.3rem 0.2rem 0.2rem 0.6rem;
+  border-radius: 0.9rem;
 }
 
- .information {
-  font-size: 1rem;
-  line-height:1.4rem;
+.card img {
+  height: 2.7rem;
+  width: 2.7rem;
+  padding: 0.2rem 0.5rem 0.3rem 0.1rem;
+}
+
+.information {
+  font-size: 0.8rem;
+  line-height: 1rem;
   font-family: var(--font);
   text-align: justify;
-  margin: 0.8rem 0px;
 }
 
 /*style of footer*/
 #footer {
-  top: 1235px;
-  position: absolute;
-  width: 100%;
-  height: 240px;
-}
+ padding: 2rem 0 ;
+ width: 100%;
+ background-color: var(--white);
+ font-family: var(--font);
+ display: flex;
+ align-items: center;
 
-/*style of footer list links*/
-
-.foot-list {
-  flex-direction: column;
-  align-items: center;
-  padding: 15px 20px;
-  padding-left: 150px;
-  left: 5%;
-  bottom: 35.5%;
-  justify-content: space-between;
-  line-height: 38px;
-  list-style: none;
-  position: relative;
-  height: 120px;
-  width: 50%;
 }
-
-.foot-list .list-footer-pages {
-  font-family: "Poppins", sans-serif;
-}
-
-/*links below footer page*/
-.foot-list-link {
-  flex-direction: row;
-  align-items: center;
-  padding: 22px 12px;
-  padding-left: 228px;
-  justify-content: space-between;
-  list-style: none;
-  position: relative;
-  width: auto;
-  height: 120px;
-}
-
-.foot-list-link .list-footer-links {
-  display: inline-block;
-  margin: 0;
-  justify-content: space-between;
-  padding: 0px 25px;
-  height: fit-content;
-  font-family: "Poppins", sans-serif;
-  color: var(--purple);
-}
-
-/*styles of apps  (google and apple) */
-.Apps {
-  position: absolute;
-  left: 41.62%;
-  top: -0.29%;
-  box-sizing: border-box;
-  justify-content: space-between;
-  inline-size: auto;
-  height: auto;
-}
-
-/*style of icons*/
-.Apps .apps-icon {
-  display: inline-block;
-  height: 35px;
-  max-width: 30rem;
-  margin: 0 auto;
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-/*style of text*/
-.Apps .apps-text {
-  padding-left: 7.4%;
-  font-size: 22px;
-  padding-bottom: 3%;
-  font-family: "Poppins", sans-serif;
-  color: var(--purple);
-}
-
-/*style of social position in page*/
-.social {
-  position: absolute;
-  right: 2.74%;
-  top: -0.29%;
-}
-/*style of icons (facebook, instagram, youtube*/
-.social-icon {
-  height: 40px;
-  width: 38px;
-  padding-left: 5px;
-  margin-left: 25px;
-  cursor: pointer;
-}
-/*acesse nossas redes*/
-.social .message {
-  font-size: 22px;
-  padding-bottom: 3%;
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  color: var(--purple);
-}
-
-/*style of the logo in footer*/
-
-.logo-footer {
-  height: auto;
-  position: relative;
-  width: 130px;
-  left: 50px;
-}
-
 /*style of size of logo footer*/
-.logo-footer .imgFooter {
-  width: 80px;
-  height: 63px;
-  bottom: 30px;
+.logo-footer{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.8rem;
 }
 
 /*style of name below footer image*/
-.logo-footer .logoName {
-  position: absolute;
-  left: -6.22%;
-  right: 85.35%;
-  top: 40px;
-
-  font-family: "Caveat", cursive;
-  font-style: normal;
+.logo-footer h2{
+  font-size: 2.2rem;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 60px;
+  color: var(--purple);
+  font-family: var(--font-brand);
+}
 
-  color: var(--dark-purple);
+.foot-nav {
+  display: block;
+  width: 13rem;
+  margin-left: 10rem;
+}
+
+.foot-nav ul{
+  display: flex;
+  padding-top: 0.2rem;
+  list-style: none;
+}
+
+.foot-nav li {
+  display: list-item;
+  align-self: center;
+}
+
+.apps{
+  margin-left: 10rem;
+}
+
+.apps img{
+  width: 9rem;
+  height: 3rem;
+  display: flex;
+  flex-direction:row
+}
+.apps p {
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.footer_socials{
+   margin: 2rem;
+}
+
+.footer_icone{
+  font-size: 1.5rem;
+  color: var(--purple);
+  margin: 0 2rem;
+}
+
+
+.foot-link{
+  margin: 0;
+  margin-top: 4rem;
 }
