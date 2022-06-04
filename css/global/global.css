@@ -15,6 +15,11 @@
 
   --font: 'Sans-serif', arial;
   --font-brand: "Caveat", cursive;
+
+  --desktop: 1200px;
+  --laptop:1024px;
+  --tablet:768px;
+  --phone:480px;
 }
 
 ::-webkit-scrollbar {

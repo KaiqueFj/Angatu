@@ -26,7 +26,7 @@ header {
 
 .Header-logo {
   width: 10rem;
-  margin: 0 0.8rem;
+  margin: 0;
   display: flex;
   align-items: center;
 }
@@ -107,30 +107,16 @@ li {
   color: var(--white);
 }
 
-/*Main*/
-#main {
-  height: 60vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font);
-}
 .main-home {
-  padding-top: 13%;
   width: 1300px;
   display: flex;
   align-items: center;
-  padding-left: 1%;
   justify-content: space-between;
 }
 
 .mainImageHome {
-  flex-wrap: wrap;
-  margin-left: 4rem;
+  margin-left: 3.5rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /*size of background image*/
@@ -221,7 +207,7 @@ li {
 /*opções dentro do site*/
 #features {
   height: 100%;
-  padding-left: 1.4%;
+  padding-left: 1.5rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -239,7 +225,7 @@ li {
 
 /*info das opções*/
 .info {
-  margin: 0.6rem 0.4rem;
+  margin-bottom: 5rem;
 }
 
 .title {
@@ -256,7 +242,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   height: 13rem;
-  padding: 0.3rem 0.2rem 0.2rem 0.6rem;
+  padding: 0.1rem 0.2rem 1px 0;
   border-radius: 0.9rem;
 }
 
@@ -275,75 +261,129 @@ li {
 
 /*style of footer*/
 #footer {
- padding: 2rem 0 ;
- width: 100%;
- background-color: var(--white);
- font-family: var(--font);
- display: flex;
- align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  background-color: var(--white);
+  font-family: var(--font);
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 
 }
 /*style of size of logo footer*/
-.logo-footer{
+.logo-footer {
   display: flex;
   flex-direction: column;
   margin-left: 1.8rem;
 }
 
 /*style of name below footer image*/
-.logo-footer h2{
+.logo-footer h2 {
   font-size: 2.2rem;
   font-weight: 500;
   color: var(--purple);
   font-family: var(--font-brand);
 }
 
-.foot-nav {
-  display: block;
-  width: 13rem;
-  margin-left: 10rem;
+.img-Footer{
+  width: 3rem;
+  height: 3rem;
 }
 
-.foot-nav ul{
-  display: flex;
-  padding-top: 0.2rem;
-  list-style: none;
+
+.apps {
+  margin-left: 20.3rem;
+  text-align: center;
 }
 
-.foot-nav li {
-  display: list-item;
-  align-self: center;
-}
-
-.apps{
-  margin-left: 10rem;
-}
-
-.apps img{
+.apps img {
   width: 9rem;
   height: 3rem;
-  display: flex;
-  flex-direction:row
+}
+
+.apps img:nth-child(1) {
+  float: right;
+  width: 30rem;
 }
 .apps p {
   font-family: var(--font);
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
   text-align: center;
 }
 
-.footer_socials{
-   margin: 2rem;
+
+.footer_socials {
+  margin: 2rem;
 }
 
-.footer_icone{
+.footer_icone {
   font-size: 1.5rem;
   color: var(--purple);
   margin: 0 2rem;
 }
 
 
-.foot-link{
-  margin: 0;
-  margin-top: 4rem;
+footer p{
+  font-family: var(--font);
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    width: 100%;
+  }
+
+  .Header-logo {
+    padding-left: 1%;
+  }
+  nav {
+    margin-left: 1rem;
+  }
+
+  ul {
+    margin-left: 5rem;
+  }
+
+  li a {
+    font-size: 1.3rem;
+  }
+
+  #contato button {
+    margin-left: 1.5rem;
+  }
+
+  .mainImg {
+    margin-right: 5em;
+    width: 63rem;
+  }
+
+  .smallLogo {
+    margin-left: 34.5rem;
+  }
+
+  #information {
+    height: 15rem;
+    margin-top: 1rem;
+  }
+
+  .secondPart {
+    margin-right: 3rem;
+  }
+
+  .card {
+    width: 12rem;
+  }
+
+  .info .title {
+    width: 12rem;
+    padding-bottom: 3.2rem;
+  }
+
+  .info .information {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    padding-left: 0.5rem;
+  }
 }
