@@ -13,7 +13,7 @@ button {
 /*Header style*/
 
 header {
-  width: 100vw;
+  width: 100%;
   height: 9vh;
   position: fixed;
   z-index: 100;
@@ -41,8 +41,22 @@ header {
 nav {
   display: block;
   margin-left: 12rem;
-  width: 1300px;
+  width: 75rem;
 }
+
+@media screen and (max-width: 800px) {
+  nav {
+    position: fixed;
+    top: 3rem;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--white);
+    transition: 0.5s;
+  }
+}
+
 
 ul {
   display: flex;
@@ -108,14 +122,14 @@ li {
 }
 
 .main-home {
-  width: 1300px;
+  width: 75rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .mainImageHome {
-  margin-left: 3.5rem;
+  margin-left: 2.5rem;
   display: flex;
 }
 
@@ -130,12 +144,6 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.3rem 1rem;
-  position: absolute;
-  width: 32rem;
-  height: 20rem;
-  margin-left: 8rem;
-  margin-top: 4rem;
   background: var(--glass);
 }
 
@@ -163,16 +171,10 @@ li {
 /*logo in the middle of the second part*/
 .smallLogo {
   position: absolute;
-  margin-left: 37.5rem;
-  margin-top: 46rem;
 }
 
 /*size of second part*/
 #information {
-  height: 35vh;
-  position: relative;
-  width: 100%;
-  margin-top: 14rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,7 +182,6 @@ li {
 }
 
 .secondPart {
-  width: 1300px;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -199,7 +200,7 @@ li {
   font-family: var(--font);
   font-weight: 500;
   width: 62rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: center;
   line-height: 2.2rem;
 }
@@ -209,18 +210,13 @@ li {
   height: 100%;
   padding-left: 1.5rem;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 3rem;
+  margin-bottom:1rem
 }
 
 .options {
-  width: 1300px;
+  width: 75rem;
   display: flex;
   flex-direction: row;
-  gap: 1.8em;
 }
 
 /*info das opções*/
@@ -229,21 +225,15 @@ li {
 }
 
 .title {
-  height: 2.4rem;
   font-family: var(--font);
   font-weight: 700;
-  font-size: 1.2rem;
   color: var(--black);
 }
 
 .card {
-  width: 14rem;
   background-color: var(--glass);
   display: flex;
   flex-wrap: wrap;
-  height: 13rem;
-  padding: 0.1rem 0.2rem 1px 0;
-  border-radius: 0.9rem;
 }
 
 .card img {
@@ -263,16 +253,14 @@ li {
 #footer {
   padding: 2rem 0;
   width: 100%;
-  background-color: var(--white);
+  text-align: center;
+  background-color: var(--purple);
   font-family: var(--font);
-  display: flex;
   align-items: center;
   box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
-
 }
 /*style of size of logo footer*/
 .logo-footer {
-  display: flex;
   flex-direction: column;
   margin-left: 1.8rem;
 }
@@ -281,58 +269,37 @@ li {
 .logo-footer h2 {
   font-size: 2.2rem;
   font-weight: 500;
-  color: var(--purple);
+  color: var(--white);
   font-family: var(--font-brand);
 }
 
-.img-Footer{
+.img-Footer {
   width: 3rem;
   height: 3rem;
 }
 
-
-.apps {
-  margin-left: 20.3rem;
-  text-align: center;
-}
-
-.apps img {
-  width: 9rem;
-  height: 3rem;
-}
-
-.apps img:nth-child(1) {
-  float: right;
-  width: 30rem;
-}
-.apps p {
-  font-family: var(--font);
-  font-weight: 500;
-  font-size: 1.5rem;
-  padding-bottom: 1.5rem;
-  text-align: center;
-}
-
-
 .footer_socials {
-  margin: 2rem;
+  margin-bottom: 2rem;
 }
 
 .footer_icone {
   font-size: 1.5rem;
-  color: var(--purple);
+  color: var(--white);
   margin: 0 2rem;
 }
 
-
-footer p{
+.foot-p {
   font-family: var(--font);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  
 }
 
 @media screen and (max-width: 1200px) {
   header {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .Header-logo {
@@ -343,47 +310,88 @@ footer p{
   }
 
   ul {
-    margin-left: 5rem;
+    margin-left: 9.1rem;
   }
 
   li a {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
   }
 
   #contato button {
-    margin-left: 1.5rem;
+    margin-left: 6.5rem;
   }
 
   .mainImg {
     margin-right: 5em;
-    width: 63rem;
+    width: 70rem;
+    max-width: 100%;
   }
 
   .smallLogo {
-    margin-left: 34.5rem;
+    margin-left: 36.5rem;
+    margin-top: 35.9rem;
   }
 
   #information {
+    width: 75rem;
     height: 15rem;
     margin-top: 1rem;
   }
 
+  .mainImageHome {
+    height: 36rem;
+  }
+  .messageinBg {
+    padding: 1.3rem 1rem;
+    position: absolute;
+    width: 32rem;
+    height: 20rem;
+    margin-left: 8rem;
+    margin-top: 4rem;
+  }
+
   .secondPart {
-    margin-right: 3rem;
+    margin-right: 0.9rem;
+  }
+  .info {
+    margin-bottom: 3rem;
+  }
+  .options {
+    gap: 1.2rem;
+  }
+
+  #features {
+    padding-left: 1.2rem;
   }
 
   .card {
-    width: 12rem;
+    width: 13.2rem;
+    height: 13rem;
+    padding: 0.1rem 0.2rem 1px 0;
+    border-radius: 0.9rem;
+  }
+
+  .footer_socials{
+    text-align: center;
+    padding-left: 2.2rem;
+  }
+
+  .foot-p{
+    text-align: center;
+    padding-left: 2.5rem;
   }
 
   .info .title {
     width: 12rem;
     padding-bottom: 3.2rem;
+    font-size: 1.1rem;
+    height: 2.4rem;
   }
 
   .info .information {
     font-size: 0.9rem;
     line-height: 1rem;
-    padding-left: 0.5rem;
+    padding-left: 0.2rem;
   }
+
 }
