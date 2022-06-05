@@ -38,25 +38,14 @@ header {
   font-family: var(--font-brand);
 }
 
+.btn-mobile {
+  display: none;
+}
 nav {
   display: block;
   margin-left: 12rem;
   width: 75rem;
 }
-
-@media screen and (max-width: 800px) {
-  nav {
-    position: fixed;
-    top: 3rem;
-    right: -100%;
-    width: 80%;
-    height: 100%;
-    padding: 2rem;
-    background-color: var(--white);
-    transition: 0.5s;
-  }
-}
-
 
 ul {
   display: flex;
@@ -210,7 +199,7 @@ li {
   height: 100%;
   padding-left: 1.5rem;
   width: 100%;
-  margin-bottom:1rem
+  margin-bottom: 1rem;
 }
 
 .options {
@@ -292,7 +281,6 @@ li {
   font-family: var(--font);
   font-size: 1.2rem;
   color: var(--white);
-  
 }
 
 @media screen and (max-width: 1200px) {
@@ -371,12 +359,12 @@ li {
     border-radius: 0.9rem;
   }
 
-  .footer_socials{
+  .footer_socials {
     text-align: center;
     padding-left: 2.2rem;
   }
 
-  .foot-p{
+  .foot-p {
     text-align: center;
     padding-left: 2.5rem;
   }
@@ -393,5 +381,71 @@ li {
     line-height: 1rem;
     padding-left: 0.2rem;
   }
+}
 
+@media (max-width: 768px) {
+  ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    right: 0;
+    background: var(--white);
+    height: 0;
+    transition: 0.6s;
+    z-index: 1000;
+
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active ul {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  ul a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  .btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #icon-btn {
+    display: block;
+    border-top: 2px solid;
+    width: 5rem;
+  }
+  #icon-btn::after #icon-btn::before {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top:5px;
+    transition:.3s;
+    position:relative;
+  }
+
+  #nav.active #icon-btn{
+    border-top-color: transparent;
+  }
+
+  #nav.active #icon-btn::before{
+    transform: rotate(135deg);
+  }
+
+  #nav.active #icon-btn::after{
+    transform: rotate(-135deg);
+    top: -7px;
+  }
 }
