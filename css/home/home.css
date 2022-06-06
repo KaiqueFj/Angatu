@@ -111,14 +111,12 @@ li {
 }
 
 .main-home {
-  width: 75rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .mainImageHome {
-  margin-left: 2.5rem;
   display: flex;
 }
 
@@ -310,8 +308,7 @@ li {
   }
 
   .mainImg {
-    margin-right: 5em;
-    width: 70rem;
+    width: 72rem;
     max-width: 100%;
   }
 
@@ -327,7 +324,7 @@ li {
   }
 
   .mainImageHome {
-    height: 36rem;
+    height: 34rem;
   }
   .messageinBg {
     padding: 1.3rem 1rem;
@@ -383,6 +380,7 @@ li {
   }
 }
 
+/*Responsive for mobile*/
 @media (max-width: 768px) {
   ul {
     display: block;
@@ -390,7 +388,8 @@ li {
     width: 100%;
     top: 6.5rem;
     left: 23rem;
-    background: var(--white);
+    background: var(--glass);
+    backdrop-filter: blur(10px);
     height: 0;
     transition: 0.6s;
     z-index: 1000;
@@ -408,7 +407,8 @@ li {
   ul a {
     padding: 1rem 0;
     margin: 0 1rem;
-    font-size: 0.9rem;
+    color:var(--black);
+    font-size: 1.2rem;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
   }
   .btn-mobile {
@@ -423,8 +423,9 @@ li {
     gap: 1rem;
   }
 
-  nav #contato {
+  nav #contato, #entrar{
     display: flex;
+    font-size: 1.2rem;
   }
   nav #contato button {
     margin-left: 0;
