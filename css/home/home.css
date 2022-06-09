@@ -131,6 +131,11 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  width: 32rem;
+  height: 20rem;
+  margin-left: 8rem;
+  margin-top: 4rem;
   background: var(--glass);
 }
 
@@ -139,24 +144,28 @@ li {
 .strong {
   font-family: var(--font);
   font-weight: 700;
+  color: var(--black);
   font-size: 2.4rem;
   line-height: 3.2rem;
-  color: var(--black);
   margin: 0.8rem 0;
 }
+
 /*Edit of subtext in the middle of background image*/
 .text {
-  height: 8rem;
   font-family: var(--font);
   font-weight: bold;
-  font-size: 1.1rem;
-  line-height: 1.7rem;
   text-align: justify;
   color: var(--black);
+  height: 8rem;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
   margin: 1.8rem 0;
 }
+
 /*logo in the middle of the second part*/
 .smallLogo {
+  justify-content: center;
+  display: flex;
   position: absolute;
 }
 
@@ -296,6 +305,7 @@ li {
   }
 
   ul {
+    width: 51rem;
     margin-left: 9.1rem;
   }
 
@@ -318,7 +328,6 @@ li {
   }
 
   #information {
-    width: 75rem;
     height: 15rem;
     margin-top: 1rem;
   }
@@ -326,13 +335,9 @@ li {
   .mainImageHome {
     height: 34rem;
   }
+
   .messageinBg {
     padding: 1.3rem 1rem;
-    position: absolute;
-    width: 32rem;
-    height: 20rem;
-    margin-left: 8rem;
-    margin-top: 4rem;
   }
 
   .secondPart {
@@ -407,7 +412,7 @@ li {
   ul a {
     padding: 1rem 0;
     margin: 0 1rem;
-    color:var(--black);
+    color: var(--black);
     font-size: 1.2rem;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
   }
@@ -423,7 +428,8 @@ li {
     gap: 1rem;
   }
 
-  nav #contato, #entrar{
+  nav #contato,
+  #entrar {
     display: flex;
     font-size: 1.2rem;
   }
@@ -436,6 +442,15 @@ li {
     border-top: 0.3rem solid;
     width: 3rem;
   }
+  .secondPart p:nth-child(1) {
+    font-size: 2.3rem;
+  }
+
+  .secondPart p:nth-child(2) {
+    width: 38rem;
+    font-size: 1.3rem;
+  }  
+
   #icon-btn::after,
   #icon-btn::before {
     content: "";
@@ -460,4 +475,37 @@ li {
     transform: rotate(-135deg);
     top: -0.7rem;
   }
+  .strong {
+    font-size: 2.1rem;
+    line-height: 3.1rem;
+    margin: 0.8rem 0;
+  }
+
+  .text {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+  }
+
+  .messageinBg {
+    margin-left: 3rem;
+  }
+  .smallLogo {
+    margin-right: 4rem;
+  }
+
+  .options{
+    display: grid;
+    margin-top: 3rem;
+    grid-template-columns: 2rem 26rem 2rem;
+    grid-template-rows: 10rem 18rem;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    margin-left: 7rem;
+    border-color: var(--white) 2px;
+  }
+
+    
+
 }
