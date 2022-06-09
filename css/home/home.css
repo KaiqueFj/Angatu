@@ -111,7 +111,6 @@ li {
 }
 
 .main-home {
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -135,7 +134,7 @@ li {
   width: 32rem;
   height: 20rem;
   margin-left: 8rem;
-  margin-top: 4rem;
+  margin-top: -25rem;
   background: var(--glass);
 }
 
@@ -166,7 +165,6 @@ li {
 .smallLogo {
   justify-content: center;
   display: flex;
-  position: absolute;
 }
 
 /*size of second part*/
@@ -322,10 +320,7 @@ li {
     max-width: 100%;
   }
 
-  .smallLogo {
-    margin-left: 36.5rem;
-    margin-top: 35.9rem;
-  }
+
 
   #information {
     height: 15rem;
@@ -488,9 +483,6 @@ li {
 
   .messageinBg {
     margin-left: 3rem;
-  }
-  .smallLogo {
-    margin-right: 4rem;
   }
 
   .options{
