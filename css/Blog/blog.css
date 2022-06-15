@@ -156,6 +156,7 @@ li {
 }
 
 .post-image {
+  padding-top: 0.6rem;
   grid-area: sidebar;
   border-radius: 1.3rem;
 }
@@ -172,22 +173,25 @@ li {
   grid-area: main-2;
   padding-left: 1.1rem;
   font-family: var(--font);
-
+  text-align: justify;
   font-size: 1.4rem;
 }
 
 #link button {
-  background-color: var(--light-gray);
+  background-color: var(--dark-purple);
   border: none;
+  color: var(--white);
   padding: 0.6rem 1.8rem;
   border-radius: 10px;
   cursor: pointer;
-  margin-left: 7rem;
+  margin-left: 1rem;
 }
 
 #link {
   grid-area: footer;
 }
+
+
 
 /*style of footer*/
 #footer {
@@ -233,6 +237,9 @@ li {
   font-size: 1.2rem;
   color: var(--white);
 }
+
+
+
 
 @media screen and (max-width: 1200px) {
   header {
