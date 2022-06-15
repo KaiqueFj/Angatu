@@ -13,51 +13,50 @@ button {
 /*Header style*/
 
 header {
+  width: 100%;
+  height: 9vh;
+  position: fixed;
+  z-index: 100;
+  background-color: var(--white);
+  font-family: var(--font);
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 60px 10px 10px;
-
-  position: absolute;
-  width: 100%;
-  height: 82px;
-  left: 0px;
-  top: 0px;
-
-  background: var(--white);
-  border: 1px solid var(--black);
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px var(--black);
 }
 
-/*Logo style*/
-.logo {
-  height: 46px;
-  width: 240px;
-  padding-bottom: 5px;
-  padding-left: 65px;
-  cursor: pointer;
+.Header-logo {
+  width: 10rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
-/*space inside the navlist*/
-.list .list-li {
-  display: inline-block;
-  padding: 0px 20px;
-  margin-left: 35px;
+.Header-logo h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--purple);
+  font-family: var(--font-brand);
 }
 
-/*to keep list without style*/
-.list {
-  position: static;
-  width: 100%;
-  left: 253px;
-  top: -11.07px;
+.btn-mobile {
+  display: none;
+}
+nav {
+  display: block;
+  margin-left: 12rem;
+  width: 75rem;
+}
 
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 10px;
+ul {
+  display: flex;
+  gap: 2.8rem;
+  padding-top: 0.2rem;
+  list-style: none;
+}
+
+li {
+  display: list-item;
+  align-self: center;
 }
 
 /*style of transition*/
@@ -81,73 +80,69 @@ header {
 }
 
 /*style of contact button*/
-.btn-ctn {
+
+#contato button {
+  background-color: var(--light-gray);
+  border: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 7rem;
+}
+
+#contato button:hover {
   background-color: var(--gray);
-  border: none;
-  border-radius: 25px;
-  padding: 9px 18px;
+  transition: all ease 1s;
   color: var(--white);
-  height: 45px;
-  cursor: pointer;
-  justify-content: right;
 }
 
-/*style of SingIn button*/
-
-.btn-log {
-  background-color: var(--dark-purple);
-  height: 45px;
-  width: 85px;
-  color: var(--white);
-  padding: 9px 8px;
-  border: none;
-  border-radius: 25px;
-  padding-right: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-/*style of SingIn button hover*/
-
-.btn-log:hover {
+#entrar button {
   background-color: var(--purple);
+  border: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
+#entrar button:hover {
+  background-color: var(--dark-purple);
+  transition: all ease 1s;
+  color: var(--white);
+}
+/*Container of background*/
 /*color of background*/
 body {
   background-color: var(--dark-green);
 }
 
-.lotus {
-  top: 16%;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+#container{
+  height: 100%;
+  padding-left: 1.5rem;
+  width: 72rem;
+  max-width: 100%;
+  margin-bottom: 1rem;
 }
 
-.lotus button {
-  width: 8%;
-  height: 6vh;
+.lotus-head{
+  padding-left: 5rem;
+  padding-top: 9.1rem;
+  max-width: 100%;
+  text-align-last: justify;
+  width: 71rem;
+}
+
+.lotus-head button{
   background: transparent;
-  border: 0;
-  padding-left: 30px;
+  border: none;
+  
 }
 
-.lotus button img {
-  height: 30px;
-  width: 38px;
+#lotus-image{
+  width: 8rem;
+  height: 7.4rem;
 }
 
-#lotus-image {
-  margin-left: 46%;
-  height: 8rem;
-  display: flex;
-  justify-content: center;
-  width: 9rem;
-}
-
-.lotus input {
+.lotus-head input {
   background: url(../../assets/musicoterapia/Search.png) no-repeat right;
   background-size: 16%;
   margin-right: 30px;
@@ -158,23 +153,24 @@ body {
 }
 
 .title {
-  font-size: 20px;
-  margin-top: 20%;
-  padding-left: 3%;
-  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  padding-left: 0.8rem;
+  font-family: var(--font);
   align-items: center;
   color: var(--white);
 }
+
 .options {
   display: grid;
   margin-top: 6rem;
   grid-template-columns: 4rem 30rem 4rem;
   grid-template-rows: 11rem 27rem;
-  grid-column-gap: 2px;
-  grid-row-gap: 9px;
+  grid-column-gap: 0.4rem;
+  grid-row-gap: 0.4rem;
   justify-items: center;
   align-items: center;
-  margin-left: 26%;
+  margin-left: 15.5rem;
 
   border-color: var(--white) 2px;
 }
@@ -182,7 +178,7 @@ body {
 .options img:hover {
   opacity: 1;
   transform: scale(1.1);
-  transition: all 1s ease-in;
+  transition: all 0.9s ease-in;
 }
 
 .container p {
@@ -198,140 +194,213 @@ body {
   height: 16rem;
 }
 
+
 /*style of footer*/
 #footer {
-  top: 62rem;
-  position: absolute;
+  padding: 2rem 0;
   width: 100%;
-  height: 310px;
-  background-color: var(--white);
-}
-
-/*style of footer list links*/
-
-.foot-list {
-  flex-direction: column;
+  text-align: center;
+  background-color: var(--purple);
+  font-family: var(--font);
   align-items: center;
-  padding: 15px 20px;
-  padding-left: 150px;
-  left: 5%;
-  bottom: 35.5%;
-  justify-content: space-between;
-  line-height: 38px;
-  list-style: none;
-  position: relative;
-  height: 120px;
-  width: 50%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 }
-
-.foot-list .list-footer-pages {
-  font-family: "Poppins", sans-serif;
-}
-
-/*links below footer page*/
-.foot-list-link {
-  flex-direction: row;
-  align-items: center;
-  padding: 22px 12px;
-  padding-left: 228px;
-  justify-content: space-between;
-  list-style: none;
-  position: relative;
-  width: auto;
-  height: 120px;
-}
-
-.foot-list-link .list-footer-links {
-  display: inline-block;
-  margin: 0;
-  justify-content: space-between;
-  padding: 0px 25px;
-  height: fit-content;
-  font-family: "Poppins", sans-serif;
-  color: var(--purple);
-}
-
-/*styles of apps  (google and apple) */
-.Apps {
-  position: absolute;
-  left: 41.62%;
-  top: -0.29%;
-  box-sizing: border-box;
-  justify-content: space-between;
-  inline-size: auto;
-  height: auto;
-}
-
-/*style of icons*/
-.Apps .apps-icon {
-  display: inline-block;
-  height: 35px;
-  max-width: 30rem;
-  margin: 0 auto;
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-/*style of text*/
-.Apps .apps-text {
-  padding-left: 7.4%;
-  font-size: 22px;
-  padding-bottom: 3%;
-  font-family: "Poppins", sans-serif;
-  color: var(--purple);
-}
-
-/*style of social position in page*/
-.social {
-  position: absolute;
-  right: 2.74%;
-  top: -0.29%;
-}
-/*style of icons (facebook, instagram, youtube*/
-.social-icon {
-  height: 40px;
-  width: 38px;
-  padding-left: 5px;
-  margin-left: 25px;
-  cursor: pointer;
-}
-/*acesse nossas redes*/
-.social .message {
-  font-size: 22px;
-  padding-bottom: 3%;
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  color: var(--purple);
-}
-
-/*style of the logo in footer*/
-
-.logo-footer {
-  height: auto;
-  position: relative;
-  width: 130px;
-  left: 50px;
-}
-
 /*style of size of logo footer*/
-.logo-footer .imgFooter {
-  width: 80px;
-  height: 63px;
-  bottom: 30px;
+.logo-footer {
+  flex-direction: column;
+  margin-left: 1.8rem;
 }
 
 /*style of name below footer image*/
-.logo-footer .logoName {
-  position: absolute;
-  left: -6.22%;
-  right: 85.35%;
-  top: 40px;
-
-  font-family: "Caveat", cursive;
-  font-style: normal;
+.logo-footer h2 {
+  font-size: 2.2rem;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 60px;
+  color: var(--white);
+  font-family: var(--font-brand);
+}
 
-  color: var(--dark-purple);
+.img-Footer {
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer_socials {
+  margin-bottom: 2rem;
+}
+
+.footer_icone {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin: 0 2rem;
+}
+
+.foot-p {
+  font-family: var(--font);
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  header {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Header-logo {
+    padding-left: 1%;
+  }
+  nav {
+    margin-left: 1rem;
+  }
+
+  ul {
+    width: 51rem;
+    margin-left: 9.1rem;
+  }
+
+  li a {
+    font-size: 0.9rem;
+  }
+
+  #contato button {
+    margin-left: 6.5rem;
+  }
+
+  .mainImg {
+    max-width: 100%;
+    width: 74rem;
+    margin-top: 6rem;
+    height: 24rem;
+  }
+
+  .mainImageHome {
+    height: 34rem;
+  }
+
+  .footer_socials {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+  }
+
+  .foot-p {
+    text-align: center;
+    padding-left: 2.5rem;
+  }
+}
+
+/*Responsive for mobile*/
+@media (max-width: 768px) {
+  ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 6.5rem;
+    left: 23rem;
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    height: 0;
+    transition: 0.6s;
+    z-index: 1000;
+
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active ul {
+    height: 15rem;
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  ul a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    color: var(--black);
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  .btn-mobile {
+    display: flex;
+    margin-left: 25rem;
+
+    padding: 0.3rem 1rem;
+    font-size: 1.8rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 1rem;
+  }
+
+  nav #contato,
+  #entrar {
+    display: flex;
+    font-size: 1.2rem;
+  }
+  nav #contato button {
+    margin-left: 0;
+    padding: 0.8rem 1.3rem;
+  }
+
+  #icon-btn {
+    border-top: 0.3rem solid;
+    width: 3rem;
+  }
+  .secondPart p:nth-child(1) {
+    font-size: 2.3rem;
+  }
+
+  .secondPart p:nth-child(2) {
+    width: 38rem;
+    font-size: 1.3rem;
+  }
+
+  #icon-btn::after,
+  #icon-btn::before {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 0.3rem;
+    background: currentColor;
+    margin-top: 0.5rem;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #icon-btn {
+    border-top-color: transparent;
+  }
+
+  #nav.active #icon-btn::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #icon-btn::after {
+    transform: rotate(-135deg);
+    top: -0.7rem;
+  }
+  .strong {
+    font-size: 2.1rem;
+    line-height: 3.1rem;
+    margin: 0.8rem 0;
+  }
+
+  .text {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+  }
+
+  .messageinBg {
+    margin-left: 3rem;
+  }
+  .options {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 31rem;
+    margin: 5rem auto;
+    gap: 2rem;
+  }
 }
