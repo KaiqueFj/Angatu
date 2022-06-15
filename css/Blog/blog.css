@@ -387,7 +387,6 @@ li {
   .messageinBg {
     margin-left: 3rem;
   }
-
   .options {
     grid-template-columns: repeat(2, 1fr);
     max-width: 31rem;
