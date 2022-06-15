@@ -203,14 +203,17 @@ li {
 #features {
   height: 100%;
   padding-left: 1.5rem;
-  width: 100%;
+  width: 72rem;
+  max-width: 100%;
   margin-bottom: 1rem;
 }
 
 .options {
-  width: 75rem;
-  display: flex;
-  flex-direction: row;
+  width: 71rem;
+  display: grid;
+    margin-top: 3rem;
+    grid-template-columns: repeat(5,1fr);
+    border-color: var(--white) 2px
 }
 
 /*info das opções*/
@@ -316,7 +319,7 @@ li {
   }
 
   .mainImg {
-    width: 72rem;
+    width: 75rem;
     max-width: 100%;
   }
 
@@ -486,16 +489,10 @@ li {
   }
 
   .options{
-    display: grid;
-    margin-top: 3rem;
-    grid-template-columns: 2rem 26rem 2rem;
-    grid-template-rows: 10rem 18rem;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    justify-items: center;
-    align-items: center;
-    margin-left: 7rem;
-    border-color: var(--white) 2px;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 31rem;
+    margin: 0 auto;
+    gap: 2rem
   }
 
     
