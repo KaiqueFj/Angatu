@@ -112,10 +112,10 @@ li {
 /*Container of background*/
 /*color of background*/
 body {
-  background-color: var(--dark-green);
+  background: var(--elegant-black);
 }
 
-#container{
+#container {
   height: 100%;
   padding-left: 1.5rem;
   width: 72rem;
@@ -123,7 +123,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.lotus-head{
+.lotus-head {
   padding-left: 5rem;
   padding-top: 9.1rem;
   max-width: 100%;
@@ -131,23 +131,22 @@ body {
   width: 71rem;
 }
 
-.lotus-head button{
+.lotus-head button {
   background: transparent;
   border: none;
-  
 }
 
-#lotus-image{
-  width: 8rem;
+#lotus-image {
+  width: 6rem;
   height: 7.4rem;
+  margin-left: 5rem;
 }
 
 .lotus-head input {
   background: url(../../assets/musicoterapia/Search.png) no-repeat right;
-  background-size: 16%;
-  margin-right: 30px;
-
-  height: 6vh;
+  background-size: 2.1rem;
+  margin-right: 0.2rem;
+  height: 2.5rem;
   border-radius: 36px;
   background-color: var(--light-gray);
 }
@@ -170,7 +169,7 @@ body {
   grid-row-gap: 0.4rem;
   justify-items: center;
   align-items: center;
-  margin-left: 15.5rem;
+  margin-left: 16.2rem;
 
   border-color: var(--white) 2px;
 }
@@ -193,7 +192,6 @@ body {
   width: 13rem;
   height: 16rem;
 }
-
 
 /*style of footer*/
 #footer {
@@ -239,9 +237,6 @@ body {
   font-size: 1.2rem;
   color: var(--white);
 }
-
-
-
 
 @media screen and (max-width: 1200px) {
   header {

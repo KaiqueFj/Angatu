@@ -3,7 +3,8 @@
   --white: #fff;
   --ice:#f0f0f0;
   --black:#000;
-  --purple: #7766cd;
+  --elegant-black:#272c39;
+  --purple: #7269e3;
   --dark-purple:#402f93;
   --primary-color:rgb(255, 255, 255);
   --gray:rgb(94, 94, 94);
@@ -11,10 +12,15 @@
   --light-gray:#A6B3BD;
   --glass:rgba(200, 200, 200, 0.4);
   --dark-glass:rgba(114, 114, 114, 0.5);
-  --dark-green:#15222b;
+  --dark-green:#231934;
 
   --font: 'Sans-serif', arial;
   --font-brand: "Caveat", cursive;
+
+  --blue-cloud: linear-gradient(#82A5EA ,#E0C1FF);
+  --sea-color: linear-gradient(#5375EE ,#53C0EE);
+  --purple-gradient: linear-gradient(#9753EE ,#7253EE);
+
 
   --desktop: 1200px;
   --laptop:1024px;

@@ -191,8 +191,6 @@ li {
   grid-area: footer;
 }
 
-
-
 /*style of footer*/
 #footer {
   padding: 2rem 0;
@@ -237,9 +235,6 @@ li {
   font-size: 1.2rem;
   color: var(--white);
 }
-
-
-
 
 @media screen and (max-width: 1200px) {
   header {
