@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angatu</title>
-    <link rel="stylesheet" href="./css/home/home.css">
+    <link rel="stylesheet" href="./css/como-funciona/styles.css">
     <link rel="stylesheet" href="./css/global/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
 </head>
@@ -17,28 +19,61 @@
 <body>
     <div id="main">
         <header>
-            <div class="headerImage">
-                <img class="logo" src="./assets/logo2.jpeg" alt="Logo Angatu">
+            <div class="Header-logo">
+                <img class="logo" src="./assets/Logo.png" alt="Logo Angatu">
+                <h2>Angatu</h2>
             </div>
-            <nav>
+            <nav id="nav">
+                <button class="btn-mobile" id="btn-mobile">Menu
+                    <span id="icon-btn"></span>
+                </button>
                 <ul class="list">
                     <li class="list-li"><a href="home.html" class="list-link">Home</a></li>
                     <li class="list-li"><a href="Como Funciona.html" class="list-link">Como Funciona</a></li>
                     <li class="list-li"><a href="Blog.html" class="list-link">Blog</a></li>
                     <li class="list-li"><a href="Sobre Nós.html" class="list-link">Sobre Nós</a></li>
-                    <a class="list-li" href="Contato.html"><button class="btn-ctn">Contact</button></a>
-                    <a class="list-li" href="Login.html"><button class="btn-log">Entrar</button></a>
+
+                    <a id="contato" class="list-li" href="Contato.html"><button class="btn-ctn">Contact</button></a>
+                    <a id="entrar" class="list-li" href="Login.html"><button class="btn-log">Entrar</button></a>
                 </ul>
-
             </nav>
-
-
-
         </header>
-
-
     </div>
 
+    <section class="container">
+        <div class="main">
+            <h4>em desenvolvimento</h4>
+        </div>
+    </section>
+
+    <footer id="footer">
+
+        <div class="logo-footer">
+            <img class="imgFooter" src="./assets/Logo.png" alt="Logo Angatu">
+            <h2 class="logoName">Angatu</p>
+        </div>
+
+
+
+        <div class="footer_socials">
+            <a href="#" class="footer_icone">
+                <i class='bx bxl-facebook-circle'></i>
+            </a>
+            <a href="# " class="footer_icone">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="#" class="footer_icone">
+                <i class='bx bxl-youtube'></i>
+            </a>
+
+        </div>
+
+
+        <p class="foot-p"> © 2022 Angatu copyright all right reserved</p>
+
+    </footer>
+
 </body>
+<script src="./javascript/main.js"></script>
 
 </html>

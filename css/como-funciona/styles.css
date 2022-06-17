@@ -1,0 +1,317 @@
+/*Style of fonts*/
+
+li,
+a,
+button {
+  color: var(--black);
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Header style*/
+
+header {
+  width: 100%;
+  height: 9vh;
+  position: fixed;
+  z-index: 100;
+  background-color: var(--white);
+  font-family: var(--font);
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  display: flex;
+  align-items: center;
+}
+
+.Header-logo {
+  width: 10rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.Header-logo h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--purple);
+  font-family: var(--font-brand);
+}
+
+.btn-mobile {
+  display: none;
+}
+nav {
+  display: block;
+  margin-left: 12rem;
+  width: 75rem;
+}
+
+ul {
+  display: flex;
+  gap: 2.8rem;
+  padding-top: 0.2rem;
+  list-style: none;
+}
+
+li {
+  display: list-item;
+  align-self: center;
+}
+
+/*style of transition*/
+.list .list-link::after {
+  content: "";
+  height: 2px;
+  width: 0px;
+  background-color: var(--white);
+  display: block;
+  transition: 0.5s ease-out;
+}
+
+/*hover for transition in <a>*/
+.list .list-link:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  left: 25%;
+  background-color: var(--purple);
+  display: block;
+}
+
+/*style of contact button*/
+
+#contato button {
+  background-color: var(--light-gray);
+  border: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 7rem;
+}
+
+#contato button:hover {
+  background-color: var(--gray);
+  transition: all ease 1s;
+  color: var(--white);
+}
+
+#entrar button {
+  background-color: var(--purple);
+  border: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#entrar button:hover {
+  background-color: var(--dark-purple);
+  transition: all ease 1s;
+  color: var(--white);
+}
+/*Container of background*/
+/*color of background*/
+body {
+  background: var(--elegant-black);
+}
+
+#container {
+  height: 100%;
+  padding-left: 1.5rem;
+  width: 72rem;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+/*style of footer*/
+#footer {
+  padding: 2rem 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--purple);
+  font-family: var(--font);
+  align-items: center;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+/*style of size of logo footer*/
+.logo-footer {
+  flex-direction: column;
+  margin-left: 1.8rem;
+}
+
+/*style of name below footer image*/
+.logo-footer h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--white);
+  font-family: var(--font-brand);
+}
+
+.img-Footer {
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer_socials {
+  margin-bottom: 2rem;
+}
+
+.footer_icone {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin: 0 2rem;
+}
+
+.foot-p {
+  font-family: var(--font);
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Header-logo {
+    padding-left: 1%;
+  }
+  nav {
+    margin-left: 1rem;
+  }
+
+  ul {
+    width: 51rem;
+    margin-left: 9.1rem;
+  }
+
+  li a {
+    font-size: 0.9rem;
+  }
+
+  #contato button {
+    margin-left: 6.5rem;
+  }
+
+  .mainImg {
+    max-width: 100%;
+    width: 74rem;
+    margin-top: 6rem;
+    height: 24rem;
+  }
+
+  .mainImageHome {
+    height: 34rem;
+  }
+
+  .footer_socials {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+  }
+
+  .foot-p {
+    text-align: center;
+    padding-left: 2.5rem;
+  }
+}
+
+/*Responsive for mobile*/
+@media (max-width: 768px) {
+  ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 6.5rem;
+    left: 23rem;
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    height: 0;
+    transition: 0.6s;
+    z-index: 1000;
+
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active ul {
+    height: 15rem;
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  ul a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    color: var(--black);
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  .btn-mobile {
+    display: flex;
+    margin-left: 25rem;
+
+    padding: 0.3rem 1rem;
+    font-size: 1.8rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 1rem;
+  }
+
+  nav #contato,
+  #entrar {
+    display: flex;
+    font-size: 1.2rem;
+  }
+  nav #contato button {
+    margin-left: 0;
+    padding: 0.8rem 1.3rem;
+  }
+
+  #icon-btn {
+    border-top: 0.3rem solid;
+    width: 3rem;
+  }
+
+
+  #icon-btn::after,
+  #icon-btn::before {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 0.3rem;
+    background: currentColor;
+    margin-top: 0.5rem;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #icon-btn {
+    border-top-color: transparent;
+  }
+
+  #nav.active #icon-btn::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #icon-btn::after {
+    transform: rotate(-135deg);
+    top: -0.7rem;
+  }
+  .strong {
+    font-size: 2.1rem;
+    line-height: 3.1rem;
+    margin: 0.8rem 0;
+  }
+
+  .text {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+  }
+
+
+}
