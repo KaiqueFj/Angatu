@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/global/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
 
@@ -19,71 +21,80 @@
 <body>
     <div id="main">
         <header>
-            <div class="headerImage">
-                <img class="logo" src="./assets/logo2.jpeg" alt="Logo Angatu" href>
+            <div class="Header-logo">
+                <img class="logo" src="./assets/Logo.png" alt="Logo Angatu">
+                <h2>Angatu</h2>
             </div>
-            <nav>
+            <nav id="nav">
+                <button class="btn-mobile" id="btn-mobile">Menu
+                    <span id="icon-btn"></span>
+                </button>
                 <ul class="list">
                     <li class="list-li"><a href="home.html" class="list-link">Home</a></li>
                     <li class="list-li"><a href="Como Funciona.html" class="list-link">Como Funciona</a></li>
                     <li class="list-li"><a href="Blog.html" class="list-link">Blog</a></li>
                     <li class="list-li"><a href="Sobre Nós.html" class="list-link">Sobre Nós</a></li>
-                    <a class="list-li" href="Contato.html"><button class="btn-ctn">Contact</button></a>
-                    <a class="list-li" href="Login.html"><button class="btn-log">Entrar</button></a>
+
+                    <a id="contato" class="list-li" href="Contato.html"><button class="btn-ctn">Contact</button></a>
+                    <a id="entrar" class="list-li" href="Login.html"><button class="btn-log">Entrar</button></a>
                 </ul>
             </nav>
         </header>
-        <div class="mainImageHome">
-            <img class="mainImg" src="./assets/aboutUs/bg.png" alt="MainImage">
-        </div>
 
-        <div class="messageinBg">
-            <p class="strong">
-                Sobre Nós
-            </p>
-            <p class="text">
-                A Angatu nasceu o objetivo de ajudar na promoção do bem-estar mental. A plataforma visa establecer um
-                vínculo com indicíduos que sofram de ansiedade e estresse, servindo como ferramenta primária no dia a
-                dia desses indivíduos ou como suporte à tratamentos com especialistas.
-            </p>
-        </div>
+        <section class="container">
+            <div class="main">
+
+                <div class="mainImageHome">
+                    <img class="mainImg" src="./assets/aboutUs/bg.png" alt="MainImage">
+                </div>
+
+                <div class="messageinBg">
+                    <p class="strong">
+                        Sobre Nós
+                    </p>
+                    <p class="text">
+                        A Angatu nasceu o objetivo de ajudar na promoção do bem-estar mental. A plataforma visa
+                        establecer um
+                        vínculo com indicíduos que sofram de ansiedade e estresse, servindo como ferramenta primária no
+                        dia a
+                        dia desses indivíduos ou como suporte à tratamentos com especialistas.
+                    </p>
+                </div>
+            </div>
+
     </div>
+    </section>
 
     <footer id="footer">
 
         <div class="logo-footer">
             <img class="imgFooter" src="./assets/Logo.png" alt="Logo Angatu">
-            <p class="logoName">Angatu</p>
-        </div>
-        <ul class="foot-list">
-            <li class="list-footer-pages"><a href="home.html">Home</a></li>
-            <li class="list-footer-pages"><a href="Como Funciona.html">Como Funciona</a></li>
-            <li class="list-footer-pages"><a href="Sobre Nós.html">Sobre nós</a></li>
-            <li class="list-footer-pages"><a href="Blog.html">Blog</a></li>
-        </ul>
-
-        <ul class="Apps">
-            <p class="apps-text">Baixe o aplicativo</p>
-            <a><img src="./assets/google-icon.png" alt="Icon-google-icon.png" class="apps-icon"></a>
-            <a><img src="./assets/apple-icon.png" alt="Icon-apple-icon.png" class="apps-icon"></a>
-        </ul>
-
-        <div class="social">
-            <h3 class="message">Acesse nossas redes</h3>
-            <img src="./assets/instagram 1.png" alt="Instagram-Icon" class="social-icon">
-            <img src="./assets/facebook 1.png" alt="Facebook-Icon" class="social-icon">
-            <img src="./assets/youtube 1.png" alt="YouTube-Icon" class="social-icon">
+            <h2 class="logoName">Angatu</p>
         </div>
 
 
-        <ul class="foot-list-link">
-            <li class="list-footer-links">@2022 Angatu</li>
-            <li class="list-footer-links">Todos os direitos reservados</li>
-            <li class="list-footer-links">Termos e condições</li>
-            <li class="list-footer-links">Políticas de privacidade</li>
-        </ul>
+
+        <div class="footer_socials">
+            <a href="#" class="footer_icone">
+                <i class='bx bxl-facebook-circle'></i>
+            </a>
+            <a href="# " class="footer_icone">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="#" class="footer_icone">
+                <i class='bx bxl-youtube'></i>
+            </a>
+
+        </div>
+
+
+            <p class="foot-p"> © 2022 Angatu copyright all right reserved</p>
+
     </footer>
 
+</div>
+
 </body>
+<script src="./javascript/main.js"></script>
 
 </html>

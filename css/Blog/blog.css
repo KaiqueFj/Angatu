@@ -267,7 +267,7 @@ li {
     max-width: 100%;
     width: 74rem;
     margin-top: 6rem;
-    height: 24rem;
+    height: 21rem;
   }
 
   .mainImageHome {
@@ -318,7 +318,7 @@ li {
   }
   .btn-mobile {
     display: flex;
-    margin-left: 25rem;
+    margin-left: auto;
 
     padding: 0.3rem 1rem;
     font-size: 1.8rem;

@@ -252,7 +252,7 @@ body {
   }
   .btn-mobile {
     display: flex;
-    margin-left: 25rem;
+    margin-left: auto;
 
     padding: 0.3rem 1rem;
     font-size: 1.8rem;
