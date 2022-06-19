@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/contact/styles.css">
     <link rel="stylesheet" href="./css/global/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
@@ -16,114 +18,132 @@
 
 <body>
     <div id="main">
+
         <header>
-            <div class="headerImage">
-                <img class="logo" src="./assets/logo2.jpeg" alt="Logo Angatu">
+            <div class="Header-logo">
+                <img class="logo" src="./assets/Logo.png" alt="Logo Angatu">
+                <h2>Angatu</h2>
             </div>
-            <nav>
+            <nav id="nav">
+                <button class="btn-mobile" id="btn-mobile">Menu
+                    <span id="icon-btn"></span>
+                </button>
                 <ul class="list">
                     <li class="list-li"><a href="home.html" class="list-link">Home</a></li>
                     <li class="list-li"><a href="Como Funciona.html" class="list-link">Como Funciona</a></li>
                     <li class="list-li"><a href="Blog.html" class="list-link">Blog</a></li>
                     <li class="list-li"><a href="Sobre Nós.html" class="list-link">Sobre Nós</a></li>
-                    <a class="list-li" href="Contato.html"><button class="btn-ctn">Contact</button></a>
-                    <a class="list-li" href="Login.html"><button class="btn-log">Entrar</button></a>
-                </ul>
 
+                    <a id="contato" class="list-li" href="Contato.html"><button class="btn-ctn">Contact</button></a>
+                    <a id="entrar" class="list-li" href="Login.html"><button class="btn-log">Entrar</button></a>
+                </ul>
             </nav>
 
         </header>
 
 
-
-        <div class="mainImage">
-            <img class="mainImg" src="./assets/contact/background.png" alt="MainImage">
-        </div>
-
-        <div class="singUp-box">
-            <h3> Contato</h3>
-            <p>A sua mensagem é muito importante para nós. Assim podemos manter um contanto mais direto e sincero com
-                você ;)</p>
-            <form>
-
-                <div class="user-box">
-                    <img src="./assets/SingUp/Icon-Avatar.png" alt="Icon-user" class="icon-user">
-                    <input type="text" name="Username" id="Username" placeholder="Digite seu nome:" pattern="[a-Z]" title="Insira apenas letras" required>
-                    <label>Nome:</label>
-                </div>
-
-                <div class="user-box">
-                    <img src="./assets/SingUp/mail-icon (1).png" alt="Icon-user" class="icon-user">
-
-                    <input type="E-mail" name="Username" id="E-mail" placeholder="Digite seu E-mail:" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Por favor, insira o modelo de e-mail corretamente" required>
-                    <label>E-mail:</label>
-                </div>
+        <section class="container">
 
 
-                <div class="user-box">
-                    <img src="./assets/SingUp/phone-icon.png" alt="Icon-user" class="icon-user">
-                    <input type="tel" name="Username" id="Telefone" placeholder="Digite seu telefone:" pattern="[9][0-9]{8}" required>
-                    <label>Telefone:</label>
-                </div>
+            <div class="message-bg">
+                <h3>Nos de sua opinião</h3>
+                <p>A sua mensagem é muito importante para nós. Assim podemos manter um contanto mais direto e sincero
+                    com
+                    você ;)</p>
+                  
 
-                <div class="user-box">
-                    <textarea id="textMessage" cols="33" rows="5" class="t-area"
-                        placeholder="Envie sua mensagem aqui:"></textarea>
-                    <label>Mensagem:</label>
-                </div>
-
-                <div class="submitBtn">
-                    <input type="submit" value="Enviar mensagem">
-                </div>
+                    
+        <div class="footer_socials">
+            <a href="#" class="footer_icone">
+                <i class='bx bxl-facebook-circle'></i>
+            </a>
+            <a href="# " class="footer_icone">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="#" class="footer_icone">
+                <i class='bx bxl-youtube'></i>
+            </a>
 
         </div>
+            </div>
+            <div class="mainImage">
+                <img class="mainImg" src="./assets/contact/black-background.jpeg" alt="MainImage">
+            </div>
+
+       
+
+    
+
+            <div class="form-container">
+                <h3> Contato</h3>
+    
+                <form>
+
+                    <div class="user-box">
+                        <input type="text" name="Username" id="Username" placeholder="Digite seu nome:" pattern="[a-Z]"
+                            title="Insira apenas letras" required>
+                    </div>
+
+                    <div class="user-box">
+                        <input type="E-mail" name="Username" id="E-mail" placeholder="Digite seu E-mail:"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            title="Por favor, insira o modelo de e-mail corretamente" required>
+                    </div>
 
 
-        </form>
+                    <div class="user-box">
+                        <input type="tel" name="Username" id="Telefone" placeholder="Digite seu telefone:"
+                            pattern="[9][0-9]{8}" required>
+                    </div>
+
+                    <div class="user-box">
+                        <textarea id="textMessage" cols="30" rows="5" class="t-area"
+                            placeholder="Envie sua mensagem aqui:"></textarea>
+                    </div>
+
+                    <div class="submitBtn">
+                        <input type="submit" value="Enviar mensagem">
+                    </div>
+
+            </div>
+
+
+            </form>
     </div>
-
-
-
+    </div>
+    </section>
 
 
     <footer id="footer">
 
         <div class="logo-footer">
             <img class="imgFooter" src="./assets/Logo.png" alt="Logo Angatu">
-            <p class="logoName">Angatu</p>
-        </div>
-        <ul class="foot-list">
-            <li class="list-footer-pages"><a href="home.html">Home</a></li>
-            <li class="list-footer-pages"><a href="Como Funciona.html">Como Funciona</a></li>
-            <li class="list-footer-pages"><a href="Sobre Nós.html">Sobre nós</a></li>
-            <li class="list-footer-pages"><a href="Blog.html">Blog</a></li>
-        </ul>
-
-        <ul class="Apps">
-            <p class="apps-text">Baixe o aplicativo</p>
-            <a><img src="./assets/google-icon.png" alt="Icon-google-icon.png" class="apps-icon"></a>
-            <a><img src="./assets/apple-icon.png" alt="Icon-apple-icon.png" class="apps-icon"></a>
-        </ul>
-
-        <div class="social">
-            <h3 class="message">Acesse nossas redes</h3>
-            <img src="./assets/instagram 1.png" alt="Instagram-Icon" class="social-icon">
-            <img src="./assets/facebook 1.png" alt="Facebook-Icon" class="social-icon">
-            <img src="./assets/youtube 1.png" alt="YouTube-Icon" class="social-icon">
+            <h2 class="logoName">Angatu</p>
         </div>
 
 
-        <ul class="foot-list-link">
-            <li class="list-footer-links">@2022 Angatu</li>
-            <li class="list-footer-links">Todos os direitos reservados</li>
-            <li class="list-footer-links">Termos e condições</li>
-            <li class="list-footer-links">Políticas de privacidade</li>
-        </ul>
+
+        <div class="footer_socials">
+            <a href="#" class="footer_icone">
+                <i class='bx bxl-facebook-circle'></i>
+            </a>
+            <a href="# " class="footer_icone">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="#" class="footer_icone">
+                <i class='bx bxl-youtube'></i>
+            </a>
+
+        </div>
+
+
+        <p class="foot-p"> © 2022 Angatu copyright all right reserved</p>
+
     </footer>
 
-
-
+    </div>
 
 </body>
+<script src="./javascript/main.js"></script>
 
 </html>
