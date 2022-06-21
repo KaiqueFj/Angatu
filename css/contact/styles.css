@@ -114,7 +114,8 @@ li {
 .information {
   position: relative;
   width: 100%;
-  min-height: 79vh;  padding: 2rem;
+  min-height: 79vh;
+  padding: 5rem;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -124,11 +125,9 @@ li {
 .form {
   width: 100%;
   max-width: 57rem;
-    height: 35rem;
   background-color: var(--light-gray3);
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -136,7 +135,7 @@ li {
 
 .contact-form {
   position: relative;
-  background-color: var(--light-gray3);
+  background-color: var(--white);
 }
 
 form {
@@ -146,10 +145,11 @@ form {
   position: relative;
 }
 
-.title {
-  color: var(--white);
+.contact-form h3 {
+  color: var(--black);
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  font-family: var(--font);
   line-height: 1;
   margin-bottom: 0.7rem;
 }
@@ -163,8 +163,8 @@ input {
   width: 100%;
   outline: none;
   border: 2px solid var(--black);
-  background-color: none;
-  padding: 0.5rem 1.2rem;
+  background: var(--light-gray3);
+  padding: 1.2rem 1.2rem;
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -173,8 +173,11 @@ input {
 }
 
 textarea.input {
+  width: 100%;
+  border: 2px solid var(--black);
+  background: var(--light-gray3);
   padding: 0.8rem 1.2rem;
-  min-height: 12rem;
+  min-height: 10rem;
   border-radius: 22px;
   resize: none;
   overflow-y: auto;
@@ -188,14 +191,15 @@ textarea.input {
   padding: 0 0.4rem;
   color: var(--black);
   font-weight: 500;
+  font-size: 0.9rem;
 }
 
 .btn-send {
-  padding: 0.6rem 1.3rem;
-  background-color: var(--white);
+  padding: 1.1rem 1.3rem;
+  background-color: var(--purple);
   border: 2px solid var(--white);
   font-size: 0.95rem;
-  color: var(--purple);
+  color: var(--white);
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -215,10 +219,20 @@ textarea.input {
 
 .contact-info .title {
   color: var(--purple);
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: var(--font);
+  line-height: 1;
+  margin-bottom: 0.7rem;
 }
 
 .contact-info .text {
   color: var(--black);
+  text-align: justify;
+  font-weight: 500;
+  font-size: 1.3rem;
+  font-family: var(--font);
+  line-height: 2.5rem;
   margin: 1.5rem 0 2rem 0;
 }
 
@@ -226,13 +240,13 @@ textarea.input {
   display: flex;
   color: var(--black);
   margin: 0.7rem 0;
+  justify-content: space-between;
   align-items: center;
-  font-size: 0.95rem;
+  text-align: center;
 }
 
-
 .contact-icon {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: var(--purple);
   margin: 0 2rem;
 }
@@ -417,10 +431,13 @@ textarea.input {
   .text {
     margin: 1rem 0 1.5rem 0;
   }
+  .information {
+    padding: 8rem 0;
+  }
 }
 
 @media (max-width: 408px) {
   .information {
-    padding: 1.5rem;
+    padding: 8rem 0;
   }
 }
