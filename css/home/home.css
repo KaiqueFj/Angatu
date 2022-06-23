@@ -66,20 +66,48 @@ nav{
 }
 
 .main-home {
+  display: flex;
   align-items: center;
-  justify-content: space-between;
   background: url(../../assets/calm.jpg) no-repeat center center;
   height: 50vh;
   width: 100%;
 }
 
 .message-bg{
-  position: absolute;
+  position: relative;
   width: 30rem;
-  height: 30rem;
-  background-color: var(--light-gray);
+  height: 42vh;
+  background-color: var(--glass);
+  margin-left: 8rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  text-align: justify;
 }
 
+.message-bg h3{
+  font-size: 1.9rem;
+  color: var(--black);
+  font-weight: 700;
+  font-family: var(--font);
+  padding-bottom: 2rem;
+}
+
+.message-bg p{
+  font-size: 1.4rem;
+  color: var(--black);
+  font-weight: 500;
+  font-family: var(--font);
+
+}
+
+.small-logo{
+  width: 100%;
+  text-align: center;
+}
+.mini-logo{
+  justify-content: center;
+}
 
 /*opções dentro do site*/
 #features {
