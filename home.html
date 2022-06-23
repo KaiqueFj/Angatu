@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angatu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">     <title>Angatu</title>
     <link rel="stylesheet" href="./css/home/home.css">
     <link rel="stylesheet" href="./css/global/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,22 +17,24 @@
 <body>
 
     <header>
-        <div class="Header-logo">
-            <img class="logo" src="./assets/Logo.png" alt="Logo Angatu">
-            <h2>Angatu</h2>
-        </div>
-        <nav id="nav">
-            <button class="btn-mobile" id="btn-mobile">Menu
-                <span id="icon-btn"></span>
-            </button>
-            <ul class="list">
-                <li class="list-li"><a href="home.html" class="list-link">Home</a></li>
-                <li class="list-li"><a href="Como Funciona.html" class="list-link">Como Funciona</a></li>
-                <li class="list-li"><a href="Blog.html" class="list-link">Blog</a></li>
-                <li class="list-li"><a href="Sobre Nós.html" class="list-link">Sobre Nós</a></li>
 
-                <a id="contato" class="list-li" href="Contato.html"><button class="btn-ctn">Contact</button></a>
-                <a id="entrar" class="list-li" href="Login.html"><button class="btn-log">Entrar</button></a>
+        <nav id="nav">
+            <img src="./assets/Logo.png" alt="Logo image">
+            <a href="/" class="logo">Angatu</a>
+
+            <div class="mobile-nav">
+                <div class="l1"></div>
+                <div class="l2"></div>
+                <div class="l3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Como Funciona.html">Como funciona</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Sobre Nós.html">Sobre nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="SingUp.html">Entrar</a></li>
+
             </ul>
         </nav>
 
@@ -41,11 +42,8 @@
 
     <div id="main">
         <div class="main-home">
-            <div class="mainImageHome">
-                <img class="mainImg" src="./assets/calm.jpg" alt="MainImage">
-            </div>
-
-            <div class="messageinBg">
+            
+            <div class="message-bg">
                 <p class="strong">
                     Cuide do seu bem-estar mental com Angatu
                 </p>
@@ -63,111 +61,112 @@
         </div>
 
 
-     <section id="information">
-        <div class="secondPart">
-            <p>
-                Seu cuidado diário com seu bem-estar
-            </p>
+        <section id="information">
+            <div class="secondPart">
+                <p>
+                    Seu cuidado diário com seu bem-estar
+                </p>
 
-            <p>
-                Aqui você vai encontrar uma série de atividades selecionadas especialmente para o seu perfil que vão
-                ajudá-lo a ter uma vida mais saudável.
-            </p>
-        </div>
-
-     </section>
-
-     <section id="features">
-         <div class="options">
-            <div class="card">
-                <a href="musicoterapia.html"><img src="./assets/sound.png" alt="clave de sol" class="card-icon"></a>
-
-                <div class="info">
-                    <p class="title">Musicoterapia</p>
-
-                    <p class="information">Processo sistemático de intervenção que ajuda a promover a saúde utilizando
-                        experiencias musicais </p>
-                </div>
-
+                <p>
+                    Aqui você vai encontrar uma série de atividades selecionadas especialmente para o seu perfil que vão
+                    ajudá-lo a ter uma vida mais saudável.
+                </p>
             </div>
 
-            <div class="card">
-                <a href="meditação.html"><img src="./assets/meditation.png" alt="imagem meditação"
-                        class="card-icon"></a>
+        </section>
 
-                <div class="info">
-                    <p class="title">Meditação</p>
+        <section id="features">
+            <div class="options">
+                <div class="card">
+                    <a href="musicoterapia.html"><img src="./assets/sound.png" alt="clave de sol" class="card-icon"></a>
 
-                    <p class="information">Técnica que tem como objetivo trazer um estado de calma, relaxamento,
-                        tranquilidade e foco</p>
+                    <div class="info">
+                        <p class="title">Musicoterapia</p>
+
+                        <p class="information">Processo sistemático de intervenção que ajuda a promover a saúde
+                            utilizando
+                            experiencias musicais </p>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <a href="meditação.html"><img src="./assets/meditation.png" alt="imagem meditação"
+                            class="card-icon"></a>
+
+                    <div class="info">
+                        <p class="title">Meditação</p>
+
+                        <p class="information">Técnica que tem como objetivo trazer um estado de calma, relaxamento,
+                            tranquilidade e foco</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="games.html"><img src="./assets/game.png" alt="figurinha game" class="card-icon"></a>
+
+                    <div class="info">
+                        <p class="title">Jogos</p>
+
+                        <p class="information">Atividades lúdicas que auxiliam na descompressão e relaxamento
+                            podendo aliviar estresse e ansiedade</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <a href="#"><img src="./assets/Humor.png" alt="Figurinha mood" class="card-icon"></a>
+
+                    <div class="info">
+                        <p class="title">Diário de Humor</p>
+
+                        <p class="information">Monitore seu humor ao longo do tempo, evite as ciladas de pensamento
+                            habituais e promova reflexões</p>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <a href="workout.html"><img src="./assets/spot.png" alt="sport figurinha" class="card-icon"></a>
+
+                    <div class="info">
+                        <p class="title">Atividades Externas</p>
+
+                        <p class="information">Desafios que estimulam você a movimentar o corpo e realizar
+                            atividades em áreas externas</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="card">
-                <a href="games.html"><img src="./assets/game.png" alt="figurinha game" class="card-icon"></a>
+        <footer id="footer">
 
-                <div class="info">
-                    <p class="title">Jogos</p>
-
-                    <p class="information">Atividades lúdicas que auxiliam na descompressão e relaxamento
-                        podendo aliviar estresse e ansiedade</p>
-                </div>
+            <div class="logo-footer">
+                <img class="imgFooter" src="./assets/Logo.png" alt="Logo Angatu">
+                <h2 class="logoName">Angatu</p>
             </div>
 
 
-            <div class="card">
-                <a href="#"><img src="./assets/Humor.png" alt="Figurinha mood" class="card-icon"></a>
 
-                <div class="info">
-                    <p class="title">Diário de Humor</p>
+            <div class="footer_socials">
+                <a href="#" class="footer_icone">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="# " class="footer_icone">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="#" class="footer_icone">
+                    <i class='bx bxl-youtube'></i>
+                </a>
 
-                    <p class="information">Monitore seu humor ao longo do tempo, evite as ciladas de pensamento
-                        habituais e promova reflexões</p>
-                </div>
             </div>
-
-            <div class="card">
-
-                <a href="workout.html"><img src="./assets/spot.png" alt="sport figurinha" class="card-icon"></a>
-
-                <div class="info">
-                    <p class="title">Atividades Externas</p>
-
-                    <p class="information">Desafios que estimulam você a movimentar o corpo e realizar
-                        atividades em áreas externas</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="footer">
-
-        <div class="logo-footer">
-            <img class="imgFooter" src="./assets/Logo.png" alt="Logo Angatu">
-            <h2 class="logoName">Angatu</p>
-        </div>
-
-
-
-        <div class="footer_socials">
-            <a href="#" class="footer_icone">
-                <i class='bx bxl-facebook-circle'></i>
-            </a>
-            <a href="# " class="footer_icone">
-                <i class='bx bxl-instagram'></i>
-            </a>
-            <a href="#" class="footer_icone">
-                <i class='bx bxl-youtube'></i>
-            </a>
-
-        </div>
 
 
             <p class="foot-p"> © 2022 Angatu copyright all right reserved</p>
 
-    </footer>
+        </footer>
 
-</div>
+    </div>
 
 </body>
 <script src="./javascript/main.js"></script>

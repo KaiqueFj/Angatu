@@ -27,7 +27,6 @@ header {
 .Header-logo {
   width: 10rem;
   margin: 0;
-  display: flex;
   align-items: center;
 }
 
@@ -43,8 +42,8 @@ header {
 }
 nav {
   display: block;
-  margin-left: 12rem;
-  width: 75rem;
+  width: 100%;
+  max-width: 60rem;
 }
 
 ul {
@@ -347,6 +346,7 @@ textarea.input {
     padding-left: 2.5rem;
   }
 }
+
 
 /*Responsive for mobile*/
 @media (max-width: 768px) {
