@@ -146,12 +146,12 @@ form {
 }
 
 .contact-form h3 {
-  color: var(--black);
+  color: var(--purple);
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-family: var(--font);
   line-height: 1;
-  margin-bottom: 0.7rem;
+  text-align: left;
 }
 
 .user-box {
@@ -193,6 +193,8 @@ textarea.input {
   font-weight: 500;
   font-size: 0.9rem;
 }
+
+
 
 .btn-send {
   padding: 1.1rem 1.3rem;

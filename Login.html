@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/global/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
 </head>
@@ -17,112 +18,108 @@
 <body>
     <div id="main">
         <header>
-            <div class="headerImage">
-                <img class="logo" src="./assets/logo2.jpeg" alt="Logo Angatu">
+            <div class="Header-logo">
+                <img class="logo" src="./assets/Logo.png" alt="Logo Angatu">
+                <h2>Angatu</h2>
             </div>
-            <nav>
+            <nav id="nav">
+                <button class="btn-mobile" id="btn-mobile">Menu
+                    <span id="icon-btn"></span>
+                </button>
                 <ul class="list">
                     <li class="list-li"><a href="home.html" class="list-link">Home</a></li>
                     <li class="list-li"><a href="Como Funciona.html" class="list-link">Como Funciona</a></li>
                     <li class="list-li"><a href="Blog.html" class="list-link">Blog</a></li>
                     <li class="list-li"><a href="Sobre Nós.html" class="list-link">Sobre Nós</a></li>
-                    <a class="list-li" href="contato.html"><button class="btn-ctn">Contact</button></a>
+
+                    <a id="contato" class="list-li" href="Contato.html"><button class="btn-ctn">Contact</button></a>
+                    <a id="entrar" class="list-li" href="Login.html"><button class="btn-log">Entrar</button></a>
                 </ul>
-
             </nav>
-
         </header>
 
 
 
-        <div class="mainImage">
-            <img class="mainImg" src="./assets/SingUp/BackGround_login.png" alt="MainImage">
-        </div>
+        <section class="container">
 
-        <div class="singUp-box">
-            <h3 >Faça login em sua conta</h3>
-            <form>
+            <div class="information">
 
-                
+                <div class="form">
+                    <div class="contact-info">
+                        <img src="./assets/Logo.png" alt="logo angatu">
 
-                <div class="user-box">
-                    <img src="./assets/SingUp/mail-icon (1).png" alt="Icon-user" class="icon-user">
-                    <input type="E-mail" name="Username" id="E-mail" placeholder="Digite seu E-mail:" required>
-                    <label>E-mail</label>
+                        <h3 class="title">Bem-Vindo de volta :D</h3>
+
+
+                        
+                    </div>
+
+                    <div class="contact-form">
+                        <form action="">
+                            <h3>Login</h3>
+                            <p>Bem-Vindo de volta! por favor, faça login na sua conta</p>
+                         
+                            <div class="user-box">
+                                <input type="email" name="e-mail" class="input">
+                                <label for="">E-mail</label>
+                            </div>
+
+                            <div class="user-box">
+                                <input type="password" name="Password" class="input">
+                                <label for="">Senha:</label>
+                            </div>
+
+                            <div class="check-box">
+                                <input type="checkbox" name="checkbox" class="input">
+                                <label for="">Manter-se conectado</label>
+
+                                <a href="#">Esqueceu sua senha ? </a>
+                            </div>
+
+                            <input type="submit" value="Enviar" class="btn-send">
+                        </form>
+
+
+                    </div>
                 </div>
+            </div>
 
-                <div class="user-box">
-                    <img src="./assets/SingUp/password-icon.png" alt="Icon-user" class="icon-user">
-                    <input type="password" name="Username" id="Senha" placeholder="Digite sua senha:" required>
-                    <label>Senha</label>
-                </div>
-
-                <div class="second-options">
-                    <input type="checkbox" name="check" id="check" class="check-box" />
-                    <label  class="check-text">Mantenha-me conectado</label>
-                    <a  class="password-text" href="#">Esqueceu sua senha?</a>
-
-                </div>
-
-
-
-                <div class="submitBtn">
-                    <input type="submit" value="Entrar">
-                </div>
-
-                <div class="message">
-                    <p class="text">  Não está registrado? </p>
-                    <a class="bold-message" href="SingUp.html">Junte-se ao nosso time</a>
-                </div>
-
-        </div>
-
-
-        </form>
     </div>
 
+    </section>
 
 
 
+        <footer id="footer">
 
-    <footer id="footer">
-
-        <div class="logo-footer">
-            <img class="imgFooter" src="./assets/Logo.png" alt="Logo Angatu">
-            <p class="logoName">Angatu</p>
+            <div class="logo-footer">
+                <img class="imgFooter" src="./assets/Logo.png" alt="Logo Angatu">
+                <h2 class="logoName">Angatu</p>
+            </div>
+    
+    
+    
+            <div class="footer_socials">
+                <a href="#" class="footer_icone">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="# " class="footer_icone">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="#" class="footer_icone">
+                    <i class='bx bxl-youtube'></i>
+                </a>
+    
+            </div>
+    
+    
+            <p class="foot-p"> © 2022 Angatu copyright all right reserved</p>
+    
+        </footer>
+    
         </div>
-        <ul class="foot-list">
-            <li class="list-footer-pages"><a href="home.html">Home</a></li>
-            <li class="list-footer-pages"><a href="Como Funciona.html">Como Funciona</a></li>
-            <li class="list-footer-pages"><a href="Sobre Nós.html">Sobre nós</a></li>
-            <li class="list-footer-pages"><a href="Blog.html">Blog</a></li>
-        </ul>
-
-        <ul class="Apps">
-            <p class="apps-text">Baixe o aplicativo</p>
-            <a><img src="./assets/google-icon.png" alt="Icon-google-icon.png" class="apps-icon"></a>
-            <a><img src="./assets/apple-icon.png" alt="Icon-apple-icon.png" class="apps-icon"></a>
-        </ul>
-
-        <div class="social">
-            <h3 class="message">Acesse nossas redes</h3>
-            <img src="./assets/instagram 1.png" alt="Instagram-Icon" class="social-icon">
-            <img src="./assets/facebook 1.png" alt="Facebook-Icon" class="social-icon">
-            <img src="./assets/youtube 1.png" alt="YouTube-Icon" class="social-icon">
-        </div>
-
-
-        <ul class="foot-list-link">
-            <li class="list-footer-links">@2022 Angatu</li>
-            <li class="list-footer-links">Todos os direitos reservados</li>
-            <li class="list-footer-links">Termos e condições</li>
-            <li class="list-footer-links">Políticas de privacidade</li>
-        </ul>
-    </footer>
-
-
-
-
-</body>
-
-</html>
+    
+    </body>
+    <script src="./javascript/main.js"></script>
+    
+    </html>
