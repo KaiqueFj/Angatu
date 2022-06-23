@@ -105,21 +105,40 @@ nav{
   width: 100%;
   text-align: center;
 }
-.mini-logo{
-  justify-content: center;
+
+.second-part{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 71rem;
+  padding: 2rem 1.5rem;
+  font-family: var(--font);
+  text-align: center;
 }
+
+.second-part h3{
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.second-part p{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+
 
 /*opções dentro do site*/
 #features {
-  height: 100%;
-  padding-left: 1.5rem;
-  width: 72rem;
-  max-width: 100%;
+  width: 100%;
+  max-width: 72rem;
   margin-bottom: 1rem;
+  padding: 1.2rem 0;
 }
 
 .options {
-  width: 71rem;
+  width: 100%;
+  gap: 2.3rem;
   display: grid;
     margin-top: 3rem;
     grid-template-columns: repeat(5,1fr);
@@ -187,6 +206,7 @@ nav{
 
 .footer_socials {
   margin-bottom: 2rem;
+  margin-left: 2rem;
 }
 
 .footer_icone {
@@ -199,6 +219,7 @@ nav{
   font-family: var(--font);
   font-size: 1.2rem;
   color: var(--white);
+  margin-left: 1rem;
 }
 
 
