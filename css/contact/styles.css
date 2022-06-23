@@ -206,7 +206,7 @@ textarea.input {
   border-radius: 25px;
   outline: none;
   transition: 0.3s;
-  margin: 0;
+  margin-top: 2rem;
 }
 
 .btn-send:hover {
@@ -217,19 +217,21 @@ textarea.input {
 .contact-info {
   padding: 2.3rem;
   position: relative;
+  background: url(../../assets/SingUp/background-2.jpeg)
 }
 
 .contact-info .title {
-  color: var(--purple);
+  color: var(--white);
   font-weight: 500;
-  font-size: 2rem;
+  text-align: center;
+  font-size: 2.9rem;
   font-family: var(--font);
-  line-height: 1;
-  margin-bottom: 0.7rem;
+  line-height: 2;
+
 }
 
 .contact-info .text {
-  color: var(--black);
+  color: var(--white);
   text-align: justify;
   font-weight: 500;
   font-size: 1.3rem;
@@ -249,8 +251,12 @@ textarea.input {
 
 .contact-icon {
   font-size: 2.5rem;
-  color: var(--purple);
+  color: var(--white);
   margin: 0 2rem;
+}
+
+.icons p {
+  color: var(--white);
 }
 
 /*style of footer*/

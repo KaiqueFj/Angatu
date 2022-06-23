@@ -222,10 +222,10 @@ input {
   top: 50%;
   left: 12rem;
   transform: translateY(-50%);
-  padding: 0 0.9rem;
+  padding: 0 0.4rem;
   color: var(--black);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .check-box label,
@@ -271,23 +271,25 @@ a {
   font-size: 3rem;
   font-family: var(--font);
   line-height: 1;
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 
-.info {
-  display: flex;
-  color: var(--black);
-  margin: 0.7rem 0;
+.other-options{
   justify-content: space-between;
-  align-items: center;
-  text-align: center;
+  position: relative;
+  margin: 1rem 0;
 }
 
-.contact-icon {
-  font-size: 2.5rem;
-  color: var(--purple);
-  margin: 0 2rem;
+.other-options p,a{
+  font-family: var(--font);
+  font-size: 0.98rem;
 }
+
+.other-options a{
+  font-weight: 700;
+}
+
+
 /*style of footer*/
 #footer {
   padding: 2rem 0;
