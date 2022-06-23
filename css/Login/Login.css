@@ -110,7 +110,6 @@ li {
   color: var(--white);
 }
 
-
 /*Container of background*/
 .information {
   position: relative;
@@ -167,11 +166,10 @@ form {
   margin: 3rem 0;
 }
 
-.check-box{
+.check-box {
   position: relative;
   margin: 1rem 0;
 }
-
 
 input {
   width: 100%;
@@ -195,7 +193,7 @@ input {
   color: var(--black);
   font-weight: 500;
 }
-.check-box input{
+.check-box input {
   width: 10%;
   outline: none;
   border: 2px solid var(--black);
@@ -208,7 +206,7 @@ input {
   transform: 0.3s;
 }
 
-.check-box label{
+.check-box label {
   position: absolute;
   top: 50%;
   left: 1.7rem;
@@ -218,7 +216,6 @@ input {
   font-weight: 500;
   font-size: 0.9rem;
 }
-
 
 .check-box a {
   position: absolute;
@@ -231,7 +228,8 @@ input {
   font-size: 0.9rem;
 }
 
-.check-box label, a{
+.check-box label,
+a {
   font-size: 1rem;
   color: var(--black);
 }
@@ -258,23 +256,22 @@ input {
   padding: 2.3rem;
   position: relative;
   text-align: center;
-  background-image: url(../../assets/SingUp/background-2.jpeg) 
+  background-image: url(../../assets/SingUp/background-2.jpeg);
 }
 
-
-.contact-info  img{
+.contact-info img {
   position: relative;
   width: 10rem;
 }
 
 .contact-info .title {
   color: var(--white);
-    font-weight: 700;
-    text-align: center;
-    font-size: 3rem;
-    font-family: var(--font);
-    line-height: 1;
-    margin-top: 6rem;
+  font-weight: 700;
+  text-align: center;
+  font-size: 3rem;
+  font-family: var(--font);
+  line-height: 1;
+  margin-top: 6rem;
 }
 
 .info {
