@@ -44,13 +44,72 @@ nav{
 .nav-list{
   list-style: none;
   display: flex;
+  align-items: center;
 }
+
+
 
 .nav-list a{
   letter-spacing: 3px;
   margin-left: 32px;
   color: var(--purple);
+}
 
+.nav-list li:nth-child(5){
+  width: 9rem;
+  background: var(--dark-glass);
+    border-radius: 10px;
+    height: 2.6rem;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.nav-list li:nth-child(5):hover{
+  background-color: var(--gray);
+  transition: all ease 1s;
+  color: var(--white);
+}
+
+.nav-list li:nth-child(6):hover{
+ 
+background-color: var(--dark-purple);
+transition: all ease 1s;
+color: var(--white);
+}
+
+
+
+.nav-list li:nth-child(6){
+  background: var(--purple);
+    border-radius: 10px;
+    width: 9rem;
+    height: 2.6rem;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
+    color: var(--white);
+}
+
+
+.ctn-btn{
+  color: var(--black) !important;
+  font-weight: 700;
+    font-size: 1rem;
+}
+
+.ctn-btn:hover{
+  color: var(--white) !important;
+}
+
+.sing-btn{
+  padding-left: 0.7rem;
+  padding-top: 4.2rem;
+  color: var(--black) !important;
+  font-weight: 700;
+    font-size: 1rem;
+}
+  
+.sing-btn:hover{
+  color: var(--white) !important;
 }
 
 .mobile-nav{
@@ -110,7 +169,6 @@ nav{
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 71rem;
   padding: 2rem 1.5rem;
   font-family: var(--font);
   text-align: center;
@@ -131,9 +189,8 @@ nav{
 /*opções dentro do site*/
 #features {
   width: 100%;
-  max-width: 72rem;
   margin-bottom: 1rem;
-  padding: 1.2rem 0;
+  padding: 1.2rem 2rem;
 }
 
 .options {

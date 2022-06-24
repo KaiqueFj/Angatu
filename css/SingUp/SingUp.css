@@ -12,107 +12,120 @@ button {
 
 /*Header style*/
 
-header {
+body{
+  overflow-x: hidden;
+}
+/*Header style*/
+a{
+  color: var(--white);
+  text-decoration: none;
+  transition:0.3s
+}
+
+a:hover{
+  opacity: 0.7;
+}
+
+.logo{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: var(--font-brand);
+  color: var(--purple);
+}
+
+nav{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px 60px 10px 10px;
-
-  position: absolute;
-  width: 100%;
-  height: 82px;
-  left: 0px;
-  top: 0px;
-
-  background: var(--white);
-  border: 1px solid var(--black);
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px var(--black);
-}
-
-/*Logo style*/
-.logo {
-  height: 46px;
-  width: 240px;
-  padding-bottom: 5px;
-  padding-left: 65px;
-  cursor: pointer;
-}
-
-/*space inside the navlist*/
-.list .list-li {
-  display: inline-block;
-  padding: 0px 20px;
-  margin-left: 35px;
-}
-
-/*to keep list without style*/
-.list {
-  position: static;
-  width: 100%;
-  left: 253px;
-  top: -11.07px;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 10px;
-}
-
-/*style of transition*/
-.list .list-link::after {
-  content: "";
-  height: 2px;
-  width: 0px;
+  font-family: var(--font), sans-serif;
+  color: var(--purple);
   background-color: var(--white);
-  display: block;
-  transition: 0.5s ease-out;
+  height: 8vh;
 }
 
-/*hover for transition in <a>*/
-.list .list-link:hover::after {
-  content: "";
-  height: 2px;
-  width: 100%;
-  left: 25%;
-  background-color: var(--purple);
-  display: block;
+.nav-list{
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
-/*style of contact button*/
-.btn-ctn {
+
+
+.nav-list a{
+  letter-spacing: 3px;
+  margin-left: 32px;
+  color: var(--purple);
+}
+
+.nav-list li:nth-child(5){
+  width: 9rem;
+  background: var(--dark-glass);
+    border-radius: 10px;
+    height: 2.6rem;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.nav-list li:nth-child(5):hover{
   background-color: var(--gray);
-  border: none;
-  border-radius: 25px;
-  padding: 9px 18px;
+  transition: all ease 1s;
   color: var(--white);
-  height: 45px;
-  cursor: pointer;
-  justify-content: right;
 }
 
-/*style of SingIn button*/
+.nav-list li:nth-child(6):hover{
+ 
+background-color: var(--dark-purple);
+transition: all ease 1s;
+color: var(--white);
+}
 
-.btn-log {
+
+
+.nav-list li:nth-child(6){
+  background: var(--purple);
+    border-radius: 10px;
+    width: 9rem;
+    height: 2.6rem;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
+    color: var(--white);
+}
+
+
+.ctn-btn{
+  color: var(--black) !important;
+  font-weight: 700;
+    font-size: 1rem;
+}
+
+.ctn-btn:hover{
+  color: var(--white) !important;
+}
+
+.sing-btn{
+  padding-left: 0.7rem;
+  padding-top: 4.2rem;
+  color: var(--black) !important;
+  font-weight: 700;
+    font-size: 1rem;
+}
+  
+.sing-btn:hover{
+  color: var(--white) !important;
+}
+
+.mobile-nav{
+  display: none;
+  cursor: pointer;
+}
+.mobile-nav div {
+  width: 32px;
+  height: 2px;
   background-color: var(--dark-purple);
-  height: 45px;
-  width: 85px;
-  color: var(--white);
-  padding: 9px 8px;
-  border: none;
-  border-radius: 25px;
-  padding-right: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
+  margin: 8px;
+  transform: 0.3s;
 }
-
-/*style of SingIn button hover*/
-
-.btn-log:hover {
-  background-color: var(--purple);
-}
-
 /*Container of background*/
 
 .mainImage {
