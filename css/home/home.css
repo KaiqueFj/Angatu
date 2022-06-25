@@ -280,7 +280,7 @@ color: var(--white);
 }
 
 
-@media (max-width:768px){
+@media (max-width:880px){
 
   body{
     overflow-x: hidden;
