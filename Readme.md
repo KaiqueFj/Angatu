@@ -14,6 +14,9 @@ This application has the features of:
  - css
  - javascript 
 
+ # In case you want to visit our website, visit this link:
+ - https://kaiquefj.github.io/Angatu/index.html
+
 
 
 # 💻 How to install?
