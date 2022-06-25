@@ -280,7 +280,7 @@ color: var(--white);
 }
 
 
-@media (max-width:999px){
+@media (max-width:768px){
 
   body{
     overflow-x: hidden;
@@ -289,7 +289,7 @@ color: var(--white);
     position: absolute;
     top: 8vh;
     right: 0;
-    width: 50vh;
+    width: 38vw;
     height: 92vh;
     background: var(--elegant-black);
     flex-direction: column;
@@ -298,6 +298,11 @@ color: var(--white);
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
   }
+
+  
+.nav-list a{
+  color: var(--white);
+}
 
   .nav-list li{
     margin-left: 0;

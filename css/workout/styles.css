@@ -365,10 +365,5 @@ body {
 .nav-list.active{
   transform: translateX(0);
 }
-  .options {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 31rem;
-    margin: 5rem auto;
-    gap: 2rem;
-  }
+
 
