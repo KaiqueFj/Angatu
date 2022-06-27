@@ -120,7 +120,7 @@ color: var(--white);
   height: 2px;
   background-color: var(--dark-purple);
   margin: 8px;
-  transform: 0.3s;
+  transition: all ease 1s;
 }
 /*Container of background*/
 
@@ -315,6 +315,7 @@ body {
   .nav-list{
     position: absolute;
     top: 8vh;
+    z-index: 9;
     right: 0;
     width: 38vw;
     height: 92vh;
