@@ -427,6 +427,15 @@ a {
   .information {
     padding: 8rem 0;
   }
+
+  .check-box input{
+    width: 4%;
+  }
+
+  .check-box label{
+    font-size: 0.9rem;
+    left: 0.6rem;
+  }
 }
 
 @media (max-width: 408px) {

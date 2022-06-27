@@ -217,7 +217,7 @@ textarea.input {
   font-size: 0.95rem;
   color: var(--white);
   line-height: 1;
-  border-radius: 25px;
+  border-radius: 10px;
   outline: none;
   transition: 0.3s;
   margin-top: 2rem;
