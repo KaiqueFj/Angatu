@@ -23,7 +23,6 @@ a:hover{
 
 .logo{
   font-size: 1.5rem;
-  text-transform: uppercase;
   letter-spacing: 4px;
   font-family: var(--font-brand);
   color: var(--purple);
@@ -48,7 +47,7 @@ nav{
 
 
 .nav-list a{
-  letter-spacing: 3px;
+  letter-spacing: 0.1rem;
   margin-left: 32px;
   color: var(--purple);
 }
@@ -349,49 +348,6 @@ a {
   color: var(--white);
 }
 
-@media screen and (max-width: 1200px) {
-  header {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .Header-logo {
-    padding-left: 1%;
-  }
-  nav {
-    margin-left: 1rem;
-  }
-
-  ul {
-    width: 51rem;
-    margin-left: 9.1rem;
-  }
-
-  li a {
-    font-size: 0.9rem;
-  }
-
-  #contato button {
-    margin-left: 6.5rem;
-  }
-
-  .container {
-    height: 100%;
-    width: 70rem;
-    max-width: 100%;
-  }
-
-  .footer_socials {
-    text-align: center;
-    padding-left: 2.2rem;
-  }
-
-  .foot-p {
-    text-align: center;
-    padding-left: 2.5rem;
-  }
-}
 
 /*Responsive for mobile*/
 
@@ -405,7 +361,7 @@ a {
     position: absolute;
     top: 8vh;
     right: 0;
-    z-index: 9;
+    z-index: 999;
     width: 38vw;
     height: 92vh;
     background: var(--elegant-black);
