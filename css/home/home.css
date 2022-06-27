@@ -128,14 +128,12 @@ color: var(--white);
   display: flex;
   align-items: center;
   background: url(../../assets/calm.jpg) no-repeat center center;
-  height: 50vh;
   width: 100%;
 }
 
 .message-bg{
   position: relative;
   width: 30rem;
-  height: 42vh;
   background-color: var(--glass);
   margin-left: 8rem;
   display: flex;
@@ -216,6 +214,7 @@ color: var(--white);
 .card {
   background-color: var(--glass);
   display: flex;
+  border-radius: 12px;
   flex-wrap: wrap;
 }
 
