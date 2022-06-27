@@ -5,16 +5,11 @@ a,
 button {
   color: var(--black);
   font-weight: 500;
-  font-size: 16px;
+
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
 
-/*Header style*/
-
-body{
-  overflow-x: hidden;
-}
 /*Header style*/
 a{
   color: var(--white);
@@ -128,278 +123,205 @@ color: var(--white);
 }
 /*Container of background*/
 
-.mainImage {
-  background: var(--purple);
-  max-width: 1920px;
-  max-height: 1080;
-}
 
-/*size of background image*/
-
-.mainImg {
-  position: absolute;
-  width: 100%;
-  height: 56rem;
-  top: 83px;
-  background-size: contain;
-}
-
-.singUp-box h3 {
-  margin: 0 0 50px;
-  padding: 0;
-  color: var(--white);
-  text-align: center;
-  padding-left: 96px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-size: 30px;
-  line-height: 40px;
-  display: flex;
-  color: #ffffff;
-}
-.singUp-box {
-  position: absolute;
-  top: 19%;
-  left: 21.5%;
-  width: 746px;
-  padding: 40px;
-  background: var(--dark-glass);
-  border-radius: 58px;
-}
-
-.singUp-box .user-box {
+/*Container of background*/
+.information {
   position: relative;
-  left: 15%;
-  width: auto;
-}
-
-.singUp-box .user-box input {
-  width: 68%;
-  padding: 10px 32px;
-  font-size: 16px;
-  padding-left: 3.6rem;
-  margin-bottom: 30px;
-  outline: none;
-  background: var(--white);
-  border-radius: 50px;
-}
-.singUp-box .user-box label {
-  position: absolute;
-  top: -31px;
-  color: var(--white);
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  pointer-events: none;
-  transition: 0.5s;
-}
-
-.singUp-box .submitBtn input {
-  width: 68%;
-  padding: 10px 32px;
-  font-size: 16px;
-  margin-bottom: 30px;
-  margin-left: 15%;
-  outline: none;
-  background: var(--dark-purple);
-  cursor: pointer;
-  border-radius: 10px;
-
-  color: var(--white);
-}
-
-.singUp-box .user-box img {
-  padding-left: 2%;
-  padding-top: 0.5rem;
-  height: auto;
-  image-orientation: initial;
-  position: absolute;
-  width: 42px;
-}
-
-.singUp-box .submitBtn input:hover {
-  background-color: var(--purple);
-  transition: 0.8s;
-  transition: ease-in-out;
-}
-
-.singUp-box .message{
-    position: absolute;
-    justify-content: space-between;
-    padding-left: 24%;
-    width: 61%;
-    height: 24%;
-}
-
-
-.message .text{
-    display: inline-block;
-    color: var(--white);
-    font-size: 14px;
-    padding-right: 5px;
-}
-
-.singUp-box .bold-message{
-    font-weight: 700;
-    display: inline-block;
-    position: absolute;
-    width: 50%;
-    font-size: 14px;
-    color: var(--white);
-    cursor:pointer;
-    bottom: 85%;
-
-
-}
-
-.title {
-  height: 50px;
-  font-family: "Poppins";
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
+  width: 100%;
+  min-height: 79vh;
+  padding: 5rem;
+  overflow: hidden;
   display: flex;
   align-items: center;
-  color: #ffffff;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 57rem;
+  background-color: var(--light-gray3);
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form {
+  position: relative;
+  background-color: var(--white);
+}
+
+form {
+  padding: 2.3rem 2.2rem;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact-form h3 {
+  color: var(--purple);
+  font-weight: 500;
+  font-size: 3.5rem;
+  font-family: var(--font);
+  line-height: 1;
+  text-align: left;
+}
+
+.user-box {
+  position: relative;
+  margin: 1rem 0;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border: 2px solid var(--black);
+  background: var(--light-gray3);
+  padding: 1.2rem 1.2rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-radius: 20px;
+  transform: 0.3s;
+}
+
+textarea.input {
+  width: 100%;
+  border: 2px solid var(--black);
+  background: var(--light-gray3);
+  padding: 0.8rem 1.2rem;
+  min-height: 10rem;
+  border-radius: 22px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.user-box label {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+
+
+.btn-send {
+  padding: 1.1rem 1.3rem;
+  background-color: var(--purple);
+  border: 2px solid var(--white);
+  font-size: 0.95rem;
+  color: var(--white);
+  line-height: 1;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+  margin-top: 2rem;
+}
+
+.btn-send:hover {
+  color: var(--white);
+  background-color: var(--dark-purple);
+  transition: ease-out 0.3s;
+}
+
+.contact-info {
+  padding: 2.3rem;
+  position: relative;
+  background: url(../../assets/SingUp/background-2.jpeg)
+}
+
+.contact-info .title {
+  color: var(--white);
+  font-weight: 500;
+  text-align: center;
+  font-size: 2.9rem;
+  font-family: var(--font);
+  line-height: 2;
+
+}
+
+.contact-info .text {
+  color: var(--white);
+  text-align: justify;
+  font-weight: 500;
+  font-size: 1.3rem;
+  font-family: var(--font);
+  line-height: 2.5rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.info {
+  display: flex;
+  color: var(--black);
+  margin: 0.7rem 0;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: var(--white);
+  margin: 0 2rem;
+}
+
+.icons p {
+  color: var(--white);
 }
 
 /*style of footer*/
 #footer {
-  top: 62rem;
-  position: absolute;
+  padding: 2rem 0;
   width: 100%;
-  height: 240px;
-}
-
-/*style of footer list links*/
-
-.foot-list {
-  flex-direction: column;
+  text-align: center;
+  background-color: var(--purple);
+  font-family: var(--font);
   align-items: center;
-  padding: 15px 20px;
-  padding-left: 150px;
-  left: 5%;
-  bottom: 35.5%;
-  justify-content: space-between;
-  line-height: 38px;
-  list-style: none;
-  position: relative;
-  height: 120px;
-  width: 50%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 }
-
-.foot-list .list-footer-pages {
-  font-family: "Poppins", sans-serif;
-}
-
-/*links below footer page*/
-.foot-list-link {
-  flex-direction: row;
-  align-items: center;
-  padding: 22px 12px;
-  padding-left: 228px;
-  justify-content: space-between;
-  list-style: none;
-  position: relative;
-  width: auto;
-  height: 120px;
-}
-
-.foot-list-link .list-footer-links {
-  display: inline-block;
-  margin: 0;
-  justify-content: space-between;
-  padding: 0px 25px;
-  height: fit-content;
-  font-family: "Poppins", sans-serif;
-  color: var(--purple);
-}
-
-/*styles of apps  (google and apple) */
-.Apps {
-  position: absolute;
-  left: 41.62%;
-  top: -0.29%;
-  box-sizing: border-box;
-  justify-content: space-between;
-  inline-size: auto;
-  height: auto;
-}
-
-/*style of icons*/
-.Apps .apps-icon {
-  display: inline-block;
-  height: 35px;
-  max-width: 30rem;
-  margin: 0 auto;
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-/*style of text*/
-.Apps .apps-text {
-  padding-left: 7.4%;
-  font-size: 22px;
-  padding-bottom: 3%;
-  font-family: "Poppins", sans-serif;
-  color: var(--purple);
-}
-
-/*style of social position in page*/
-.social {
-  position: absolute;
-  right: 2.74%;
-  top: -0.29%;
-}
-/*style of icons (facebook, instagram, youtube*/
-.social-icon {
-  height: 40px;
-  width: 38px;
-  padding-left: 5px;
-  margin-left: 25px;
-  cursor: pointer;
-}
-/*acesse nossas redes*/
-.social .message {
-  font-size: 22px;
-  padding-bottom: 3%;
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  color: var(--purple);
-}
-
-/*style of the logo in footer*/
-
-.logo-footer {
-  height: auto;
-  position: relative;
-  width: 130px;
-  left: 50px;
-}
-
 /*style of size of logo footer*/
-.logo-footer .imgFooter {
-  width: 80px;
-  height: 63px;
-  bottom: 30px;
+.logo-footer {
+  flex-direction: column;
+  margin-left: 1.8rem;
 }
 
 /*style of name below footer image*/
-.logo-footer .logoName {
-  position: absolute;
-  left: -6.22%;
-  right: 85.35%;
-  top: 40px;
-
-  font-family: "Caveat", cursive;
-  font-style: normal;
+.logo-footer h2 {
+  font-size: 2.2rem;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 60px;
-
-  color: var(--dark-purple);
+  color: var(--white);
+  font-family: var(--font-brand);
 }
 
+.img-Footer {
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer_socials {
+  margin-bottom: 2rem;
+}
+
+.footer_icone {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin: 0 2rem;
+}
+
+.foot-p {
+  font-family: var(--font);
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+
+
+/*Responsive for mobile*/
 
 
 @media (max-width:880px){
@@ -410,8 +332,8 @@ color: var(--white);
   .nav-list{
     position: absolute;
     top: 8vh;
+    z-index: 999;
     right: 0;
-    z-index: 9;
     width: 38vw;
     height: 92vh;
     background: var(--elegant-black);
@@ -465,4 +387,22 @@ color: var(--white);
 
 .nav-list.active{
   transform: translateX(0);
+}
+@media (max-width: 850px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .text {
+    margin: 1rem 0 1.5rem 0;
+  }
+  .information {
+    padding: 8rem 0;
+  }
+}
+
+@media (max-width: 408px) {
+  .information {
+    padding: 8rem 0;
+  }
 }
