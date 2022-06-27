@@ -25,7 +25,6 @@ a:hover{
 
 .logo{
   font-size: 1.5rem;
-  text-transform: uppercase;
   letter-spacing: 4px;
   font-family: var(--font-brand);
   color: var(--purple);
@@ -50,7 +49,7 @@ nav{
 
 
 .nav-list a{
-  letter-spacing: 3px;
+  letter-spacing: 0.1rem;
   margin-left: 32px;
   color: var(--purple);
 }
@@ -121,7 +120,7 @@ color: var(--white);
   height: 2px;
   background-color: var(--dark-purple);
   margin: 8px;
-  transform: 0.3s;
+  transition: all ease 1s;
 }
 
 .main-home {
@@ -286,6 +285,7 @@ color: var(--white);
   }
   .nav-list{
     position: absolute;
+    z-index: 9;
     top: 8vh;
     right: 0;
     width: 38vw;
