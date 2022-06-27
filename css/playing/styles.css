@@ -12,17 +12,17 @@ button {
 
 /*Header style*/
 
-a{
+a {
   color: var(--white);
   text-decoration: none;
-  transition:0.3s
+  transition: 0.3s;
 }
 
-a:hover{
+a:hover {
   opacity: 0.7;
 }
 
-.logo{
+.logo {
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -30,7 +30,7 @@ a:hover{
   color: var(--purple);
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -40,78 +40,72 @@ nav{
   height: 8vh;
 }
 
-.nav-list{
+.nav-list {
   list-style: none;
   display: flex;
   align-items: center;
 }
 
-
-
-.nav-list a{
-  letter-spacing: 3px;
+.nav-list a {
+  letter-spacing: 0.1rem;
   margin-left: 32px;
   color: var(--purple);
 }
 
-.nav-list li:nth-child(5){
+.nav-list li:nth-child(5) {
   width: 9rem;
   background: var(--dark-glass);
-    border-radius: 10px;
-    height: 2.6rem;
-    padding-top: 0.5rem;
-    margin-left: 1rem;
+  border-radius: 10px;
+  height: 2.6rem;
+  padding-top: 0.5rem;
+  margin-left: 1rem;
 }
 
-.nav-list li:nth-child(5):hover{
+.nav-list li:nth-child(5):hover {
   background-color: var(--gray);
   transition: all ease 1s;
   color: var(--white);
 }
 
-.nav-list li:nth-child(6):hover{
- 
-background-color: var(--dark-purple);
-transition: all ease 1s;
-color: var(--white);
+.nav-list li:nth-child(6):hover {
+  background-color: var(--dark-purple);
+  transition: all ease 1s;
+  color: var(--white);
 }
 
-
-
-.nav-list li:nth-child(6){
+.nav-list li:nth-child(6) {
   background: var(--purple);
-    border-radius: 10px;
-    width: 9rem;
-    height: 2.6rem;
-    padding-top: 0.5rem;
-    margin-left: 1rem;
-    color: var(--white);
+  border-radius: 10px;
+  width: 9rem;
+  height: 2.6rem;
+  padding-top: 0.5rem;
+  margin-left: 1rem;
+  color: var(--white);
 }
 
-
-.ctn-btn{
+.ctn-btn {
   color: var(--black) !important;
   font-weight: 700;
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
-.ctn-btn:hover{
+.ctn-btn:hover {
   color: var(--white) !important;
 }
 
-.sing-btn{
+.sing-btn {
   padding-left: 0.7rem;
   padding-top: 4.2rem;
   color: var(--black) !important;
   font-weight: 700;
-    font-size: 1rem;
+  font-size: 1rem;
 }
-  
-.sing-btn:hover{
+
+.sing-btn:hover {
   color: var(--white) !important;
 }
 
-.mobile-nav{
+.mobile-nav {
   display: none;
   cursor: pointer;
 }
@@ -127,24 +121,20 @@ color: var(--white);
 /*Container of background*/
 /*color of background*/
 body {
-  overflow-x: hidden;
   background: var(--elegant-black);
+  overflow-x: hidden;
 }
 
 #container {
-  height: 100%;
-  padding-left: 1.5rem;
-  width: 72rem;
-  max-width: 100%;
-  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .lotus-head {
-  padding-left: 5rem;
-  padding-top: 9.1rem;
-  max-width: 100%;
-  text-align-last: justify;
-  width: 71rem;
+  padding: 1rem;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .lotus-head button {
@@ -154,8 +144,7 @@ body {
 
 #lotus-image {
   width: 6rem;
-  height: 7.4rem;
-  margin-left: 5rem;
+  margin-left: 7rem;
 }
 
 .lotus-head input {
@@ -178,15 +167,11 @@ body {
 
 .options {
   display: grid;
-  margin-top: 6rem;
-  grid-template-columns: 4rem 30rem 4rem;
-  grid-template-rows: 11rem 27rem;
-  grid-column-gap: 0.4rem;
-  grid-row-gap: 0.4rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5rem auto;
+  gap: 2rem;
   justify-items: center;
   align-items: center;
-  margin-left: 16.2rem;
-
   border-color: var(--white) 2px;
 }
 
@@ -254,71 +239,19 @@ body {
   color: var(--white);
 }
 
-@media screen and (max-width: 1200px) {
-  header {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .Header-logo {
-    padding-left: 1%;
-  }
-  nav {
-    margin-left: 1rem;
-  }
-
-  ul {
-    width: 51rem;
-    margin-left: 9.1rem;
-  }
-
-  li a {
-    font-size: 0.9rem;
-  }
-
-  #contato button {
-    margin-left: 6.5rem;
-  }
-
-  .mainImg {
-    max-width: 100%;
-    width: 74rem;
-    margin-top: 6rem;
-    height: 24rem;
-  }
-
-  .mainImageHome {
-    height: 34rem;
-  }
-
-  .footer_socials {
-    text-align: center;
-    padding-top: 0.5rem;
-    padding-left: 2rem;
-  }
-
-  .foot-p {
-    text-align: center;
-    padding-left: 2.5rem;
-  }
-}
-
 /*Responsive for mobile*/
 
-
-@media (max-width:880px){
-
-  body{
+@media (max-width: 880px) {
+  body {
     overflow-x: hidden;
   }
-  .nav-list{
+  .nav-list {
     position: absolute;
     top: 8vh;
-    z-index: 9;
     right: 0;
     width: 38vw;
     height: 92vh;
+    z-index: 9;
     background: var(--elegant-black);
     flex-direction: column;
     align-items: center;
@@ -327,54 +260,86 @@ body {
     transition: transform 0.3s ease-in;
   }
 
-  
-.nav-list a{
-  color: var(--white);
-}
+  .nav-list a {
+    color: var(--white);
+  }
 
-  .nav-list li{
+  .nav-list li {
     margin-left: 0;
     opacity: 0;
   }
- 
-  .mobile-nav{
+
+  .mobile-nav {
     display: block;
   }
+
+  .options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   
+.lotus-head button {
+  background: transparent;
+  border: none;
+}
+
+#lotus-image {
+  width: 5rem;
+    margin-left: 2.3rem;
+}
+
+.lotus-head input {
+  background-size: 2.1rem;
+  margin-right: 0.2rem;
+  height: 2.8rem;
+  width: 11rem;
+}
+   
+}
+
+@media (max-width:680px){
+  .lotus-head button {
+    background: transparent;
+    border: none;
+  }
+
+  .lotus-head img {
+    width: 3rem;
+  }
+  
+  #lotus-image {
+    width: 4rem;
+      margin-left: 2.3rem;
+  }
+  
+  .lotus-head input {
+    background-size: 2.1rem;
+    margin-right: 0.2rem;
+    height: 2.8rem;
+    width: 8rem;
+  }
 }
 
 @keyframes navLinkFade {
-  from{
+  from {
     opacity: 0;
     transform: translateX(50px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translate(0);
   }
-  
 }
-.mobile-nav.active .l1{
+.mobile-nav.active .l1 {
   transform: rotate(-45deg) translate(-8px, 8px);
-
 }
-.mobile-nav.active .l2{
+.mobile-nav.active .l2 {
   opacity: 0;
-
 }
-.mobile-nav.active .l3{  
+.mobile-nav.active .l3 {
   transform: rotate(45deg) translate(-5px, -7px);
-
 }
 
-
-.nav-list.active{
+.nav-list.active {
   transform: translateX(0);
 }
-  .options {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 31rem;
-    margin: 5rem auto;
-    gap: 2rem;
-  }
-
