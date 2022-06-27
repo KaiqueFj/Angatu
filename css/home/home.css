@@ -201,8 +201,8 @@ color: var(--white);
 
 /*info das opções*/
 .info {
-  margin-bottom: 5rem;
-}
+padding: 1rem 1rem
+;}
 
 .title {
   font-family: var(--font);
@@ -228,6 +228,7 @@ color: var(--white);
   line-height: 1rem;
   font-family: var(--font);
   text-align: justify;
+  padding-top: 1rem;
 }
 
 /*style of footer*/
@@ -311,6 +312,20 @@ color: var(--white);
   .mobile-nav{
     display: block;
   }
+
+  .message-bg{
+    margin-left: 1rem;
+    padding: 2rem;
+    }
+
+  .options{
+    grid-template-columns: repeat(2,1fr);
+    max-width: 31rem;
+    margin: 0 auto;
+    gap: 2rem
+  }
+
+    
   
 }
 
@@ -344,15 +359,3 @@ color: var(--white);
 }
 
 /*Responsive for mobile*/
-@media (max-width: 768px) {
- 
-  .options{
-    grid-template-columns: repeat(2,1fr);
-    max-width: 31rem;
-    margin: 0 auto;
-    gap: 2rem
-  }
-
-    
-
-}
