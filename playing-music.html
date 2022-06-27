@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="./css/global/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="main">
     
         <header>
 
@@ -40,80 +41,75 @@
             </nav>
     
         </header>
-    
-        <div class="lotus">
-            <button> <img src="./assets/playing/Vector.png" alt="left-arrow"></button>
+        <div id="main">
 
-            <a href="#"> <img src="./assets/playing/Music-Icon.png" alt="lotus" id="lotus-image"></a>
-
-            <input type="search" name="Search bar" id="search">
-        </div>
-
-        <div class="menu">
-            <div class="sound-image">
-                <img src="./assets/playing/Florest.png" alt="Florest Image">
-                <p>Sons da Floresta</p>
-            </div>
-    
-            <div class="player">
-                <input type="range"  class="range" min="0" max="100" value="40">
-                <span>0:00</span>
-
-                <span>2:50</span>
-            </div>
-    
-            <div class="options">
-                <button src="./assets/playing/Vector.png" alt="left-arrow"> </button>
-                <button src="./assets/playing/Play-button.png" alt="play-button"> </button>
-                <button src="./assets//playing/Vector.png" alt="right-arrow"> </button>
-            </div>
-        </div>
       
+        <section id="container">
+            <div class="lotus-head">
 
-
-
-
-       
-
-
-        <footer id="footer">
-
-            <div class="logo-footer">
-                <img class="imgFooter" src="./assets/Logo.png" alt="Logo Angatu">
-                <p class="logoName">Angatu</p>
+                    <button> <img src="./assets/musicoterapia/Vector.png" alt="left-arrow"></button>
+        
+                     <img src="./assets/musicoterapia/Music-Icon.png" alt="lotus" id="lotus-image">
+        
             </div>
-            <ul class="foot-list">
-                <li class="list-footer-pages"><a href="home.html">Home</a></li>
-                <li class="list-footer-pages"><a href="Como Funciona.html">Como Funciona</a></li>
-                <li class="list-footer-pages"><a href="Sobre Nós.html">Sobre nós</a></li>
-                <li class="list-footer-pages"><a href="Blog.html">Blog</a></li>
-            </ul>
+      
+    
+        </section>
 
-            <ul class="Apps">
-                <p class="apps-text">Baixe o aplicativo</p>
-                <a><img src="./assets/google-icon.png" alt="Icon-google-icon.png" class="apps-icon"></a>
-                <a><img src="./assets/apple-icon.png" alt="Icon-apple-icon.png" class="apps-icon"></a>
-            </ul>
+        <section id="container">
+            <div class="menu">
+                    <img src="./assets/playing/Florest.png" alt="Florest Image">
+                    <p>Sons da Floresta</p>
+        
+                <div class="player">
+                    <span>0:00</span>
 
-            <div class="social">
-                <h3 class="message">Acesse nossas redes</h3>
-                <img src="./assets/instagram 1.png" alt="Instagram-Icon" class="social-icon">
-                <img src="./assets/facebook 1.png" alt="Facebook-Icon" class="social-icon">
-                <img src="./assets/youtube 1.png" alt="YouTube-Icon" class="social-icon">
+                    <input type="range"  class="range" min="0" max="100" value="40">
+    
+                    <span>2:50</span>
+                </div>
+        
+                <div class="options">
+                    <button> <img src="./assets/playing/Vector.png" alt="left-arrow"></button>
+                    <button> <img src="./assets/playing/Play-button.png" alt="play-arrow"></button>
+                    <button> <img src="./assets/playing/Vector.png" alt="right-arrow"></button>
+                </div>
             </div>
+        
+           
+        </section>
+
+    
+    <footer id="footer">
+
+        <div class="logo-footer">
+            <img class="imgFooter" src="./assets/Logo.png" alt="Logo Angatu">
+            <h2 class="logoName">Angatu</p>
+        </div>
 
 
-            <ul class="foot-list-link">
-                <li class="list-footer-links">@2022 Angatu</li>
-                <li class="list-footer-links">Todos os direitos reservados</li>
-                <li class="list-footer-links">Termos e condições</li>
-                <li class="list-footer-links">Políticas de privacidade</li>
-            </ul>
-        </footer>
+
+        <div class="footer_socials">
+            <a href="#" class="footer_icone">
+                <i class='bx bxl-facebook-circle'></i>
+            </a>
+            <a href="# " class="footer_icone">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="#" class="footer_icone">
+                <i class='bx bxl-youtube'></i>
+            </a>
+
+        </div>
 
 
+        <p class="foot-p"> © 2022 Angatu copyright all right reserved</p>
 
+    </footer>
+
+    </div>
 
 </body>
+<script src="./javascript/main.js"></script>
 
 </html>

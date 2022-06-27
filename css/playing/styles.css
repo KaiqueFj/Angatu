@@ -133,7 +133,7 @@ body {
   padding: 1rem;
   align-items: center;
   display: flex;
-  width: 100%;
+  width: 56%;
   justify-content: space-between;
 }
 
@@ -147,53 +147,57 @@ body {
   margin-left: 7rem;
 }
 
-.lotus-head input {
-  background: url(../../assets/musicoterapia/Search.png) no-repeat right;
-  background-size: 2.1rem;
-  margin-right: 0.2rem;
-  height: 2.5rem;
-  border-radius: 36px;
-  background-color: var(--light-gray);
+.menu {
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
 }
 
-.title {
-  font-size: 1.5rem;
-  margin-top: 3rem;
-  padding-left: 0.8rem;
+.menu img {
+  width: 32rem;
+}
+.menu p {
+  font-size: 3rem;
   font-family: var(--font);
-  align-items: center;
+  font-weight: 500;
   color: var(--white);
+}
+
+.player {
+  flex-direction: row;
+}
+.player span {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.player input {
+  height: 3rem;
+  width: 20rem;
+  border-radius: 12px;
 }
 
 .options {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 5rem auto;
-  gap: 2rem;
-  justify-items: center;
-  align-items: center;
-  border-color: var(--white) 2px;
-}
-
-.options img:hover {
-  opacity: 1;
-  transform: scale(1.1);
-  transition: all 0.9s ease-in;
-}
-
-.container p {
-  align-items: center;
-  text-align: center;
-  color: var(--white);
-  font-family: "Poppins", sans-serif;
-  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
 .options img {
-  width: 13rem;
-  height: 16rem;
+  width: 3rem;
+  height: 3rem;
 }
 
+.options button {
+  background: transparent;
+  border: none;
+  padding: 3rem 5rem;
+}
+
+.options button:nth-child(3) {
+  transform: rotate(180deg) !important;
+}
 /*style of footer*/
 #footer {
   padding: 2rem 0;
@@ -273,31 +277,20 @@ body {
     display: block;
   }
 
-  .options {
-    grid-template-columns: repeat(2, 1fr);
+  #lotus-image {
+    width: 5rem;
+    margin-left: 2.3rem;
   }
 
-  
-.lotus-head button {
-  background: transparent;
-  border: none;
+  .lotus-head input {
+    background-size: 2.1rem;
+    margin-right: 0.2rem;
+    height: 2.8rem;
+    width: 11rem;
+  }
 }
 
-#lotus-image {
-  width: 5rem;
-    margin-left: 2.3rem;
-}
-
-.lotus-head input {
-  background-size: 2.1rem;
-  margin-right: 0.2rem;
-  height: 2.8rem;
-  width: 11rem;
-}
-   
-}
-
-@media (max-width:680px){
+@media (max-width: 480px) {
   .lotus-head button {
     background: transparent;
     border: none;
@@ -306,17 +299,54 @@ body {
   .lotus-head img {
     width: 3rem;
   }
-  
+
   #lotus-image {
     width: 4rem;
-      margin-left: 2.3rem;
+    margin-left: 2.3rem;
   }
-  
+
   .lotus-head input {
     background-size: 2.1rem;
     margin-right: 0.2rem;
     height: 2.8rem;
     width: 8rem;
+  }
+
+  .menu img {
+    width: 17rem;
+  }
+
+  .menu p {
+    font-size: 1.7rem;
+  }
+
+  .player {
+    flex-direction: row;
+  }
+
+  .player span {
+    color: var(--white);
+    font-size: 1rem;
+  }
+
+  .player input {
+    height: 3rem;
+    width: 14rem;
+    border-radius: 12px;
+  }
+
+  .options {
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .options img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .options button {
+    padding: 2rem 2rem;
   }
 }
 
