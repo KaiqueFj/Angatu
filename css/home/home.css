@@ -211,6 +211,7 @@ padding: 1rem 1rem
 }
 
 .card {
+  padding: 2rem 0.8rem;
   background-color: var(--glass);
   display: flex;
   border-radius: 12px;
