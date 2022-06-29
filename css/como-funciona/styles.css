@@ -180,59 +180,7 @@ body {
   color: var(--white);
 }
 
-@media screen and (max-width: 1200px) {
-  header {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .Header-logo {
-    padding-left: 1%;
-  }
-  nav {
-    margin-left: 1rem;
-  }
-
-  ul {
-    width: 51rem;
-    margin-left: 9.1rem;
-  }
-
-  li a {
-    font-size: 0.9rem;
-  }
-
-  #contato button {
-    margin-left: 6.5rem;
-  }
-
-  .mainImg {
-    max-width: 100%;
-    width: 74rem;
-    margin-top: 6rem;
-    height: 24rem;
-  }
-
-  .mainImageHome {
-    height: 34rem;
-  }
-
-  .footer_socials {
-    text-align: center;
-    padding-top: 0.5rem;
-    padding-left: 2rem;
-  }
-
-  .foot-p {
-    text-align: center;
-    padding-left: 2.5rem;
-  }
-}
-
 /*Responsive for mobile*/
-
-
 @media (max-width:880px){
 
   body{
