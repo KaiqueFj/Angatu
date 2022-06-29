@@ -169,7 +169,7 @@ form {
 
 .user-box {
   position: relative;
-  margin: 1rem 0;
+  margin: 2.5rem 0;
 }
 
 input {
@@ -204,6 +204,17 @@ textarea.input {
   padding: 0 0.4rem;
   color: var(--black);
   font-weight: 500;
+  font-size: 0.9rem;
+
+  transition: 0.5s;
+
+}
+
+.user-box.focus label {
+  top: 0;
+  transform: translateY(-95%);
+  left: 25px;
+
   font-size: 0.9rem;
 }
 
