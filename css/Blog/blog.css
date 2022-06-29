@@ -291,15 +291,18 @@ nav {
   .post-image {
     width: 87%;
     grid-area: sidebar;
+    margin-left: 1rem;
   }
 
   .post-text {
+    text-align: justify;
     grid-area: main;
     padding-top: 1rem;
   }
 
   .post-text-2 {
     grid-area: main-2;
+    text-align: justify;
     padding-top: 1rem;
   }
 

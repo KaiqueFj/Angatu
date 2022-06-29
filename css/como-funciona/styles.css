@@ -23,7 +23,6 @@ a:hover{
 
 .logo{
   font-size: 1.5rem;
-  text-transform: uppercase;
   letter-spacing: 4px;
   font-family: var(--font-brand);
   color: var(--purple);
