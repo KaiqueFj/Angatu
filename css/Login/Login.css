@@ -205,7 +205,18 @@ input {
   padding: 0 0.4rem;
   color: var(--black);
   font-weight: 500;
+  transition: 0.5s;
 }
+
+
+.user-box.focus label {
+  top: 0;
+  transform: translateY(-95%);
+  left: 25px;
+
+  font-size: 0.9rem;
+}
+
 .check-box input {
   width: 10%;
   outline: none;
