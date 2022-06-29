@@ -5,34 +5,30 @@ a,
 button {
   color: var(--black);
   font-weight: 500;
-  font-size: 16px;
+
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
 
 /*Header style*/
-body {
-  overflow-x: hidden;
-}
-/*Header style*/
-a {
+a{
   color: var(--white);
   text-decoration: none;
-  transition: 0.3s;
+  transition:0.3s
 }
 
-a:hover {
+a:hover{
   opacity: 0.7;
 }
 
-.logo {
+.logo{
   font-size: 1.5rem;
   letter-spacing: 4px;
   font-family: var(--font-brand);
   color: var(--purple);
 }
 
-nav {
+nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -42,72 +38,78 @@ nav {
   height: 8vh;
 }
 
-.nav-list {
+.nav-list{
   list-style: none;
   display: flex;
   align-items: center;
 }
 
-.nav-list a {
+
+
+.nav-list a{
   letter-spacing: 0.1rem;
   margin-left: 32px;
   color: var(--purple);
 }
 
-.nav-list li:nth-child(5) {
+.nav-list li:nth-child(5){
   width: 9rem;
   background: var(--dark-glass);
-  border-radius: 10px;
-  height: 2.6rem;
-  padding-top: 0.5rem;
-  margin-left: 1rem;
+    border-radius: 10px;
+    height: 2.6rem;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
 }
 
-.nav-list li:nth-child(5):hover {
+.nav-list li:nth-child(5):hover{
   background-color: var(--gray);
   transition: all ease 1s;
   color: var(--white);
 }
 
-.nav-list li:nth-child(6):hover {
-  background-color: var(--dark-purple);
-  transition: all ease 1s;
-  color: var(--white);
+.nav-list li:nth-child(6):hover{
+ 
+background-color: var(--dark-purple);
+transition: all ease 1s;
+color: var(--white);
 }
 
-.nav-list li:nth-child(6) {
+
+
+.nav-list li:nth-child(6){
   background: var(--purple);
-  border-radius: 10px;
-  width: 9rem;
-  height: 2.6rem;
-  padding-top: 0.5rem;
-  margin-left: 1rem;
-  color: var(--white);
+    border-radius: 10px;
+    width: 9rem;
+    height: 2.6rem;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
+    color: var(--white);
 }
 
-.ctn-btn {
+
+.ctn-btn{
   color: var(--black) !important;
   font-weight: 700;
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
-.ctn-btn:hover {
+.ctn-btn:hover{
   color: var(--white) !important;
 }
 
-.sing-btn {
+.sing-btn{
   padding-left: 0.7rem;
   padding-top: 4.2rem;
   color: var(--black) !important;
   font-weight: 700;
-  font-size: 1rem;
+    font-size: 1rem;
 }
-
-.sing-btn:hover {
+  
+.sing-btn:hover{
   color: var(--white) !important;
 }
 
-.mobile-nav {
+.mobile-nav{
   display: none;
   cursor: pointer;
 }
@@ -118,6 +120,7 @@ nav {
   margin: 8px;
   transition: all ease 1s;
 }
+
 /*Container of background*/
 #container {
   width: 100%;

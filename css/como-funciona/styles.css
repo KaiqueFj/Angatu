@@ -5,7 +5,7 @@ a,
 button {
   color: var(--black);
   font-weight: 500;
-  font-size: 16px;
+
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
@@ -47,7 +47,7 @@ nav{
 
 
 .nav-list a{
-  letter-spacing: 3px;
+  letter-spacing: 0.1rem;
   margin-left: 32px;
   color: var(--purple);
 }
@@ -120,10 +120,7 @@ color: var(--white);
   margin: 8px;
   transition: all ease 1s;
 }
-/*Container of background*/
 
-/*Container of background*/
-/*color of background*/
 body {
   background: var(--elegant-black);
   overflow-x: hidden;
