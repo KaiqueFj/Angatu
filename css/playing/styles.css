@@ -143,7 +143,8 @@ body {
 }
 
 #lotus-image {
-  width: 6rem;
+  width: 4rem;
+  height: 4rem;
   margin-left: 7rem;
 }
 
@@ -154,7 +155,7 @@ body {
 }
 
 .menu img {
-  width: 32rem;
+height: 42vh;
 }
 .menu p {
   font-size: 3rem;
@@ -313,7 +314,7 @@ body {
   }
 
   .menu img {
-    width: 17rem;
+    height: 32vh;
   }
 
   .menu p {
