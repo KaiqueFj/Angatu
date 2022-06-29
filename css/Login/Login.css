@@ -362,7 +362,7 @@ a {
     top: 8vh;
     right: 0;
     z-index: 999;
-    width: 38vw;
+    width: 56vw;
     height: 92vh;
     background: var(--elegant-black);
     flex-direction: column;

@@ -216,7 +216,7 @@ color: var(--white);
     z-index: 9;
     top: 8vh;
     right: 0;
-    width: 38vw;
+    width: 56vw;
     height: 92vh;
     background: var(--elegant-black);
     flex-direction: column;

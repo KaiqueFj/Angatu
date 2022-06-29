@@ -246,7 +246,7 @@ body {
     position: absolute;
     top: 8vh;
     right: 0;
-    width: 38vw;
+    width: 56vw;
     z-index: 9;
     height: 92vh;
     background: var(--elegant-black);

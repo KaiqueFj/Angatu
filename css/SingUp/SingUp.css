@@ -334,7 +334,7 @@ textarea.input {
     top: 8vh;
     z-index: 999;
     right: 0;
-    width: 38vw;
+    width: 56vw;
     height: 92vh;
     background: var(--elegant-black);
     flex-direction: column;
