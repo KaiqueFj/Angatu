@@ -288,23 +288,24 @@ a {
   line-height: 1;
   margin-top: 8rem;
 }
-
 .other-options {
-  justify-content: space-between;
+  display: flex;
   position: relative;
-  margin: 1rem 0;
+  margin: 2rem 0rem;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .other-options p,
 a {
   font-family: var(--font);
-  font-size: 0.98rem;
+  font-size: 0.9rem;
 }
 
 .other-options a {
   font-weight: 700;
+  color: var(--black);
 }
-
 /*style of footer*/
 #footer {
   padding: 2rem 0;
@@ -425,8 +426,12 @@ a {
   }
 
   .check-box label {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     left: 1rem;
+  }
+  .other-options p,
+  a {
+    font-size: 0.8rem;
   }
 }
 
