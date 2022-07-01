@@ -1,5 +1,3 @@
-/*Style of fonts*/
-
 li,
 a,
 button {
@@ -10,6 +8,9 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
+body{
+  overflow-x: hidden;
+}
 /*Header style*/
 a{
   color: var(--white);
@@ -121,42 +122,101 @@ color: var(--white);
   transition: all ease 1s;
 }
 
-/*Container of background*/
-
-.main-home {
-  display: flex;
-  align-items: center;
-  background: url(../../assets/aboutUs/bg.png) no-repeat center center;
+#container{
+  margin-bottom: 1rem;
   width: 100%;
 }
-
-.message-bg{
-  position: relative;
-  width: 30rem;
-  background-color: var(--glass);
-  margin-left: 8rem;
+ .intro{
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  padding: 3rem;
-  text-align: justify;
+  text-align: center;
+ }
+
+ .intro h2{
+  font-size: 4rem;
+ font-family: var(--font);
+ }
+
+ .intro p{
+  font-size: 2rem;
+ font-family: var(--font);
+ 
+ }
+
+
+.content-container{
+padding: 2rem;
+max-width: 100%;
 }
 
-.message-bg h3{
-  font-size: 1.9rem;
-  color: var(--black);
+.information{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas:
+    "title title image"
+    "text-t text-t image "
+    "text-t text-t image"
+    
+}
+
+.information h3{
+  font-size: 3.4rem;
   font-weight: 700;
   font-family: var(--font);
-  padding-bottom: 2rem;
+  grid-area: title;
 }
 
-.message-bg p{
-  font-size: 1.4rem;
-  color: var(--black);
-  font-weight: 500;
+.information p {
+  padding-right: 2rem;
+  font-size: 2.1rem;
   font-family: var(--font);
+  grid-area: text-t;
+  text-align: justify;
 
 }
 
+.information img{
+  border-radius: 26px;
+  grid-area: image;
+  max-height: 52rem;
+  max-width: 28rem;
+
+
+}
+
+.second-information{
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas:
+    "image ... title"
+    "image text-t text-t"
+    "image text-t text-t"
+}
+
+.second-information h3{
+  font-size: 3.4rem;
+  font-weight: 700;
+  font-family: var(--font);
+  grid-area: title;
+}
+
+.second-information p {
+  padding-left: 2rem;
+  font-size: 2.1rem;
+  text-align: justify;
+  font-family: var(--font);
+  grid-area: text-t;
+}
+
+.second-information img{
+  border-radius: 26px;
+  grid-area: image;
+  max-height: 52rem;
+  max-width: 28rem;
+}
 
 /*style of footer*/
 #footer {
@@ -240,12 +300,30 @@ color: var(--white);
     display: block;
   }
 
-  .message-bg{
-    margin-left: 1rem;
-    padding: 2rem;
-    }
+  .information h3{
+    font-size: 3rem;
+  }
 
-  
+  .information img{
+    width: 14rem;
+  }
+
+  .second-information img{
+    width: 14rem;
+    
+  }
+
+  .information p{
+    font-size: 1.5rem;
+  }
+
+  .second-information h3{
+    font-size: 3rem;
+  }
+
+  .second-information p{
+    font-size: 1.5rem;
+  }
 }
 
 @keyframes navLinkFade {
@@ -275,6 +353,36 @@ color: var(--white);
 
 .nav-list.active{
   transform: translateX(0);
+}
+
+
+@media (max-width:560px){
+  .information h3{
+    font-size: 2.1rem;
+  }
+
+  .information img{
+    width: 10rem;
+  }
+
+  .second-information img{
+    width: 10rem;
+  }
+
+  .information p{
+    font-size: 1.1rem;
+  }
+
+  .second-information h3{
+    font-size: 2.1rem;
+  }
+
+  .second-information p{
+    font-size: 1.1rem;
+  }
+
+
+  
 }
  
 
