@@ -296,12 +296,13 @@ textarea.input {
 .other-options p,
 a {
   font-family: var(--font);
-  font-size: 0.98rem;
+  font-size: 1rem;
 }
 
 .other-options a {
   font-weight: 700;
   color: var(--black);
+
 }
 
 /*style of footer*/
@@ -429,10 +430,15 @@ a {
   .information {
     padding: 8rem 0;
   }
+  .other-options p,a 
+  {
+  font-size: 0.80rem;
+}
 }
 
 @media (max-width: 408px) {
   .information {
     padding: 8rem 0;
   }
+  
 }
