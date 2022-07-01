@@ -134,12 +134,12 @@ color: var(--white);
  }
 
  .intro h2{
-  font-size: 4rem;
+  font-size: 2.8rem;
  font-family: var(--font);
  }
 
  .intro p{
-  font-size: 2rem;
+  font-size: 1.8rem;
  font-family: var(--font);
  
  }
@@ -162,7 +162,7 @@ max-width: 100%;
 }
 
 .information h3{
-  font-size: 3.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
   font-family: var(--font);
   grid-area: title;
@@ -170,7 +170,7 @@ max-width: 100%;
 
 .information p {
   padding-right: 2rem;
-  font-size: 2.1rem;
+  font-size: 1.4rem;
   font-family: var(--font);
   grid-area: text-t;
   text-align: justify;
@@ -180,8 +180,7 @@ max-width: 100%;
 .information img{
   border-radius: 26px;
   grid-area: image;
-  max-height: 52rem;
-  max-width: 28rem;
+  max-width:20rem
 
 
 }
@@ -197,7 +196,7 @@ max-width: 100%;
 }
 
 .second-information h3{
-  font-size: 3.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
   font-family: var(--font);
   grid-area: title;
@@ -205,7 +204,7 @@ max-width: 100%;
 
 .second-information p {
   padding-left: 2rem;
-  font-size: 2.1rem;
+  font-size: 1.4rem;
   text-align: justify;
   font-family: var(--font);
   grid-area: text-t;
@@ -214,8 +213,7 @@ max-width: 100%;
 .second-information img{
   border-radius: 26px;
   grid-area: image;
-  max-height: 52rem;
-  max-width: 28rem;
+  max-width:20rem
 }
 
 /*style of footer*/
@@ -301,7 +299,7 @@ max-width: 100%;
   }
 
   .information h3{
-    font-size: 3rem;
+    font-size: 1.4rem;
   }
 
   .information img{
@@ -310,19 +308,19 @@ max-width: 100%;
 
   .second-information img{
     width: 14rem;
-    
+
   }
 
   .information p{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .second-information h3{
-    font-size: 3rem;
+    font-size: 1.4rem;
   }
 
   .second-information p{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -358,7 +356,7 @@ max-width: 100%;
 
 @media (max-width:560px){
   .information h3{
-    font-size: 2.1rem;
+    font-size: 1.3rem;
   }
 
   .information img{
@@ -370,15 +368,15 @@ max-width: 100%;
   }
 
   .information p{
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .second-information h3{
-    font-size: 2.1rem;
+    font-size: 1.3rem;
   }
 
   .second-information p{
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
 
