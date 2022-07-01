@@ -151,7 +151,7 @@ color: var(--white);
 }
 
 form {
-  padding: 2.3rem 2.2rem;
+  padding: 2.3rem 1.2rem;
   z-index: 10;
   overflow: hidden;
   position: relative;
@@ -168,7 +168,7 @@ form {
 
 .user-box {
   position: relative;
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 
 input {
@@ -204,7 +204,20 @@ textarea.input {
   color: var(--black);
   font-weight: 500;
   font-size: 0.9rem;
+  transition: 0.5s;
 }
+
+
+
+.user-box.focus label {
+  top: 0;
+  transform: translateY(-95%);
+  left: 25px;
+
+  font-size: 0.9rem;
+}
+
+
 
 
 
@@ -270,6 +283,25 @@ textarea.input {
 
 .icons p {
   color: var(--white);
+}
+
+
+.other-options {
+  display: flex;
+    position: relative;
+    margin: 2rem 0rem;
+    justify-content: space-around;
+}
+
+.other-options p,
+a {
+  font-family: var(--font);
+  font-size: 0.98rem;
+}
+
+.other-options a {
+  font-weight: 700;
+  color: var(--black);
 }
 
 /*style of footer*/

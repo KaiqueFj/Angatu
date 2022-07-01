@@ -11,24 +11,24 @@ button {
 }
 
 /*Header style*/
-a{
+a {
   color: var(--white);
   text-decoration: none;
-  transition:0.3s
+  transition: 0.3s;
 }
 
-a:hover{
+a:hover {
   opacity: 0.7;
 }
 
-.logo{
+.logo {
   font-size: 1.5rem;
   letter-spacing: 4px;
   font-family: var(--font-brand);
   color: var(--purple);
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -38,78 +38,72 @@ nav{
   height: 8vh;
 }
 
-.nav-list{
+.nav-list {
   list-style: none;
   display: flex;
   align-items: center;
 }
 
-
-
-.nav-list a{
+.nav-list a {
   letter-spacing: 0.1rem;
   margin-left: 32px;
   color: var(--purple);
 }
 
-.nav-list li:nth-child(5){
+.nav-list li:nth-child(5) {
   width: 9rem;
   background: var(--dark-glass);
-    border-radius: 10px;
-    height: 2.6rem;
-    padding-top: 0.5rem;
-    margin-left: 1rem;
+  border-radius: 10px;
+  height: 2.6rem;
+  padding-top: 0.5rem;
+  margin-left: 1rem;
 }
 
-.nav-list li:nth-child(5):hover{
+.nav-list li:nth-child(5):hover {
   background-color: var(--gray);
   transition: all ease 1s;
   color: var(--white);
 }
 
-.nav-list li:nth-child(6):hover{
- 
-background-color: var(--dark-purple);
-transition: all ease 1s;
-color: var(--white);
+.nav-list li:nth-child(6):hover {
+  background-color: var(--dark-purple);
+  transition: all ease 1s;
+  color: var(--white);
 }
 
-
-
-.nav-list li:nth-child(6){
+.nav-list li:nth-child(6) {
   background: var(--purple);
-    border-radius: 10px;
-    width: 9rem;
-    height: 2.6rem;
-    padding-top: 0.5rem;
-    margin-left: 1rem;
-    color: var(--white);
+  border-radius: 10px;
+  width: 9rem;
+  height: 2.6rem;
+  padding-top: 0.5rem;
+  margin-left: 1rem;
+  color: var(--white);
 }
 
-
-.ctn-btn{
+.ctn-btn {
   color: var(--black) !important;
   font-weight: 700;
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
-.ctn-btn:hover{
+.ctn-btn:hover {
   color: var(--white) !important;
 }
 
-.sing-btn{
+.sing-btn {
   padding-left: 0.7rem;
   padding-top: 4.2rem;
   color: var(--black) !important;
   font-weight: 700;
-    font-size: 1rem;
+  font-size: 1rem;
 }
-  
-.sing-btn:hover{
+
+.sing-btn:hover {
   color: var(--white) !important;
 }
 
-.mobile-nav{
+.mobile-nav {
   display: none;
   cursor: pointer;
 }
@@ -120,7 +114,6 @@ color: var(--white);
   margin: 8px;
   transition: all ease 1s;
 }
-
 
 /*Container of background*/
 .information {
@@ -206,7 +199,6 @@ input {
   font-weight: 500;
   transition: 0.5s;
 }
-
 
 .user-box.focus label {
   top: 0;
@@ -297,21 +289,21 @@ a {
   margin-top: 8rem;
 }
 
-.other-options{
+.other-options {
   justify-content: space-between;
   position: relative;
   margin: 1rem 0;
 }
 
-.other-options p,a{
+.other-options p,
+a {
   font-family: var(--font);
   font-size: 0.98rem;
 }
 
-.other-options a{
+.other-options a {
   font-weight: 700;
 }
-
 
 /*style of footer*/
 #footer {
@@ -358,16 +350,13 @@ a {
   color: var(--white);
 }
 
-
 /*Responsive for mobile*/
 
-
-@media (max-width:880px){
-
-  body{
+@media (max-width: 880px) {
+  body {
     overflow-x: hidden;
   }
-  .nav-list{
+  .nav-list {
     position: absolute;
     top: 8vh;
     right: 0;
@@ -382,48 +371,41 @@ a {
     transition: transform 0.3s ease-in;
   }
 
-  
-.nav-list a{
-  color: var(--white);
-}
+  .nav-list a {
+    color: var(--white);
+  }
 
-  .nav-list li{
+  .nav-list li {
     margin-left: 0;
     opacity: 0;
   }
- 
-  .mobile-nav{
+
+  .mobile-nav {
     display: block;
   }
-  
 }
 
 @keyframes navLinkFade {
-  from{
+  from {
     opacity: 0;
     transform: translateX(50px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translate(0);
   }
-  
 }
-.mobile-nav.active .l1{
+.mobile-nav.active .l1 {
   transform: rotate(-45deg) translate(-8px, 8px);
-
 }
-.mobile-nav.active .l2{
+.mobile-nav.active .l2 {
   opacity: 0;
-
 }
-.mobile-nav.active .l3{  
+.mobile-nav.active .l3 {
   transform: rotate(45deg) translate(-5px, -7px);
-
 }
 
-
-.nav-list.active{
+.nav-list.active {
   transform: translateX(0);
 }
 @media (max-width: 850px) {
@@ -438,11 +420,11 @@ a {
     padding: 8rem 0;
   }
 
-  .check-box input{
+  .check-box input {
     width: 4%;
   }
 
-  .check-box label{
+  .check-box label {
     font-size: 0.9rem;
     left: 1rem;
   }
