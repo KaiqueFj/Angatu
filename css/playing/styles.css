@@ -199,6 +199,8 @@ height: 42vh;
   padding: 3rem 5rem;
 }
 
+
+
 .options button:nth-child(3) {
   transform: rotate(180deg) !important;
 }
@@ -292,6 +294,20 @@ height: 42vh;
     height: 2.8rem;
     width: 11rem;
   }
+
+  .options .play-image{
+width: 3rem;
+height: 3rem;
+  }
+
+  .options .arrows{
+    width: 2rem;
+    height: 2rem;
+
+  }
+  
+   
+  
 }
 
 @media (max-width: 480px) {
