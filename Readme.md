@@ -24,7 +24,7 @@ This application has the features of:
 
 ```
 # Clone the repository
-$ git clone https://github.com/KaiqueFj/Help-Seniors-Back.git
+$ git clone https://github.com/KaiqueFj/Angatu.git
 
 # Enter the repository
 $ cd work
