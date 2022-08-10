@@ -201,7 +201,7 @@ color: var(--white);
 
 /*info das opções*/
 .info {
-padding: 1rem 1rem
+padding: 1rem 0.2rem
 ;}
 
 .title {
@@ -211,7 +211,7 @@ padding: 1rem 1rem
 }
 
 .card {
-  padding: 2rem 0.8rem;
+  padding: 2rem 0.5rem;
   background-color: var(--glass);
   display: flex;
   border-radius: 12px;
@@ -225,7 +225,7 @@ padding: 1rem 1rem
 }
 
 .information {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   line-height: 1rem;
   font-family: var(--font);
   text-align: justify;

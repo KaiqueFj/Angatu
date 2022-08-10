@@ -11,24 +11,24 @@ button {
 }
 
 /*Header style*/
-a {
+a{
   color: var(--white);
   text-decoration: none;
-  transition: 0.3s;
+  transition:0.3s
 }
 
-a:hover {
+a:hover{
   opacity: 0.7;
 }
 
-.logo {
+.logo{
   font-size: 1.5rem;
   letter-spacing: 4px;
   font-family: var(--font-brand);
   color: var(--purple);
 }
 
-nav {
+nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -38,72 +38,78 @@ nav {
   height: 8vh;
 }
 
-.nav-list {
+.nav-list{
   list-style: none;
   display: flex;
   align-items: center;
 }
 
-.nav-list a {
+
+
+.nav-list a{
   letter-spacing: 0.1rem;
   margin-left: 32px;
   color: var(--purple);
 }
 
-.nav-list li:nth-child(5) {
+.nav-list li:nth-child(5){
   width: 9rem;
   background: var(--dark-glass);
-  border-radius: 10px;
-  height: 2.6rem;
-  padding-top: 0.5rem;
-  margin-left: 1rem;
+    border-radius: 10px;
+    height: 2.6rem;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
 }
 
-.nav-list li:nth-child(5):hover {
+.nav-list li:nth-child(5):hover{
   background-color: var(--gray);
   transition: all ease 1s;
   color: var(--white);
 }
 
-.nav-list li:nth-child(6):hover {
-  background-color: var(--dark-purple);
-  transition: all ease 1s;
-  color: var(--white);
+.nav-list li:nth-child(6):hover{
+ 
+background-color: var(--dark-purple);
+transition: all ease 1s;
+color: var(--white);
 }
 
-.nav-list li:nth-child(6) {
+
+
+.nav-list li:nth-child(6){
   background: var(--purple);
-  border-radius: 10px;
-  width: 9rem;
-  height: 2.6rem;
-  padding-top: 0.5rem;
-  margin-left: 1rem;
-  color: var(--white);
+    border-radius: 10px;
+    width: 9rem;
+    height: 2.6rem;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
+    color: var(--white);
 }
 
-.ctn-btn {
+
+.ctn-btn{
   color: var(--black) !important;
   font-weight: 700;
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
-.ctn-btn:hover {
+.ctn-btn:hover{
   color: var(--white) !important;
 }
 
-.sing-btn {
+.sing-btn{
   padding-left: 0.7rem;
   padding-top: 4.2rem;
   color: var(--black) !important;
   font-weight: 700;
-  font-size: 1rem;
+    font-size: 1rem;
 }
-
-.sing-btn:hover {
+  
+.sing-btn:hover{
   color: var(--white) !important;
 }
 
-.mobile-nav {
+.mobile-nav{
   display: none;
   cursor: pointer;
 }
@@ -114,6 +120,7 @@ nav {
   margin: 8px;
   transition: all ease 1s;
 }
+
 
 /*Container of background*/
 /*color of background*/
@@ -130,7 +137,7 @@ body {
   padding: 1rem;
   align-items: center;
   display: flex;
-  width: 56%;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -140,62 +147,57 @@ body {
 }
 
 #lotus-image {
-  width: 4rem;
-  height: 4rem;
+  width: 6rem;
   margin-left: 7rem;
 }
 
-.menu {
-  text-align: center;
-  width: 100%;
-  padding: 1rem;
+.lotus-head input {
+  background: url(../../assets/musicoterapia/Search.png) no-repeat right;
+  background-size: 2.1rem;
+  margin-right: 0.2rem;
+  height: 2.5rem;
+  border-radius: 36px;
+  background-color: var(--light-gray);
 }
 
-.menu img {
-  height: 42vh;
-}
-.menu p {
-  font-size: 3rem;
+.title {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  padding-left: 0.8rem;
   font-family: var(--font);
-  font-weight: 500;
+  align-items: center;
   color: var(--white);
-}
-
-.player {
-  flex-direction: row;
-}
-.player span {
-  color: var(--white);
-  font-size: 2rem;
-}
-
-.player input {
-  height: 3rem;
-  width: 20rem;
-  border-radius: 12px;
 }
 
 .options {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5rem auto;
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  border-color: var(--white) 2px;
+}
+
+.options img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.9s ease-in;
+}
+
+.container p {
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
 }
 
 .options img {
-  width: 3rem;
-  height: 3rem;
+  width: 13rem;
+  height: 16rem;
 }
 
-.options button {
-  background: transparent;
-  border: none;
-  padding: 3rem 5rem;
-}
-
-.options button:nth-child(3) {
-  transform: rotate(180deg) !important;
-}
 /*style of footer*/
 #footer {
   padding: 2rem 0;
@@ -223,11 +225,6 @@ body {
 .img-Footer {
   width: 3rem;
   height: 3rem;
-}
-
-.options .arrows {
-  width: 2rem;
-  height: 2rem;
 }
 
 .footer_socials {
@@ -280,30 +277,31 @@ body {
     display: block;
   }
 
-  #lotus-image {
-    width: 5rem;
-    margin-left: 2.3rem;
+  .options {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .lotus-head input {
-    background-size: 2.1rem;
-    margin-right: 0.2rem;
-    height: 2.8rem;
-    width: 11rem;
-  }
-
-  .options .play-image {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .options .arrows {
-    width: 2rem;
-    height: 2rem;
-  }
+  
+.lotus-head button {
+  background: transparent;
+  border: none;
 }
 
-@media (max-width: 480px) {
+#lotus-image {
+  width: 5rem;
+    margin-left: 2.3rem;
+}
+
+.lotus-head input {
+  background-size: 2.1rem;
+  margin-right: 0.2rem;
+  height: 2.8rem;
+  width: 11rem;
+}
+   
+}
+
+@media (max-width:680px){
   .lotus-head button {
     background: transparent;
     border: none;
@@ -312,54 +310,17 @@ body {
   .lotus-head img {
     width: 3rem;
   }
-
+  
   #lotus-image {
     width: 4rem;
-    margin-left: 2.3rem;
+      margin-left: 2.3rem;
   }
-
+  
   .lotus-head input {
     background-size: 2.1rem;
     margin-right: 0.2rem;
     height: 2.8rem;
     width: 8rem;
-  }
-
-  .menu img {
-    height: 32vh;
-  }
-
-  .menu p {
-    font-size: 1.7rem;
-  }
-
-  .player {
-    flex-direction: row;
-  }
-
-  .player span {
-    color: var(--white);
-    font-size: 1rem;
-  }
-
-  .player input {
-    height: 3rem;
-    width: 14rem;
-    border-radius: 12px;
-  }
-
-  .options {
-    padding: 2rem;
-    width: 100%;
-  }
-
-  .options img {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .options button {
-    padding: 2rem 2rem;
   }
 }
 
