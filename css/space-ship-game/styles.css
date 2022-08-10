@@ -1,0 +1,9 @@
+body{
+    background-color: var(--black);
+    background-image: url(../../assets/space-ship/space-gif.gif);
+}
+
+#space-game{
+    width: 100%;
+    max-height: 60rem;
+}
