@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,24 @@
 
     <title>Game</title>
 </head>
+
 <body>
-    <canvas id="space-game"  width="800" height="400" ></canvas>
-    
-<script src="./javascript/space-ship.js"></script>
+    <canvas id="space-game" width="800" height="400" style="display:none"></canvas>
+
+
+    <div id="Start-container">
+        <h2>Bem vindo, jogador</h2>
+        <h4>Aproveite o jogo ;)</h4>
+        <a onclick="PlayStartButton()">Iniciar Jogo</a>
+    </div>
+
+    <div id="Restart-Container" style="display: none">
+        <h2>Tente outra vez</h2>
+        <a onclick="Restart()">Reinicar o Jogo</a>
+    </div>
+
+
+    <script src="./javascript/space-ship.js"></script>
 </body>
+
 </html>

@@ -1,9 +1,98 @@
-body{
-    background-color: var(--black);
-    background-image: url(../../assets/space-ship/space-gif.gif);
+body {
+  background-color: var(--black);
+  background-image: url(../../assets/space-ship/space-gif.gif);
 }
 
-#space-game{
-    width: 100%;
-    max-height: 60rem;
+#space-game {
+  width: 100%;
+  max-height: 60rem;
+}
+
+#Start-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+
+  margin-top: 20rem;
+  justify-content: center;
+  margin-left: 28%;
+
+  max-width: 100%;
+  width: 45%;
+  font-family: var(--font);
+
+  padding: 2rem;
+  background: var(--glass);
+  border-radius: 15px;
+}
+
+#Restart-Container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+
+  margin-top: 20rem;
+  justify-content: center;
+  margin-left: 28%;
+
+  max-width: 100%;
+  width: 45%;
+  font-family: var(--font);
+
+  padding: 6rem;
+  background: var(--glass);
+  border-radius: 15px;
+}
+
+#Start-container h4 {
+  font-family: var(--font);
+  font-size: 2.7em;
+  text-align: center;
+  color: var(--white);
+  border-radius: 15px;
+  padding: 0.9rem;
+}
+
+#Start-container h2,
+#Restart-Container h2 {
+  font-family: var(--font);
+  font-size: 3.3em;
+  text-align: center;
+  color: var(--white);
+  border-radius: 15px;
+  padding: 0.9rem;
+}
+
+#Start-container a,
+#Restart-Container a {
+  font-family: var(--font);
+  font-size: 2em;
+  color: var(--white);
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 56%;
+  text-align: center;
+  justify-content: center;
+  padding: 1.6rem;
+  margin-left: 21%;
+}
+
+#Start-container a:hover,
+#Restart-Container a:hover {
+  background-color: var(--glass);
+}
+
+@media (max-width: 768px) {
+  #Restart-Container {
+    padding: 1rem;
+  }
+  #Start-container a,
+  #Restart-Container a {
+    font-size: 1.4em;
+  }
+
+  #Start-container h2,
+  #Restart-Container h2 {
+    font-size: 2.2em;
+  }
 }

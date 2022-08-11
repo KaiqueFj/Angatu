@@ -1,6 +1,8 @@
 var canvas = document.getElementById("space-game");
 var ctx = canvas.getContext("2d");
 
+var startGame = document.getElementById('Play')
+
 var sizeAsteroid = 40;
 var step = 10;
 var xSpaceship = Math.floor(canvas.width / 2);
@@ -27,7 +29,7 @@ ctx.font = "20px Arial";
 
 function newAsteroid(x, y) {
     ctx.fillRect(x, y, sizeAsteroid, sizeAsteroid);
-    ctx.drawImage(asteroid,x, y, sizeAsteroid, sizeAsteroid);
+    ctx.drawImage(asteroid, x, y, sizeAsteroid, sizeAsteroid);
 
     console.log("New asteroid: " + xAsteroid + ", " + yAsteroid);
 }
@@ -45,10 +47,11 @@ function drawSpaceship(x, y, widthSpaceship, heightSpaceship) {
     ctx.drawImage(image, x, y, widthSpaceship, heightSpaceship);
 }
 
+
 function move(key) {
-    switch(key.keyCode) {
+    switch (key.keyCode) {
         case 38:
-            if(ySpaceship > step) {
+            if (ySpaceship > step) {
                 ySpaceship -= step;
             } else {
                 ySpaceship = 0;
@@ -56,7 +59,7 @@ function move(key) {
             image.src = "./assets/space-ship/shipUp.jpeg";
             break;
         case 40:
-            if(ySpaceship < canvas.height - step - heightSpaceship) {
+            if (ySpaceship < canvas.height - step - heightSpaceship) {
                 ySpaceship += step;
             } else {
                 ySpaceship = canvas.height - heightSpaceship;
@@ -64,15 +67,15 @@ function move(key) {
             image.src = "./assets/space-ship/ship-down.jpeg";
             break;
         case 37:
-            if(xSpaceship > step) {
+            if (xSpaceship > step) {
                 xSpaceship -= step;
             } else {
                 xSpaceship = 0;
             }
             image.src = "./assets/space-ship/ship-left.jpeg";
             break;
-        case 39: 
-            if(xSpaceship < canvas.width - step - widthSpaceship) {
+        case 39:
+            if (xSpaceship < canvas.width - step - widthSpaceship) {
                 xSpaceship += step;
             } else {
                 xSpaceship = canvas.width - widthSpaceship;
@@ -84,7 +87,7 @@ function move(key) {
 }
 
 function detectColision(xSpaceship, ySpaceship, widthSpaceship, heightSpaceship, xAsteroid, yAsteroid, widthAsteroid, heightAsteroid) {
-    if(((xSpaceship + widthSpaceship) > xAsteroid && (xAsteroid + widthAsteroid) > xSpaceship) && ((ySpaceship + heightSpaceship) > yAsteroid && (yAsteroid + heightAsteroid) > ySpaceship)) {
+    if (((xSpaceship + widthSpaceship) > xAsteroid && (xAsteroid + widthAsteroid) > xSpaceship) && ((ySpaceship + heightSpaceship) > yAsteroid && (yAsteroid + heightAsteroid) > ySpaceship)) {
         console.log("Colision!");
         return true;
     } else {
@@ -105,19 +108,18 @@ function calculateScore() {
     deltaT = Math.floor((t - t0) / 1000);
     return deltaT;
 }
-
-function gameOver() {
-    ctx.font = "40px Helvetica";
-    ctx.fillStyle = "red";
-    ctx.fillText("GAME OVER", canvas.width/2 - 120, canvas.height/2);
-}
+ 
 
 function gameLoop() {
+
+
     clearCanvas();
 
     // add score
-    score = calculateScore();
+    var score = calculateScore();
+
     scoreboard(score, level);
+
 
     // create asteroids at random places
     xAsteroid = Math.floor(Math.random() * canvas.width);
@@ -128,23 +130,67 @@ function gameLoop() {
     drawSpaceship(xSpaceship, ySpaceship, widthSpaceship, heightSpaceship);
 
     // check colision
-    if(detectColision(xSpaceship, ySpaceship, widthSpaceship, heightSpaceship, xAsteroid, yAsteroid, sizeAsteroid, sizeAsteroid)) {
-        gameOver();
+    if (detectColision(xSpaceship, ySpaceship, widthSpaceship, heightSpaceship, xAsteroid, yAsteroid, sizeAsteroid, sizeAsteroid)) {
+        GameOver();
+
     } else {
-        if(score > 0 && score % 10 == 0) {
+        if (score > 0 && score % 10 == 0) {
             //     fps = fps*1.5;
             //     level += 1;
             // }
             level = Math.floor(score / 5) + 1;
             fps = 2 + level * 0.5;
 
-}
-        setTimeout(function() {
+        }
+        setTimeout(function () {
             requestAnimationFrame(gameLoop);
         }, 1000 / fps);
     }
+
+
 }
 
-requestAnimationFrame(gameLoop);
+function PlayStartButton() {
+
+    let startContainer = document.getElementById("Start-container");
+    let canvas = document.getElementById("space-game");
+    let RestartContainer = document.getElementById("Restart-Container");
+
+    startContainer.style.display = "none";
+    canvas.style.display = "block";
+    RestartContainer.style.display = "none";
+
+    requestAnimationFrame(gameLoop);
+}
+
+function GameOver() {
+
+
+    let RestartContainer = document.getElementById("Restart-Container");
+    let canvas = document.getElementById("space-game");
+
+    RestartContainer.style.display = "grid";
+    canvas.style.display = "none";
+
+}
+
+function Restart() {
+
+    let startContainer = document.getElementById("Start-container");
+    let canvas = document.getElementById("space-game");
+    let RestartContainer = document.getElementById("Restart-Container");
+
+    startContainer.style.display = "none";
+    canvas.style.display = "block";
+
+
+    fps = 2;
+    level = 1;
+    requestAnimationFrame(gameLoop).remove
+
+
+}
+
+
 
 window.onkeydown = move;   
