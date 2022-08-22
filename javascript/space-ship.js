@@ -97,10 +97,13 @@ function detectColision(xSpaceship, ySpaceship, widthSpaceship, heightSpaceship,
 }
 
 function scoreboard(score, level) {
-    ctx.strokeStyle = 'white';
-
-    ctx.strokeText("PONTOS: " + score, 10, canvas.height - 10);
-    ctx.strokeText("LEVEL: " + level, 10, 30);
+    ctx.font = '22px "Poppins"';
+    ctx.textAlign = 'left';
+    ctx.fillStyle = 'white';
+    ctx.fillText(`Level:`+level, canvas.width - 780, canvas.height-350);      
+    ctx.fillText(`Pontos:`+score, canvas.width - 780, canvas.height -5); 
+     
+    
 }
 
 function calculateScore() {
@@ -159,6 +162,8 @@ function PlayStartButton() {
     startContainer.style.display = "none";
     canvas.style.display = "block";
     RestartContainer.style.display = "none";
+
+    score = 0
 
     requestAnimationFrame(gameLoop);
 }
