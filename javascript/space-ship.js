@@ -109,11 +109,6 @@ function scoreboard(score, level) {
     ctx.fillText(`Level:` + level, canvas.width - 780, canvas.height - 350);
 }
 
-function calculateScore() {
-    t = new Date().getTime();
-    deltaT = Math.floor((t - t0) / 1000);
-    return deltaT;
-}
 
 function createScoreboard() {
     const scoreboard = {
