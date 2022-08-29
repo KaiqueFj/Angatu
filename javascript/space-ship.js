@@ -2,8 +2,10 @@ var startGame = document.getElementById('Play')
 let canvas = document.getElementById("space-game");
 let ctx = canvas.getContext("2d");
 let t0 = new Date().getTime();
+
 let t, deltaT;
 let fps = 2;
+let activeScreen = {}
 
 let image = new Image();
 image.src = "./assets/space-ship/shipUp.jpeg";
@@ -11,6 +13,7 @@ image.src = "./assets/space-ship/shipUp.jpeg";
 const asteroid = new Image();
 asteroid.src = "./assets/space-ship/meteor.gif"
 
+const globals = {}
 
 const asteroide = {
     sizeAsteroid: 40,
@@ -100,10 +103,10 @@ function createScoreboard() {
         level: 1,
         draw() {
             ctx.font = '0.97em "Press Start 2P"';
-            ctx.textAlign = 'left';
+            ctx.textAlign = 'start';
             ctx.fillStyle = 'white'
-            ctx.fillText(`Pontos: ${this.points}`, canvas.width - 780, canvas.height - 5);
-            ctx.fillText(`Level: ${this.level}`, canvas.width - 780, canvas.height - 350);
+            ctx.fillText(`Level: ${this.level}`, 20, 30);
+            ctx.fillText(`Pontos: ${this.points}`, 20, canvas.height - 40);
         },
         update() {
             const intervalToCalculate = 2;
@@ -112,7 +115,9 @@ function createScoreboard() {
             if (afterInterval) {
                 this.points = this.points + 1
                 this.level = Math.floor(this.points / 5) + 1;
+                fps = 1 + this.level * 0.5;
             }
+
         },
 
     }
@@ -126,67 +131,72 @@ function CreateGameplay() {
             ctx.drawImage(image, Nave.xSpaceship, Nave.ySpaceship, Nave.widthSpaceship, Nave.heightSpaceship);
         },
 
-        drawNewAsteroid() {
+        update() {
             asteroide.xAsteroid = Math.floor(Math.random() * canvas.width);
             asteroide.yAsteroid = Math.floor(Math.random() * canvas.height);
+        },
+
+        drawNewAsteroid() {
+
             newAsteroid(asteroide.xAsteroid, asteroide.yAsteroid);
         },
 
         Colision() {
             if (detectColision(Nave.xSpaceship, Nave.ySpaceship, Nave.widthSpaceship, Nave.heightSpaceship, asteroide.xAsteroid, asteroide.yAsteroid, asteroide.sizeAsteroid, asteroide.sizeAsteroid)) {
-                GameOver();
-
+                ChangeScreen(screens.GAME_OVER)
+                return
             }
         }
 
     }
-
-
-
     return createGame
 }
 
+function createIntroPage() {
+    const firstScreen = {
+        draw() {
+            let startContainer = document.getElementById("Start-container");
+            let canvas = document.getElementById("space-game");
+            let GameOverContainer = document.getElementById("GameOver-Container");
+
+            startContainer.style.display = "grid";
+            canvas.style.display = "none";
+            GameOverContainer.style.display = "none";
+
+        }
+
+    }
+    return firstScreen;
+}
 
 
 
 function PlayStartButton() {
     let startContainer = document.getElementById("Start-container");
     let canvas = document.getElementById("space-game");
-    let RestartContainer = document.getElementById("Restart-Container");
+    let GameOverContainer = document.getElementById("GameOver-Container");
 
 
     startContainer.style.display = "none";
+    GameOverContainer.style.display = "none";
+
     canvas.style.display = "block";
-    RestartContainer.style.display = "none";
-    requestAnimationFrame(gameLoop)
+
 
 }
 
 function GameOver() {
 
 
-    let RestartContainer = document.getElementById("Restart-Container");
+    let GameOverContainer = document.getElementById("GameOver-Container");
     let canvas = document.getElementById("space-game");
 
-    RestartContainer.style.display = "grid";
+    GameOverContainer.style.display = "grid";
     canvas.style.display = "none";
 
 }
 
-function Restart() {
 
-    let startContainer = document.getElementById("Start-container");
-    let canvas = document.getElementById("space-game");
-    let RestartContainer = document.getElementById("Restart-Container");
-    RestartContainer.style.display = "none";
-
-    startContainer.style.display = "none";
-    canvas.style.display = "block";
-
-}
-
-const globals = {}
-let activeScreen = {}
 
 function ChangeScreen(Newscreen) {
     activeScreen = Newscreen
@@ -200,21 +210,21 @@ function ChangeScreen(Newscreen) {
 const screens = {
     Begin: {
         start() {
+            globals.Begin = createIntroPage()
             globals.Spaceship = CreateGameplay();
-            clearCanvas();
-
 
         },
 
         draw() {
-
+            clearCanvas()
+            globals.Begin.draw()
 
         },
+
         click() {
             ChangeScreen(screens.GAMEPLAY);
         },
         update() {
-
         }
 
     }
@@ -224,16 +234,20 @@ screens.GAMEPLAY = {
     start() {
         globals.scoreboard = createScoreboard();
     },
-    
+
+    update() {
+
+        globals.scoreboard.update();
+        globals.Spaceship.update();
+
+    },
     draw() {
+        clearCanvas()
+
         globals.scoreboard.draw();
         globals.Spaceship.drawNewAsteroid();
         globals.Spaceship.drawSpaceship();
-    },
-    update() {
-        globals.scoreboard.update();
-        globals.Spaceship.drawNewAsteroid();
-        globals.Spaceship.drawSpaceship();
+        globals.Spaceship.Colision()
     },
 };
 
@@ -242,6 +256,7 @@ screens.GAME_OVER = {
         GameOver()
     },
     update() {
+        globals.Spaceship.update()
 
     },
     click() {
@@ -255,8 +270,9 @@ function gameLoop() {
     activeScreen.draw();
     activeScreen.update();
 
+    setTimeout(function () {
         requestAnimationFrame(gameLoop);
-    
+    }, 1000 / fps);
 }
 
 window.addEventListener('click', function () {

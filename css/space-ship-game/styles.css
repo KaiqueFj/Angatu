@@ -26,7 +26,7 @@ body {
   border-radius: 15px;
 }
 
-#Restart-Container {
+#GameOver-Container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
@@ -54,7 +54,7 @@ body {
 }
 
 #Start-container h2,
-#Restart-Container h2 {
+#GameOver-Container h2 {
   font-family: var(--font);
   font-size: 3.3em;
   text-align: center;
@@ -64,7 +64,7 @@ body {
 }
 
 #Start-container a,
-#Restart-Container a {
+#GameOver-Container a {
   font-family: var(--font);
   font-size: 2em;
   color: var(--white);
@@ -78,21 +78,21 @@ body {
 }
 
 #Start-container a:hover,
-#Restart-Container a:hover {
+#GameOver-Container a:hover {
   background-color: var(--glass);
 }
 
 @media (max-width: 768px) {
-  #Restart-Container {
+  #GameOver-Container {
     padding: 1rem;
   }
   #Start-container a,
-  #Restart-Container a {
+  #GameOver-Container a {
     font-size: 1.4em;
   }
 
   #Start-container h2,
-  #Restart-Container h2 {
+  #GameOver-Container h2 {
     font-size: 2.2em;
   }
 }
