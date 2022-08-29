@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global/global.css">
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+
+
+    <title>Game</title>
+    
+</head>
+<body>
+    <canvas id="gameteste" width="800" height="400" style="display:none"></canvas>
+
+
+    <div id="Start-container">
+        <h2>Bem vindo, jogador</h2>
+        <h4>Aproveite o jogo ;)</h4>
+        <a onclick="PlayStartButton()">Iniciar Jogo</a>
+    </div>
+
+    <div id="GameOver-Container" style="display: none">
+        <h2>Tente outra vez</h2>
+        <a onclick="createIntroPage()">Reinicar o Jogo</a>
+    </div>
+
+
+<script src="./javascript/phaser.js"></script>
+<body>

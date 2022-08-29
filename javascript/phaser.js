@@ -5,45 +5,85 @@ let ctx = canvas.getContext("2d");
 let fps = 2;
 let activeScreen = {}
 
-let image = new Image();
-image.src = "./assets/space-ship/shipUp.jpeg";
+const Boyimage = new Image();
+Boyimage.src = "./assets/space-ship/shipUp.jpeg";
 
-const asteroid = new Image();
-asteroid.src = "./assets/space-ship/meteor.gif"
+const monster = new Image();
+monster.src = "./assets/space-ship/meteor.gif"
+
+const groundImage = new Image();
+groundImage.src = "./assets/Phaser/ground.jpeg"
 
 const globals = {}
 
-const asteroide = {
-    sizeAsteroid: 40,
-    xAsteroid: 0,
-    yAsteroid: 0
-};
-
-const Nave = {
-    xSpaceship: Math.floor(canvas.width / 2),
-    ySpaceship: Math.floor(canvas.height / 2),
-    widthSpaceship: 50,
-    heightSpaceship: 50,
+const Boy = {
+   x:30,
+   y:canvas.width -114,
+    boyWidth: 50,
+    BoyHeight: 50,
     step: 10,
 };
 
-console.log(Nave.xSpaceship, Nave.ySpaceship);
-console.log(Nave.widthSpaceship, Nave.heightSpaceship);
+const Monster = {
+    x:70,
+    y:canvas.width-114,
+    size:30
+};
 
+
+function CreateGround() {
+    const ground = {
+        positionX: 0,
+        positionY: 610,
+        width: 224,
+        height: 112,
+        x: 0,
+        y: canvas.height - 112,
+        update() {
+            const groudMoviment = 1;
+            const repeat = ground.largura / 2;
+            const movement = ground.x - groudMoviment;
+
+            // console.log('[chao.x]', chao.x);
+            // console.log('[repeat]',repeat);
+            // console.log('[moviment]', moviment % repeat);
+
+            ground.x = movement % repeat;
+        },
+        desenha() {
+            ctx.drawImage(
+                this.positionX,
+                this.positionX, this.positionY,
+                this.width, this.height,
+                this.x, this.y,
+                this.width, this.height,
+            );
+
+            ctx.drawImage(
+                groundImage,
+                this.positionX, this.positionY,
+                this.width, this.height,
+                (this.x + this.width), this.y,
+                this.width, this.height,
+            );
+        },
+    };
+    return ground;
+}
 
 function clearCanvas() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
+function drawBoy() {
+    ctx.drawImage(Boyimage, Boy.x, Boy.y, Boy.boyWidth, Boy.BoyHeight);
+}
 
-function newAsteroid(x, y) {
-    ctx.fillRect(x, y, asteroide.sizeAsteroid, asteroide.sizeAsteroid);
-    ctx.drawImage(asteroid, x, y, asteroide.sizeAsteroid, asteroide.sizeAsteroid);
+function newMonster(x, y) {
+    ctx.fillRect(x, y, Monster.size, Monster.size);
+    ctx.drawImage(monster, x, y, Monster.size, monster.size);
 }
 
 
-function drawSpaceship() {
-    ctx.drawImage(image, Nave.xSpaceship, Nave.ySpaceship, Nave.widthSpaceship, Nave.heightSpaceship);
-}
 
 function move(key) {
     switch (key.keyCode) {
@@ -82,46 +122,6 @@ function move(key) {
     }
 }
 
-
-function detectColision(xSpaceship, ySpaceship, widthSpaceship, heightSpaceship, xAsteroid, yAsteroid, widthAsteroid, heightAsteroid) {
-
-    if (((xSpaceship + widthSpaceship) > xAsteroid && (xAsteroid + widthAsteroid) > xSpaceship) && ((ySpaceship + heightSpaceship) > yAsteroid && (yAsteroid + heightAsteroid) > ySpaceship)) {
-        console.log("Colision!");
-        return true;
-    } else {
-        console.log("Safe");
-        return false;
-    }
-}
-
-
-function createScoreboard() {
-    const scoreboard = {
-        points: 0,
-        level: 1,
-        draw() {
-            ctx.font = '0.97em "Press Start 2P"';
-            ctx.textAlign = 'start';
-            ctx.fillStyle = 'white'
-            ctx.fillText(`Level: ${this.level}`, 20, 30);
-            ctx.fillText(`Pontos: ${this.points}`, 20, canvas.height - 40);
-        },
-        update() {
-            const intervalToCalculate = 2;
-            const afterInterval = 2 % intervalToCalculate === 0;
-
-            if (afterInterval) {
-                this.points = this.points + 1
-                this.level = Math.floor(this.points / 5) + 1;
-                fps = 1 + this.level * 0.5;
-            }
-
-        },
-
-    }
-    console.log(this.points)
-    return scoreboard
-}
 
 function CreateGameplay() {
     const createGame = {
