@@ -16,16 +16,19 @@ const globals = {}
 
 const player = {
     xPlayer: 0,
-    yPlayer: canvas.height -25,
+    yPlayer: canvas.height -100,
     widthPlayer: 120,
     heightPlayer: 120,
     step: 10,
+    jump:4.6,
+    gravity:0.25,
+    speed :0
 };
 
 const monster = {
     sizeMonster: 120,
     xMonster: canvas.width-10,
-    yMonster: canvas.height-10,
+    yMonster: canvas.height -100,
 };
 
 
@@ -50,8 +53,11 @@ function move(key) {
     switch (key.keyCode) {
         case 38:
             if (player.yPlayer > player.step) {
-                player.yPlayer-= player.step;
-            } else {
+                player.yPlayer-= player.step
+            } 
+            
+            
+            else {
                 player.yPlayer= 0;
             }
            
@@ -105,12 +111,19 @@ function CreateGameplay() {
             ctx.drawImage(Player, player.xPlayer, player.yPlayer, player.widthPlayer, player.heightPlayer);
         },
 
+        heroJump() {
+            
+                player.speed =  - player.jump;
+              
+        },
+        
         update() {
             const intervalToCalculate = 2;
             const afterInterval = 2 % intervalToCalculate === 0;
 
-            if (afterInterval) {
-              monster.xMonster = monster.xMonster - 1
+            if (afterInterval & monster.xMonster < canvas.width) {
+
+              monster.xMonster = monster.xMonster - 100 
             }
         },
 
@@ -124,10 +137,14 @@ function CreateGameplay() {
                 ChangeScreen(screens.GAME_OVER)
                 return
             }
-        }
+        },
 
     }
+    
+    player.speed = player.speed + player.gravity;
+    player.yPlayer = player.yPlayer + player.speed;
     return createGame
+    
 }
 
 
