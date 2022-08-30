@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" onclick="jump()">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Jump Game</title>
     <link rel="stylesheet" href="./css/invade/styles.css">
 </head>
 <body>
-    <div class="game">
-        <div id="character"></div>
-        <div id="block"></div>
+
+    <canvas id="invade-game" width="800" height="400" style="display:none"></canvas>
+
+
+    <div id="Start-container">
+        <h2>Bem vindo, jogador</h2>
+        <h4>Aproveite o jogo ;)</h4>
+        <a onclick="PlayStartButton()">Iniciar Jogo</a>
     </div>
-    <p>Score: <span id="scoreSpan"></span></p>
+
+    <div id="GameOver-Container" style="display: none">
+        <h2>Tente outra vez</h2>
+        <a onclick="createIntroPage()">Reinicar o Jogo</a>
+    </div>
+
+
 </body>
+
 <script src="./javascript/Invade.js"></script>
 </html>

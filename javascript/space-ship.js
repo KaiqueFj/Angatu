@@ -1,6 +1,7 @@
 var startGame = document.getElementById('Play')
-let canvas = document.getElementById("gameteste");
+let canvas = document.getElementById("space-game");
 let ctx = canvas.getContext("2d");
+
 
 let fps = 2;
 let activeScreen = {}
