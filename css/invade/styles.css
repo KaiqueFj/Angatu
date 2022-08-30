@@ -1,5 +1,7 @@
 body {
     background-color: var(--black);
+    background-image: url(../../assets//invade/background.gif);
+
     background-size: cover;
   }
   #invade-game {
@@ -47,7 +49,7 @@ body {
     font-family: var(--font);
     font-size: 2.7em;
     text-align: center;
-    color: var(--white);
+    color: var(--black);
     border-radius: 15px;
     padding: 0.9rem;
   }
@@ -57,7 +59,7 @@ body {
     font-family: var(--font);
     font-size: 3.3em;
     text-align: center;
-    color: var(--white);
+    color: var(--black);
     border-radius: 15px;
     padding: 0.9rem;
   }
@@ -66,8 +68,8 @@ body {
   #GameOver-Container a {
     font-family: var(--font);
     font-size: 2em;
-    color: var(--white);
-    border: 2px solid white;
+    color: var(--black);
+    border: 2px solid black;
     border-radius: 15px;
     width: 56%;
     text-align: center;

@@ -10,7 +10,7 @@ const Player = new Image();
 Player.src = "./assets/invade/character.gif";
 
 const Monster = new Image();
-Monster.src = "./assets/invade/monster.gif";
+Monster.src = "./assets/invade/monster.png";
 
 const globals = {}
 
@@ -20,15 +20,12 @@ const player = {
     widthPlayer: 120,
     heightPlayer: 120,
     step: 10,
-    jump:4.6,
-    gravity:0.25,
-    speed :0
 };
 
 const monster = {
     sizeMonster: 120,
-    xMonster: canvas.width-10,
-    yMonster: canvas.height -100,
+    xMonster: canvas.width-100,
+    yMonster: canvas.height -120,
 };
 
 
@@ -52,22 +49,21 @@ console.log(monster.xMonster, monster.yMonster)
 function move(key) {
     switch (key.keyCode) {
         case 38:
-            if (player.yPlayer > player.step) {
-                player.yPlayer-= player.step
-            } 
-            
+            if (player.yPlayer > canvas.height-240) {
+                player.yPlayer = player.yPlayer -30
+            }  
             
             else {
-                player.yPlayer= 0;
+                player.yPlayer= canvas.height-100;
             }
            
     }
 }
 
 
-function detectColision(Xplayer,yPlayer,Xmonster,Ymonster) {
-
-    if (Xplayer = Xmonster && yPlayer <= Ymonster  ) {
+function detectColision(Xplayer,yPlayer,Xmonster,yMonster) {
+ 
+    if (Xplayer >= Xmonster && yPlayer <= yMonster) {
         console.log("Colision!");
         return true;
     } else {
@@ -105,35 +101,35 @@ function createScoreboard() {
     return scoreboard
 }
 
+
 function CreateGameplay() {
     const createGame = {
         drawPlayer() {
             ctx.drawImage(Player, player.xPlayer, player.yPlayer, player.widthPlayer, player.heightPlayer);
         },
 
-        heroJump() {
-            
-                player.speed =  - player.jump;
-              
-        },
         
         update() {
             const intervalToCalculate = 2;
             const afterInterval = 2 % intervalToCalculate === 0;
 
-            if (afterInterval & monster.xMonster < canvas.width) {
-
+            if (afterInterval) {
+             
               monster.xMonster = monster.xMonster - 100 
+
             }
         },
 
         drawMonster() {
 
             DrawVillain(monster.xMonster, monster.yMonster);
+            if(monster.xMonster > canvas.width) {
+                monster.xMonster = canvas.width - 100
+            }
         },
 
         Colision() {
-            if (detectColision(player.xPlayer, player.yPlayer, monster.xMonster, monster.yMonster)) {
+            if (detectColision(player.xPlayer,player.yPlayer, monster.xMonster, monster.yMonster)) {
                 ChangeScreen(screens.GAME_OVER)
                 return
             }
@@ -141,8 +137,7 @@ function CreateGameplay() {
 
     }
     
-    player.speed = player.speed + player.gravity;
-    player.yPlayer = player.yPlayer + player.speed;
+   
     return createGame
     
 }
@@ -242,6 +237,7 @@ screens.GAMEPLAY = {
         globals.scoreboard.draw();
         globals.game.drawMonster();
         globals.game.drawPlayer();
+       // globals.game.Colision()
     },
 };
 
