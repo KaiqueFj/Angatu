@@ -16,7 +16,7 @@ const globals = {}
 
 const player = {
     xPlayer: 0,
-    yPlayer: canvas.height -100,
+    yPlayer: canvas.height - 100,
     widthPlayer: 120,
     heightPlayer: 120,
     step: 10,
@@ -24,8 +24,8 @@ const player = {
 
 const monster = {
     sizeMonster: 120,
-    xMonster: canvas.width-100,
-    yMonster: canvas.height -120,
+    xMonster: canvas.width - 100,
+    yMonster: canvas.height - 120,
 };
 
 
@@ -49,20 +49,20 @@ console.log(monster.xMonster, monster.yMonster)
 function move(key) {
     switch (key.keyCode) {
         case 38:
-            if (player.yPlayer > canvas.height-240) {
-                player.yPlayer = player.yPlayer -30
-            }  
-            
-            else {
-                player.yPlayer= canvas.height-100;
+            if (player.yPlayer > canvas.height - 240) {
+                player.yPlayer = player.yPlayer - 30
             }
-           
+
+            else {
+                player.yPlayer = canvas.height - 100;
+            }
+
     }
 }
 
 
-function detectColision(Xplayer,yPlayer,Xmonster,yMonster) {
- 
+function detectColision(Xplayer, yPlayer, Xmonster, yMonster) {
+
     if (Xplayer >= Xmonster && yPlayer <= yMonster) {
         console.log("Colision!");
         return true;
@@ -108,14 +108,14 @@ function CreateGameplay() {
             ctx.drawImage(Player, player.xPlayer, player.yPlayer, player.widthPlayer, player.heightPlayer);
         },
 
-        
+
         update() {
             const intervalToCalculate = 2;
             const afterInterval = 2 % intervalToCalculate === 0;
 
             if (afterInterval) {
-             
-              monster.xMonster = monster.xMonster - 100 
+
+                monster.xMonster = monster.xMonster - 100
 
             }
         },
@@ -123,23 +123,23 @@ function CreateGameplay() {
         drawMonster() {
 
             DrawVillain(monster.xMonster, monster.yMonster);
-            if(monster.xMonster > canvas.width) {
+            if (monster.xMonster > canvas.width) {
                 monster.xMonster = canvas.width - 100
             }
         },
 
         Colision() {
-            if (detectColision(player.xPlayer,player.yPlayer, monster.xMonster, monster.yMonster)) {
+            if (detectColision(player.xPlayer, player.yPlayer, monster.xMonster, monster.yMonster)) {
                 ChangeScreen(screens.GAME_OVER)
                 return
             }
         },
 
     }
-    
-   
+
+
     return createGame
-    
+
 }
 
 
@@ -237,7 +237,7 @@ screens.GAMEPLAY = {
         globals.scoreboard.draw();
         globals.game.drawMonster();
         globals.game.drawPlayer();
-       // globals.game.Colision()
+        globals.game.Colision()
     },
 };
 

@@ -25,7 +25,7 @@ const Nave = {
     ySpaceship: Math.floor(canvas.height / 2),
     widthSpaceship: 50,
     heightSpaceship: 50,
-    step: 10,
+    step: 4.50, //how the spaceship are dislocated 
 };
 
 console.log(Nave.xSpaceship, Nave.ySpaceship);
