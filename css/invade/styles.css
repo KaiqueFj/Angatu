@@ -1,7 +1,8 @@
 body {
     background-color: var(--black);
     background-image: url(../../assets//invade/background.gif);
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
   }
   #invade-game {

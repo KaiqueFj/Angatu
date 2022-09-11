@@ -3,6 +3,12 @@ body {
   background-image: url(../../assets/space-ship/space-gif.gif);
 }
 
+
+.return-button  {
+  background: transparent;
+  margin-left: 1.2rem;
+  margin-top: 0.4rem;
+}
 #space-game {
   width: 100%;
   max-height: 60rem;

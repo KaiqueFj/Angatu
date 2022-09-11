@@ -6,6 +6,9 @@ let ctx = canvas.getContext("2d");
 let fps = 2;
 let activeScreen = {}
 
+const floor = new Image();
+floor.src = "";
+
 const Player = new Image();
 Player.src = "./assets/invade/character.gif";
 
@@ -58,6 +61,10 @@ function move(key) {
             }
 
     }
+}
+
+function createFloor() { 
+
 }
 
 
