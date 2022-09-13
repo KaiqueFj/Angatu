@@ -1,13 +1,17 @@
 body {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: var(--black);
   background-image: url(../../assets//invade/machine.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 42rem;
+}
+
+#gameplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
 }
 
 canvas {
@@ -17,6 +21,13 @@ canvas {
   background-size: cover;
   margin: 0 auto;
   border: 1px solid var(--gray);
+}
+
+.return-button  {
+  background: transparent;
+  margin-left: 1.2rem;
+  margin-top: 0.4rem;
+  border: none;
 }
 
 #Start-container {
@@ -54,7 +65,7 @@ canvas {
   padding: 0.9rem;
 }
 
-.return-button  {
+.return-button {
   background: transparent;
   margin-left: 1.2rem;
   margin-top: 0.4rem;

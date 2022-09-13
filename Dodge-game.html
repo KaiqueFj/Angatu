@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +10,36 @@
 
     <link rel="stylesheet" href="./css/dodge-game/styles.css">
 </head>
+
 <body>
 
-    <canvas id="invade-game"  width="500" height="500"  style="display:none"></canvas>
+    <section id="nav">
+        <button class="return-button" onClick='history.back()'> <img src="./assets/games/Vector.png"
+                alt="left-arrow"></button>
 
 
-    <div id="Start-container">
-        <h2>Bem vindo, jogador</h2>
-        <h4>Aproveite o jogo ;)</h4>
-        <a onclick="PlayStartButton()">Iniciar Jogo</a>
-    </div>
+    </section>
 
-    <div id="GameOver-Container" style="display: none">
-        <h2>Tente outra vez</h2>
-        <a onclick="createIntroPage()">Reinicar o Jogo</a>
-    </div>
+    <section id="gameplay">
+        <canvas id="invade-game" width="500" height="500" style="display:none"></canvas>
 
+
+        <div id="Start-container">
+            <h2>Bem vindo, jogador</h2>
+            <h4>Aproveite o jogo ;)</h4>
+            <a onclick="PlayStartButton()">Iniciar Jogo</a>
+        </div>
+
+        <div id="GameOver-Container" style="display: none">
+            <h2>Tente outra vez</h2>
+            <a onclick="createIntroPage()">Reinicar o Jogo</a>
+        </div>
+
+
+    </section>
 
 </body>
 
 <script src="./javascript/dodge-game.js"></script>
+
 </html>
