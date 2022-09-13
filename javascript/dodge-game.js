@@ -6,20 +6,20 @@ let ctx = canvas.getContext("2d");
 let fps = 2;
 let activeScreen = {}
 
-const floor = new Image();
-floor.src = "";
+const Floor = new Image();
+Floor.src = "./assets/invade/ground2.jpg";
 
 const Player = new Image();
 Player.src = "./assets/invade/character.gif";
 
 const Monster = new Image();
-Monster.src = "./assets/invade/monster.png";
+Monster.src = "./assets/invade/monster2.gif";
 
 const globals = {}
 
 const player = {
     xPlayer: 0,
-    yPlayer: canvas.height - 100,
+    yPlayer: canvas.height - 167,
     widthPlayer: 120,
     heightPlayer: 120,
     step: 10,
@@ -28,7 +28,7 @@ const player = {
 const monster = {
     sizeMonster: 120,
     xMonster: canvas.width - 100,
-    yMonster: canvas.height - 120,
+    yMonster: canvas.height -188,
 };
 
 
@@ -42,7 +42,7 @@ function DrawPlayer() {
     ctx.drawImage(Player, player.xPlayer, player.yPlayer, player.widthPlayer, player.heightPlayer);
 }
 function DrawVillain(x, y) {
-    ctx.fillRect(x, y, monster.sizeMonster, monster.sizeMonster);
+    ctx.fillRect( Monster, x, y, monster.sizeMonster, monster.sizeMonster);
     ctx.drawImage(Monster, x, y, monster.sizeMonster, monster.sizeMonster);
 }
 
@@ -52,25 +52,56 @@ console.log(monster.xMonster, monster.yMonster)
 function move(key) {
     switch (key.keyCode) {
         case 38:
-            if (player.yPlayer > canvas.height - 240) {
+            if (player.yPlayer > canvas.height - 270) {
                 player.yPlayer = player.yPlayer - 30
             }
 
             else {
-                player.yPlayer = canvas.height - 100;
+                player.yPlayer =  canvas.height - 167
             }
 
     }
 }
 
-function createFloor() { 
+function createFloor() {
+    const floor = {
+        spriteX: 0,
+        spriteY: 0,
+        width: 800,
+        height: 80,
+        x: 0,
+        y: canvas.height -70,
+
+        update() {
+            const movementOfloor = 1;
+            const repeat = floor.width / 200;
+            const movement = floor.x - movementOfloor;
+
+            floor.x = movement % repeat
+
+            console.log("criando chão")
+            console.log(floor.x)
+            console.log(floor.y)
+        },
+
+        draw() {
+            ctx.drawImage(
+            Floor,
+            floor.x, floor.y,
+            floor.width, floor.height
+            )
+        }
+
+    }
+
+    return floor
 
 }
 
 
 function detectColision(Xplayer, yPlayer, Xmonster, yMonster) {
 
-    if (Xplayer >= Xmonster && yPlayer <= yMonster) {
+    if (Xplayer >= Xmonster) {
         console.log("Colision!");
         return true;
     } else {
@@ -78,6 +109,7 @@ function detectColision(Xplayer, yPlayer, Xmonster, yMonster) {
         return false;
     }
 }
+
 
 
 function createScoreboard() {
@@ -89,7 +121,7 @@ function createScoreboard() {
             ctx.textAlign = 'start';
             ctx.fillStyle = 'white'
             ctx.fillText(`Level: ${this.level}`, 20, 30);
-            ctx.fillText(`Pontos: ${this.points}`, 20, canvas.height - 40);
+            ctx.fillText(`Pontos: ${this.points}`, canvas.width - 180, 30);
         },
         update() {
             const intervalToCalculate = 2;
@@ -122,7 +154,7 @@ function CreateGameplay() {
 
             if (afterInterval) {
 
-                monster.xMonster = monster.xMonster - 100
+                monster.xMonster = monster.xMonster - 20
 
             }
         },
@@ -156,6 +188,7 @@ function createIntroPage() {
             let startContainer = document.getElementById("Start-container");
             let canvas = document.getElementById("invade-game");
             let GameOverContainer = document.getElementById("GameOver-Container");
+            
 
             startContainer.style.display = "grid";
             canvas.style.display = "none";
@@ -209,6 +242,7 @@ const screens = {
         start() {
             globals.Begin = createIntroPage()
             globals.game = CreateGameplay();
+            globals.floor = createFloor()
 
         },
 
@@ -236,12 +270,13 @@ screens.GAMEPLAY = {
 
         globals.scoreboard.update();
         globals.game.update();
+        globals.floor.update();
 
     },
     draw() {
         clearCanvas()
-
         globals.scoreboard.draw();
+        globals.floor.draw();
         globals.game.drawMonster();
         globals.game.drawPlayer();
         globals.game.Colision()
