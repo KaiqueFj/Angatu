@@ -17,7 +17,9 @@
 </head>
 
 <body>
-    
+
+    <div id="main">
+        
         <header>
 
             <nav id="nav">
@@ -41,23 +43,27 @@
             </nav>
     
         </header>
-        <div id="main">
-
+    </div>
+    
       
         <section id="container">
-            <div class="lotus-head">
+            <div class="music-header">
 
                     <button onClick='history.back()' > <img src="./assets/musicoterapia/Vector.png" alt="left-arrow"></button>
         
                      <img src="./assets/musicoterapia/Music-Icon.png" alt="lotus" id="lotus-image">
         
+                     <button > <img src="./assets/playing/dots.png"  class = "options"alt="options"></button>
+
             </div>
       
     
         </section>
 
         <section id="container">
-            <div class="menu">
+
+            <div class="container-song">
+                <div class="main-song">
                     <img src="./assets/playing/Florest.png" alt="Florest Image">
                     <p>Sons da Floresta</p>
         
@@ -68,11 +74,13 @@
     
                     <span>2:50</span>
                 </div>
-        
-                <div class="options">
+        </div>
+            </div>
+         
+                <div class="player-buttons">
                     <button> <img src="./assets/playing/Vector.png" alt="left-arrow" class="arrows"></button>
                     <button> <img src="./assets/playing/Play-button.png" alt="play-arrow" class="play-image"></button>
-                    <button> <img src="./assets/playing/Vector.png" alt="right-arrow" class="arrows" ></button>
+                    <button> <img src="./assets/playing/Vector.png" alt="right-arrow"  id = "right-arrow"class="arrows" ></button>
                 </div>
             </div>
         
