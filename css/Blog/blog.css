@@ -205,11 +205,6 @@ color: var(--white);
   align-items: center;
   box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 }
-/*style of size of logo footer*/
-.logo-footer {
-  flex-direction: column;
-  margin-left: 1.8rem;
-}
 
 /*style of name below footer image*/
 .logo-footer h2 {
@@ -225,9 +220,7 @@ color: var(--white);
 }
 
 .footer_socials {
-  padding-top: 1rem;
-  margin-left: 2rem;
-  margin-bottom: 2rem;
+ padding: 0.8rem;
 }
 
 .footer_icone {
