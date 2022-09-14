@@ -153,7 +153,7 @@ form {
 .contact-form h3 {
   color: var(--purple);
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 2.3rem;
   font-family: var(--font);
   line-height: 1;
   margin-bottom: 0.7rem;
@@ -168,7 +168,7 @@ form {
 
 .user-box {
   position: relative;
-  margin: 3rem 0;
+  margin: 1.8rem 0;
 }
 
 .check-box {
@@ -178,6 +178,7 @@ form {
 
 input {
   width: 100%;
+  max-height: 2rem;
   outline: none;
   border: 2px solid var(--black);
   background: var(--light-gray3);
@@ -255,7 +256,7 @@ a {
   border: 2px solid var(--white);
   font-size: 0.95rem;
   color: var(--white);
-  line-height: 1;
+  line-height: 0;
   border-radius: 10px;
   outline: none;
   transition: 0.3s;
@@ -263,7 +264,6 @@ a {
 }
 
 .btn-send:hover {
-  background-color: transparent;
   color: var(--dark-purple);
 }
 
@@ -276,14 +276,14 @@ a {
 
 .contact-info img {
   position: relative;
-  width: 10rem;
+  width: 6rem;
 }
 
 .contact-info .title {
   color: var(--white);
   font-weight: 700;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.3rem;
   font-family: var(--font);
   line-height: 1;
   margin-top: 8rem;
