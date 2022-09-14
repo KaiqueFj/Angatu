@@ -1,0 +1,321 @@
+/*Style of fonts*/
+
+li,
+a,
+button {
+  color: var(--black);
+  font-weight: 500;
+
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Header style*/
+a {
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  font-family: var(--font-brand);
+  color: var(--purple);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: var(--font), sans-serif;
+  color: var(--purple);
+  background-color: var(--white);
+  height: 8vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list a {
+  letter-spacing: 0.1rem;
+  margin-left: 32px;
+  color: var(--purple);
+}
+
+.nav-list li:nth-child(5) {
+  width: 9rem;
+  background: var(--dark-glass);
+  border-radius: 10px;
+  height: 2.6rem;
+  padding-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.nav-list li:nth-child(5):hover {
+  background-color: var(--gray);
+  transition: all ease 1s;
+  color: var(--white);
+}
+
+.nav-list li:nth-child(6):hover {
+  background-color: var(--dark-purple);
+  transition: all ease 1s;
+  color: var(--white);
+}
+
+.nav-list li:nth-child(6) {
+  background: var(--purple);
+  border-radius: 10px;
+  width: 9rem;
+  height: 2.6rem;
+  padding-top: 0.5rem;
+  margin-left: 1rem;
+  color: var(--white);
+}
+
+.ctn-btn {
+  color: var(--black) !important;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.ctn-btn:hover {
+  color: var(--white) !important;
+}
+
+.sing-btn {
+  padding-left: 0.7rem;
+  padding-top: 4.2rem;
+  color: var(--black) !important;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.sing-btn:hover {
+  color: var(--white) !important;
+}
+
+.mobile-nav {
+  display: none;
+  cursor: pointer;
+}
+.mobile-nav div {
+  width: 32px;
+  height: 2px;
+  background-color: var(--dark-purple);
+  margin: 8px;
+  transition: all ease 1s;
+}
+
+/*Container of background*/
+.information {
+  position: relative;
+  width: 100%;
+  min-height: 79vh;
+  padding: 5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 57rem;
+  background-color: var(--light-gray3);
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.contact-form {
+  position: relative;
+  background-color: var(--white);
+}
+
+form {
+  padding: 2.3rem 2.2rem;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact-form h3 {
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 4rem;
+  font-family: var(--font);
+  line-height: 1;
+  margin-bottom: 0.7rem;
+}
+
+.contact-info {
+  padding: 2.3rem;
+  position: relative;
+  text-align: center;
+  background-image: url(../../assets/SingUp/background-2.jpeg);
+}
+
+.contact-info img {
+  position: relative;
+  width: 6rem;
+}
+
+.contact-info .title {
+  color: var(--white);
+  font-weight: 700;
+  text-align: center;
+  font-size: 2.1rem;
+  font-family: var(--font);
+  line-height: 1;
+  padding: 0.8rem;
+}
+
+.contact-info .subtitle {
+  color: var(--white);
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.7rem;
+  font-family: var(--font);
+  line-height: 1;
+  padding: 0.5rem;
+}
+/*style of footer*/
+#footer {
+  padding: 2rem 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--purple);
+  font-family: var(--font);
+  align-items: center;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+/*style of name below footer image*/
+.logo-footer h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--white);
+  font-family: var(--font-brand);
+}
+
+.img-Footer {
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer_socials {
+  padding: 0.8rem;
+}
+
+.footer_icone {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin: 0 2rem;
+}
+
+.foot-p {
+  font-family: var(--font);
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+/*Responsive for mobile*/
+
+@media (max-width: 880px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    z-index: 999;
+    width: 56vw;
+    height: 92vh;
+    background: var(--elegant-black);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list a {
+    color: var(--white);
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.mobile-nav.active .l1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-nav.active .l2 {
+  opacity: 0;
+}
+.mobile-nav.active .l3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+@media (max-width: 850px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .text {
+    margin: 1rem 0 1.5rem 0;
+  }
+  .information {
+    padding: 8rem 0;
+  }
+
+  .check-box input {
+    width: 4%;
+  }
+
+  .check-box label {
+    font-size: 0.75rem;
+    left: 1rem;
+  }
+  .other-options p,
+  a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 408px) {
+  .information {
+    padding: 8rem 0;
+  }
+}
