@@ -126,7 +126,7 @@ color: var(--white);
 .main-home {
   display: flex;
   align-items: center;
-  background: url(../../assets/calm.jpg) no-repeat center center;
+  background: url(../../assets//HomePage/calm.jpg) no-repeat center center;
   width: 100%;
 }
 
