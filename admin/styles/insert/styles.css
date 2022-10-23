@@ -10,6 +10,7 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
+/*Header style*/
 a {
   color: var(--white);
   text-decoration: none;
@@ -22,7 +23,7 @@ a:hover {
 
 .logo {
   font-size: 1.5rem;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   font-family: var(--font-brand);
   color: var(--purple);
 }
@@ -115,87 +116,59 @@ nav {
 }
 
 /*Container of background*/
-#container {
+.information {
+  position: relative;
   width: 100%;
-  margin-bottom: 1rem;
-}
-
-.main-home {
+  min-height: 79vh;
+  padding: 5rem;
+  overflow: hidden;
   display: flex;
   align-items: center;
-  width: 100%;
-}
-.main-home img {
-  width: 100%;
-  max-height: 10vh;
-}
-
-.category-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: var(--font), sans-serif;
-  color: var(--purple);
-  background-color: var(--white);
-  height: 8vh;
-}
-
-.category-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-.category-list a {
-  letter-spacing: 0.1rem;
-  margin-left: 32px;
-  color: var(--purple);
-}
-
-.categories {
-  padding-top: 2rem;
-  display: flex;
   justify-content: center;
 }
 
-
-
-.today-time {
-  font-size: 1.4rem;
-  font-style: italic;
-  text-align: right;
-  font-family: var(--font);
-  font-weight: 500;
-  padding-right: 2rem;
-  padding-top: 2rem;
-}
-/*container of post*/
-.post-container {
-  max-width: 100%;
-  padding: 2rem;
-}
-
-#search-box {
-  display: flex;
-  gap: 0.1%;
-  justify-content: center;
-}
-
-.posts {
-  padding: 2rem;
+.form {
+  width: 100%;
+  max-width: 57rem;
+  background-color: var(--light-gray3);
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-areas:
-    "header header header "
-    "sidebar main main "
-    "sidebar main-2 main-2"
-    " ... footer ...";
+  grid-template-columns: repeat(2, 1fr);
 }
 
-#search {
-  width: 30%;
+.contact-form {
+  position: relative;
+  background-color: var(--white);
+}
+
+form {
+  padding: 2.3rem 2.2rem;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact-form h3 {
+  color: var(--purple);
+  font-weight: 500;
+  font-size: 1.8rem;
+  font-family: var(--font);
+  line-height: 1;
+  text-align: left;
+}
+
+.user-box {
+  position: relative;
+  margin: 1.4rem;
+}
+
+input,
+select {
+  width: 100%;
   outline: none;
-  max-height: 2rem;
+  max-height: 4rem;
   border: 2px solid var(--black);
   background: var(--light-gray3);
   padding: 1.2rem 1.2rem;
@@ -206,62 +179,113 @@ nav {
   transform: 0.3s;
 }
 
-.btn-post-search {
-  width: 3%;
-  border-radius: 10px;
-  border: 1px solid var(--white);
-  background-color: var(--purple);
-}
-
-.search-result {
-  font-family: var(--font);
-  font-size: 2.2rem;
-  text-align: left;
-  padding-top: 0.7rem;
+.user-box label {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: var(--black);
   font-weight: 500;
+  font-size: 0.9rem;
+
+  transition: 0.5s;
 }
 
-.title {
-  font-size: 3rem;
-  grid-area: header;
+.user-box.focus label {
+  top: 0;
+  transform: translateY(-95%);
+  left: 25px;
+  font-size: 0.9rem;
 }
 
-.post-image {
-  padding-top: 0.6rem;
-  grid-area: sidebar;
-  border-radius: 1.3rem;
-}
-
-.post-text {
-  grid-area: main;
-  padding-left: 1.1rem;
-  font-size: 1.7rem;
-  font-family: var(--font);
-  font-weight: 700;
-}
-
-.post-text-2 {
-  text-indent: 3rem;
-  grid-area: main-2;
-  padding-left: 1.1rem;
-  font-family: var(--font);
-  text-align: justify;
-  font-size: 1.4rem;
-}
-
-#link button {
-  background-color: var(--dark-purple);
-  border: none;
+.btn-send {
+  padding: 1.1rem 1.3rem;
+  background-color: var(--purple);
+  border: 2px solid var(--white);
+  font-size: 0.95rem;
   color: var(--white);
-  padding: 0.6rem 1.8rem;
+  line-height: 0;
   border-radius: 10px;
-  cursor: pointer;
-  margin-left: 1rem;
-  min-width: 8.2rem;
+  outline: none;
+  transition: 0.3s;
+  margin-top: 2rem;
 }
 
-#link {
-  grid-area: footer;
+.btn-send:hover {
+  color: var(--dark-purple);
+}
+
+.contact-info {
+  padding: 2.3rem;
+  position: relative;
+  background: url(../../../assets/SingUp/background-2.jpeg);
+}
+
+.contact-info h3 {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  font-family: var(--font);
+  line-height: 2;
+  
+}
+
+textarea.input {
+  width: 100%;
+  border: 2px solid var(--black);
+  background: var(--light-gray3);
+  padding: 0.8rem 1.2rem;
+  min-height: 10rem;
+  border-radius: 22px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.contact-info h4 {
+  color: var(--white);
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: var(--font);
+  line-height: 2;
+}
+
+.contact-info ul {
+  display: flex;
+  padding-top: 10rem;
+  justify-content: space-around;
+  align-items: center;
+  font-family: var(--font), sans-serif;
+  color: var(--purple);
+  list-style: none;
+}
+
+.info {
+  display: flex;
+  color: var(--black);
+  margin: 0.7rem 0;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: var(--white);
+  margin: 0 2rem;
+}
+
+.options .button-return {
+  background: transparent;
+  border: none;
+  text-align: left !important;
+  padding-left: 1.2rem;
+}
+
+.icons p {
+  color: var(--white);
 }
 
 /*style of footer*/
@@ -302,8 +326,8 @@ nav {
   font-family: var(--font);
   font-size: 1.2rem;
   color: var(--white);
-  margin-left: 3rem;
 }
+
 /*Responsive for mobile*/
 
 @media (max-width: 880px) {
@@ -313,9 +337,9 @@ nav {
   .nav-list {
     position: absolute;
     top: 8vh;
+    z-index: 999;
     right: 0;
     width: 56vw;
-    z-index: 9;
     height: 92vh;
     background: var(--elegant-black);
     flex-direction: column;
@@ -336,45 +360,6 @@ nav {
 
   .mobile-nav {
     display: block;
-  }
-
-  .posts {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas:
-      "header"
-      "sidebar"
-      "main"
-      "main-2"
-      "footer";
-  }
-
-  .title {
-    font-size: 3rem;
-    grid-area: header;
-  }
-
-  .post-image {
-    width: 87%;
-    grid-area: sidebar;
-    margin-left: 1rem;
-  }
-
-  .post-text {
-    text-align: justify;
-    grid-area: main;
-    padding-top: 1rem;
-  }
-
-  .post-text-2 {
-    grid-area: main-2;
-    text-align: justify;
-    padding-top: 1rem;
-  }
-
-  #link {
-    grid-area: footer;
-    padding-top: 0.9rem;
   }
 }
 
@@ -400,4 +385,22 @@ nav {
 
 .nav-list.active {
   transform: translateX(0);
+}
+@media (max-width: 850px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .text {
+    margin: 1rem 0 1.5rem 0;
+  }
+  .information {
+    padding: 8rem 0;
+  }
+}
+
+@media (max-width: 408px) {
+  .information {
+    padding: 8rem 0;
+  }
 }

@@ -151,34 +151,10 @@ nav {
   margin-left: 32px;
   color: var(--purple);
 }
-
-.categories {
-  padding-top: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-
-
-.today-time {
-  font-size: 1.4rem;
-  font-style: italic;
-  text-align: right;
-  font-family: var(--font);
-  font-weight: 500;
-  padding-right: 2rem;
-  padding-top: 2rem;
-}
 /*container of post*/
 .post-container {
   max-width: 100%;
   padding: 2rem;
-}
-
-#search-box {
-  display: flex;
-  gap: 0.1%;
-  justify-content: center;
 }
 
 .posts {
@@ -189,36 +165,7 @@ nav {
     "header header header "
     "sidebar main main "
     "sidebar main-2 main-2"
-    " ... footer ...";
-}
-
-#search {
-  width: 30%;
-  outline: none;
-  max-height: 2rem;
-  border: 2px solid var(--black);
-  background: var(--light-gray3);
-  padding: 1.2rem 1.2rem;
-  font-weight: 500;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
-  border-radius: 10px;
-  transform: 0.3s;
-}
-
-.btn-post-search {
-  width: 3%;
-  border-radius: 10px;
-  border: 1px solid var(--white);
-  background-color: var(--purple);
-}
-
-.search-result {
-  font-family: var(--font);
-  font-size: 2.2rem;
-  text-align: left;
-  padding-top: 0.7rem;
-  font-weight: 500;
+    " ... ... footer";
 }
 
 .title {
@@ -227,18 +174,21 @@ nav {
 }
 
 .post-image {
-  padding-top: 0.6rem;
-  grid-area: sidebar;
-  border-radius: 1.3rem;
+  height: 16rem;
+    padding-top: 0.6rem;
+    grid-area: sidebar;
+    border-radius: 1.3rem;
+    width: 16rem;
 }
 
 .post-text {
   grid-area: main;
   padding-left: 1.1rem;
-  font-size: 1.7rem;
+  font-size: 2.4rem;
   font-family: var(--font);
   font-weight: 700;
 }
+
 
 .post-text-2 {
   text-indent: 3rem;
@@ -246,7 +196,7 @@ nav {
   padding-left: 1.1rem;
   font-family: var(--font);
   text-align: justify;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 #link button {
@@ -257,7 +207,6 @@ nav {
   border-radius: 10px;
   cursor: pointer;
   margin-left: 1rem;
-  min-width: 8.2rem;
 }
 
 #link {

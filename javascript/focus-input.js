@@ -1,4 +1,4 @@
-const inputs = document.querySelectorAll(".input");
+const inputs = document.querySelectorAll(".input",".select");
 
 function focusFunc() {
   let va = this.parentNode;
